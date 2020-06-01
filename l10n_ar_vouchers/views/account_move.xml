@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="account_move_form_inherit" model="ir.ui.view">
+        <field name="name">account.move.form.inherit</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='preview_invoice']" position="after">
+                <button name="%(action_report_invoice_copies)d" 
+                        id="account_invoice_payment_btn" type="action"
+                        attrs="{'invisible': [('invoice_payment_state', 'in', ['draft','cancel'])]}"
+                        string="Imprimir Copias"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

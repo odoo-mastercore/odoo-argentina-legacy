@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_invoice_copies_ar">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-set="lang" t-value="o.user_id.lang if o.type in ('in_invoice', 'in_refund') else o.partner_id.lang"/>
+                <t t-call="account.report_invoice_document" t-lang="lang">
+                    <t t-set="type_copy"  t-value="2" /> 
+                </t> 
+                <t t-if="o.company_id.country_id.name == 'Argentina'">  
+                    <t t-call="account.report_invoice_document" t-lang="lang">
+                        <t t-set="type_copy"  t-value="3" /> 
+                    </t> 
+                </t>
+            </t>
+        </t>
+    </template>
+    <report
+            id="action_report_invoice_copies"
+            model="account.move"
+            string="Copias"
+            report_type="qweb-pdf"
+            name="l10n_ar_vouchers.report_invoice_copies_ar"
+            file="l10n_ar_vouchers.report_invoice"
+            menu="False"
+            print_report_name="'COPIAS - %s' % (object.display_name)"
+        />
+
+</odoo>

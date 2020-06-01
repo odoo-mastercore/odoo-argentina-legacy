@@ -14,7 +14,7 @@
     },
     "data": [
         'report/account_ar_vat_line_view.xml',
-        #'report/account_vat_ledger_report.xml',
+        'report/account_vat_ledger_report.xml',
         'views/account_vat_report_views.xml',
         'security/ir.model.access.csv',
         'security/security.xml',

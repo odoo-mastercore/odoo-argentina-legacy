@@ -147,6 +147,8 @@ class AccountVatLedger(models.Model):
 
     def action_print(self):
         self.ensure_one()
-        return self.env['ir.actions.report'].search(
-            [('report_name', '=', 'report_account_vat_ledger')],
-            limit=1).report_action(self)
+        model_name = \
+            "l10n_ar_reports.action_account_vat_ledger_report_xlsx"
+        self.env.ref(model_name).report_file = self.display_name
+
+        return self.env.ref(model_name).report_action(self)
