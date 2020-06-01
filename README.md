@@ -44,6 +44,6 @@ url
 - l10n_ar_afipws
 - l10n_ar_afipws_fe
 - l10n_ar_bank PENDIENTE
-- l10n_ar_vouchers
+- l10n_ar_invoice_reports
 - 
 

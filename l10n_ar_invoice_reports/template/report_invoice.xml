@@ -20,8 +20,8 @@
             model="account.move"
             string="Copias"
             report_type="qweb-pdf"
-            name="l10n_ar_vouchers.report_invoice_copies_ar"
-            file="l10n_ar_vouchers.report_invoice"
+            name="l10n_ar_invoice_reports.report_invoice_copies_ar"
+            file="l10n_ar_invoice_reports.report_invoice"
             menu="False"
             print_report_name="'COPIAS - %s' % (object.display_name)"
         />
