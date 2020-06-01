@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+<!-- TODO realizar compatibilidad en multilocalizaciones -->
+  <template id="report_invoice_ar" inherit_id="account.report_invoice_document">
+    <xpath expr="//t[@t-set='address']" position="replace">
+    <t t-if="o.company_id.country_id.name == 'Argentina'">      
+      <div style="margin:top;" class="text-center">
+        <p>
+          <h1>
+            <strong><span t-field="o.l10n_latam_document_type_id.l10n_ar_letter"/></strong>
+          </h1>
+          <h7>
+            Código: 0<span t-field="o.l10n_latam_document_type_id.code"/>
+          </h7><br/>
+          <t t-if="type_copy==2">
+            <t t-set="copies">
+            <t>DUPLICADO</t>
+            </t>
+          </t>
+          <t t-if="type_copy==3">
+            <t t-set="copies">
+            <t>TRIPLICADO</t>
+            </t>
+          </t>
+
+          <t t-if="copies">
+          <strong> <t t-esc="copies"/> </strong>            
+          </t>
+          <t t-else="">
+          <strong>ORIGINAL</strong>
+          </t>
+        </p>
+        <br/>
+      </div>
+    </t>
+    </xpath>
+
+    <xpath expr="//div[@id='informations']" position="replace">
+      <t t-if="o.company_id.country_id.name == 'Argentina'">
+          <div id="informations">
+          <div t-if="o.invoice_date">
+            <strong>Fecha de Factura: <span t-field="o.invoice_date"/></strong>
+          </div>
+          <div t-if="o.invoice_date_due and o.type == 'out_invoice' and (o.invoice_payment_state == 'open' or o.invoice_payment_state == 'paid')">
+            <strong>Fecha Vto. de Pago: <span t-field="o.invoice_date_due"/></strong>
+          </div>
+          <br/>
+          Sr(s): <span t-field="o.partner_id.name"/><br/>
+          Domicilio:
+          <span t-field="o.partner_id.street"/>,
+          <span t-field="o.partner_id.city"/>,
+          <span t-field="o.partner_id.zip"/>,
+          <span t-field="o.partner_id.state_id.name"/><br/>
+          <span t-field="o.partner_id.l10n_latam_identification_type_id.name"/>:
+          <span t-field="o.partner_id.vat"/><br/>
+          Tipo de Responsabilidad:
+          <span t-field="o.partner_id.l10n_ar_afip_responsibility_type_id"/>
+        </div>
+        <br/><br/>
+        <div name="reference">
+        </div>
+      </t>
+    </xpath>
+    <xpath expr="//th[@name='th_taxes']" position="attributes">
+      <attribute name="t-if">
+      o.l10n_latam_document_type_id.l10n_ar_letter != 'B'
+      </attribute>
+    </xpath>
+    <xpath expr="//t[@name='account_invoice_line_accountable']" position="replace">
+      <t t-if="not line.display_type" name="account_invoice_line_accountable">
+          <td name="account_invoice_line_name"><span t-field="line.name" t-options="{'widget': 'text'}"/></td>
+          <td class="text-right">
+              <span t-field="line.quantity"/>
+              <span t-field="line.product_uom_id"  groups="uom.group_uom"/>
+          </td>
+          <td t-attf-class="text-right {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}">
+              <span t-field="line.price_unit"/>
+          </td>
+          <td t-if="display_discount" t-attf-class="text-right {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}">
+              <span t-field="line.discount"/>
+          </td>
+          <td t-if="o.l10n_latam_document_type_id.l10n_ar_letter != 'B'" t-attf-class="text-left {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}">
+              <span t-esc="', '.join(map(lambda x: (x.description or x.name), line.tax_ids))" id="line_tax_ids"/>
+          </td>
+          <td class="text-right o_price_total">
+              <span t-field="line.price_subtotal" groups="account.group_show_line_subtotals_tax_excluded"/>
+              <span t-field="line.price_total" groups="account.group_show_line_subtotals_tax_included"/>
+          </td>
+      </t>
+    </xpath>
+    <xpath expr="//div[hasclass('clearfix')]" position="after">
+      <t t-if="o.company_id.country_id.name == 'Argentina'">
+        <br/>
+        <div id="barcode">
+          <div style="margin-left:-27px;">
+            <img t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', o.afip_barcode, 280, 50)" style=""/>
+          </div>
+          <br/>
+          CAE N°:
+          <span t-field="o.afip_auth_code"/><br/>
+          Fecha Vto CAE:
+          <span t-field="o.afip_auth_code_due"/><br/>
+        </div>
+        <!-- TODO Move QR to the right section-->
+        <!-- <img t-att-src="'/report/barcode/QR/%s' % 'https://mastercore.net/'" width="100" height="100"/> <br/> -->
+      </t>
+    </xpath>
+  </template>
+</odoo>
