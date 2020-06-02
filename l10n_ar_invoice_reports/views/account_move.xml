@@ -8,7 +8,7 @@
             <xpath expr="//button[@name='preview_invoice']" position="after">
                 <button name="%(action_report_invoice_copies)d" 
                         id="account_invoice_payment_btn" type="action"
-                        attrs="{'invisible': [('invoice_payment_state', 'in', ['draft','cancel'])]}"
+                        attrs="{'invisible': [('state', 'in', ['draft','cancel'])]}"
                         string="Imprimir Copias"/>
             </xpath>
         </field>
