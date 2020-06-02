@@ -420,7 +420,7 @@ msgstr "Artículos de diario publicados"
 #. module: l10n_ar_reports
 #: model_terms:ir.ui.view,arch_db:l10n_ar_reports.account_vat_ledger_form
 msgid "Present"
-msgstr "Presente"
+msgstr "Presentar"
 
 #. module: l10n_ar_reports
 #: model:ir.model.fields.selection,name:l10n_ar_reports.selection__account_vat_ledger__state__presented
@@ -504,7 +504,7 @@ msgstr "IVA Ventas"
 #: model:ir.actions.act_window,name:l10n_ar_reports.action_account_sale_vat_ledger
 #: model:ir.ui.menu,name:l10n_ar_reports.menu_account_sale_vat_ledger
 msgid "Sales VAT Ledger"
-msgstr "Libro mayor de IVA de ventas"
+msgstr "Libro IVA ventas"
 
 #. module: l10n_ar_reports
 #: model:ir.model.fields,field_description:l10n_ar_reports.field_account_vat_ledger__date_from
