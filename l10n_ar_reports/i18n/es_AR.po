@@ -430,12 +430,12 @@ msgstr "Presentado"
 #. module: l10n_ar_reports
 #: model:ir.model.fields,field_description:l10n_ar_reports.field_account_vat_ledger__presented_ledger
 msgid "Presented Ledger"
-msgstr "Libro mayor presentado"
+msgstr "Libro presentado"
 
 #. module: l10n_ar_reports
 #: model:ir.model.fields,field_description:l10n_ar_reports.field_account_vat_ledger__presented_ledger_name
 msgid "Presented Ledger Name"
-msgstr "Nombre del libro mayor presentado"
+msgstr "Nombre del libro presentado"
 
 #. module: l10n_ar_reports
 #: model_terms:ir.ui.view,arch_db:l10n_ar_reports.account_vat_ledger_form
@@ -588,7 +588,7 @@ msgstr "IVA 5%"
 #: model_terms:ir.ui.view,arch_db:l10n_ar_reports.account_vat_ledger_form
 #: model_terms:ir.ui.view,arch_db:l10n_ar_reports.account_vat_ledger_tree
 msgid "VAT Ledger"
-msgstr "Libro mayor de IVA"
+msgstr "Libro IVA"
 
 #. module: l10n_ar_reports
 #: model:ir.model.fields,field_description:l10n_ar_reports.field_account_ar_vat_line__vat_per
@@ -629,4 +629,4 @@ msgstr "Con tipo de documento"
 #. module: l10n_ar_reports
 #: model:ir.model,name:l10n_ar_reports.model_report_l10n_ar_account_vat_ledger_account_vat_ledger_xlsx
 msgid "Xlsx Account VAT Ledger"
-msgstr "Xlsx Libro mayor de IVA"
+msgstr "Xlsx Libro IVA"
