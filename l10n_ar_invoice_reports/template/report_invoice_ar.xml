@@ -89,7 +89,7 @@
       </t>
     </xpath>
     <xpath expr="//div[hasclass('clearfix')]" position="after">
-      <t t-if="o.company_id.country_id.name == 'Argentina'">
+      <t t-if="o.company_id.country_id.name == 'Argentina' and o.afip_auth_code">
         <br/>
         <div id="barcode">
           <div style="margin-left:-27px;">
