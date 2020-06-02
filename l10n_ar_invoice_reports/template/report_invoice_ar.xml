@@ -41,7 +41,7 @@
           <div t-if="o.invoice_date">
             <strong>Fecha de Factura: <span t-field="o.invoice_date"/></strong>
           </div>
-          <div t-if="o.invoice_date_due and o.type == 'out_invoice' and (o.invoice_payment_state == 'open' or o.invoice_payment_state == 'paid')">
+          <div t-if="o.invoice_date_due and o.type == 'out_invoice' and o.state == 'posted'" name="due_date">
             <strong>Fecha Vto. de Pago: <span t-field="o.invoice_date_due"/></strong>
           </div>
           <br/>
