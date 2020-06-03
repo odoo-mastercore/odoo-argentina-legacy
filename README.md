@@ -21,6 +21,7 @@ Versión 13.0 Community edition
 - Duplicado y Triplicado de Facturas
 - Reporte de Libro IVA Ventas, Compras
 - Reporte de IIBB en Ventas y Compras por Jurisdicción
+- Agregado CBU a Bancos y listado de Bancos Argentinos
 <!--- Cheques 
 - Recibos para pagos con múltiples medios de pago
 - Percepciones
@@ -55,4 +56,5 @@ docker pull pandoo/odoo:13.0
 - l10n_ar_afipws_fe
 - l10n_ar_invoice_reports
 - l10n_ar_reports 
+- l01n_ar_bank
 
