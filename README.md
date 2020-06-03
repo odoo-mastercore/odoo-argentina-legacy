@@ -1,20 +1,31 @@
-# Localización Odoo Argentina
+
+#Odoo Localization for Argentinians Partners
+
+Entrepreneurs, MiPyme's, SME, Companies, Aut  nomos. 
+Work made from ingadhoc/odoo-argentina-ce and ctmil/odoo-argentina repositories. 
+Thanks to these folks!
+
+
+# Localización Odoo Argentina (CE)
 Versión 13.0 Community edition
 
 ------
 
-**Versión frok de los amigos de Moldeo interactive y esta de ADHOC, Gracias totales.**
+**Versión fork de los amigos de ADHOC y Moldeo, ¡Gracias totales!.**
 
 ------
 
 ### Comprende las siguientes funcionalidades:
 
-- Factura Electrónica
-- Cheques
+- WebServices Implementados para Factura Electrónica AFIP (+ND, +NC, +FCEMiPyme)
+- Duplicado y Triplicado de Facturas
+- Reporte de Libro IVA Ventas, Compras
+- Reporte de IIBB en Ventas y Compras por Jurisdicción
+<!--- Cheques 
 - Recibos para pagos con múltiples medios de pago
 - Percepciones
 - Retenciones
-- Tipo de Cambio Automático
+- Tipo de Cambio Automático -->
 
 #### Dependencias externas:
 
@@ -30,12 +41,11 @@ Versión 13.0 Community edition
 ```
 pip3 install -r requirements.txt
 ```
-*En Docker se debe primero hacer update, upgrade e instalar el paquete git*
 
-#### Descargar la imagen Docker:
+#### Usando Docker podeis serviros de la imagen:
 
 ```
-url
+docker pull pandoo/odoo:13.0
 ```
 
 ### Instalar los módulos en este orden:
@@ -43,7 +53,6 @@ url
 - l10n_ar (embebido en Odoo Community edition)
 - l10n_ar_afipws
 - l10n_ar_afipws_fe
-- l10n_ar_bank PENDIENTE
 - l10n_ar_invoice_reports
-- 
+- l10n_ar_reports 
 

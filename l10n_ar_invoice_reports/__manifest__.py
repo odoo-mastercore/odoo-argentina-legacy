@@ -3,13 +3,6 @@
 # Author      : SINPASYS GLOBAL SA || MASTERCORE SAS
 # Copyright(c): 2019-Present.
 # License URL : MIT
-# All Rights Reserved.
-#
-#
-#
-# This program is copyright property of the author mentioned above.
-# You can`t redistribute it and/or modify it.
-#
 ################################################################################
 
 {
@@ -25,18 +18,16 @@
     """,
     'author': 'MASTERCORE SAS || SINAPSYS GLOBAL SA',
     'website': 'www.mastercore.net',
-    'license': 'AGPL-3',
+    'license': 'MIT',
     'category': 'Localization / Argentina',
     'depends': [
         'base',
         'account',
-        #'sale', -- se necesita para report_saleorder_ar
         'l10n_ar_afipws_fe',
     ],
     'data': [
         'template/report_invoice_ar.xml',
         'template/report_invoice.xml',
-        #'template/report_saleorder_ar.xml', -- Para una version posterior --
         'data/external_layout_report.xml',
         'views/account_move.xml',
     ],
