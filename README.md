@@ -1,5 +1,5 @@
 
-#Odoo Localization for Argentinians Partners
+# Odoo Localization for Argentinians Partners
 
 Entrepreneurs, MiPyme's, SME, Companies, Aut  nomos. 
 Work made from ingadhoc/odoo-argentina-ce and ctmil/odoo-argentina repositories. 
