@@ -18,7 +18,7 @@
     """,
     'author': 'MASTERCORE SAS || SINAPSYS GLOBAL SA',
     'website': 'www.mastercore.net',
-    'license': 'MIT',
+    'license': 'Other OSI approved licence',
     'category': 'Localization / Argentina',
     'depends': [
         'base',
