@@ -403,11 +403,6 @@ msgid "Based On Rule"
 msgstr ""
 
 #. module: l10n_ar_account_withholding
-#: model:ir.actions.report,name:l10n_ar_account_withholding.action_aeroo_certificado_de_retencion_report
-msgid "Certificado de Retención"
-msgstr "Certificado de Retención"
-
-#. module: l10n_ar_account_withholding
 #: model:ir.model.fields,field_description:l10n_ar_account_withholding.field_res_partner_arba_alicuot__codigo_hash
 msgid "Codigo Hash"
 msgstr "Código Hash"
