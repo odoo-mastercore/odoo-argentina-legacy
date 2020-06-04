@@ -680,6 +680,7 @@ msgid ""
 msgstr ""
 "Si establece un número aquí, esta chequera se establecerá automáticamente "
 "de uso cuando se eleve este número".
+
 #. module: account_check
 #: model:ir.model.fields.selection,name:account_check.selection__account_checkbook__state__active
 msgid "In Use"
