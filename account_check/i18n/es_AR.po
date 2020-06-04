@@ -570,7 +570,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_check.field_account_check__first_partner_id
 #: model_terms:ir.ui.view,arch_db:account_check.view_checks_search
 msgid "First operation partner"
-msgstr "Primera operación del Partner"
+msgstr "Partner de primera operación"
 
 #. module: account_check
 #: model:ir.model.fields,field_description:account_check.field_account_check__message_follower_ids
@@ -711,7 +711,7 @@ msgstr "Emitir Cheque"
 #: model:ir.model.fields,field_description:account_check.field_account_checkbook__issue_check_subtype
 #: model:ir.model.fields,field_description:account_check.field_account_payment__check_subtype
 msgid "Issue Check Subtype"
-msgstr "Emitir subtipo de cheque"
+msgstr "Subtipo de cheque"
 
 #. module: account_check
 #: model_terms:ir.ui.view,arch_db:account_check.account_journal_dashboard_kanban_view_inherited
@@ -723,7 +723,7 @@ msgstr "cheque(s) emitidos"
 #: model:ir.model.fields,field_description:account_check.field_account_checkbook__issue_check_ids
 #: model:ir.ui.menu,name:account_check.menu_issue_check
 msgid "Issue Checks"
-msgstr "Emitir cheques"
+msgstr "Cheques emitidos"
 
 #. module: account_check
 #: model:ir.model.fields,field_description:account_check.field_account_check__issue_date
@@ -835,7 +835,7 @@ msgstr "Ultima actualización en"
 #: model:ir.model.fields,field_description:account_check.field_account_check__partner_id
 #: model_terms:ir.ui.view,arch_db:account_check.view_checks_search
 msgid "Last operation partner"
-msgstr "Última operación del partner"
+msgstr "Partner de última operación"
 
 #. module: account_check
 #: model:ir.model.fields,field_description:account_check.field_account_check__message_main_attachment_id
@@ -1331,7 +1331,7 @@ msgstr ""
 #. module: account_check
 #: model:ir.model.fields,field_description:account_check.field_account_checkbook__range_to
 msgid "To Number"
-msgstr "Al numero"
+msgstr "Número final"
 
 #. module: account_check
 #: model_terms:ir.ui.view,arch_db:account_check.view_account_payment_form_inherited
