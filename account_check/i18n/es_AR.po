@@ -678,8 +678,8 @@ msgid ""
 "If you set a number here, this checkbook will be automatically set as used "
 "when this number is raised."
 msgstr ""
-"Si establece un número aquí, esta chequera se establecerá automáticamente "
-"de uso cuando se eleve este número".
+"Si establece un número, esta chequera será automáticamente establecida como "
+"Usada, cuando este número se utilice."
 
 #. module: account_check
 #: model:ir.model.fields.selection,name:account_check.selection__account_checkbook__state__active
