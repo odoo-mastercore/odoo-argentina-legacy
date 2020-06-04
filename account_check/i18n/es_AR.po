@@ -1224,7 +1224,7 @@ msgstr ""
 "Estado basado en actividades\n"
 "Atrasado: la fecha de vencimiento ya pasó\n"
 "Hoy: la fecha de la actividad es hoy\n"
-"Planificado: actividades futuras".
+"Planificado: actividades futuras"
 
 #. module: account_check
 #: model_terms:ir.ui.view,arch_db:account_check.view_account_check_form
@@ -1243,7 +1243,7 @@ msgid ""
 "The %s (id %s) operation has no partner linked.You will need to do it "
 "manually."
 msgstr "La operación %s (id %s) no tiene ningún socio vinculado. "
-"Deberá hacerlo manualmente"."
+"Deberá hacerlo manualmente"
 
 #. module: account_check
 #: code:addons/account_check/models/account_check.py:0
@@ -1277,7 +1277,7 @@ msgid ""
 "The deposit operation is not linked to a payment.If you want to reject you "
 "need to do it manually."
 msgstr "La operación de depósito no está vinculada a un pago. Si desea "
-"rechazar debe hacerlo manualmente".
+"rechazar debe hacerlo manualmente."
 
 #. module: account_check
 #: model:ir.model.fields.selection,name:account_check.selection__account_check__type__third_check
@@ -1466,7 +1466,7 @@ msgid ""
 "You can delete the origin reference and unlink after."
 msgstr ""
 "No puede eliminar una operación de cheque que tiene un origen. \n"
-"Puede eliminar la referencia de origen y desvincularla después".
+"Puede eliminar la referencia de origen y desvincularla después."
 
 #. module: account_check
 #: model:ir.model,name:account_check.model_account_check_operation
