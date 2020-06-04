@@ -21,8 +21,7 @@ msgstr ""
 msgid " check %s"
 msgstr " cheque %s"
 
-#. module: account
-_check
+#. module: account_check
 #: code:addons/account_check/models/account_checkbook.py:0
 #, python-format
 msgid " up to %s"
