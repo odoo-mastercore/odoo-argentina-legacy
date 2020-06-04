@@ -896,7 +896,7 @@ msgid ""
 "No number will be assigne while creating payment, number will beassigned "
 "after printing check."
 msgstr "No number will be assigne while creating payment, number will "
-"beassigned after printing check.""
+"beassigned after printing check."
 
 #. module: account_check
 #: code:addons/account_check/models/account_check.py:0
