@@ -6,9 +6,9 @@
    :target: https://www.gnu.org/licenses/agpl
    :alt: License: AGPL-3
 
-=======================================================
-Agregado de CBU a bancos y listado de Bancos Argentinos
-=======================================================
+=================================================================
+Agregado de CBU Filtro de búsqueda y listado de Bancos Argentinos
+=================================================================
 
 * Listado de entidades financieras habilitadas por el BCRA en la República Argentina.
 * Filtro para buscar las cuentas bancarias por nombre de banco
@@ -20,12 +20,7 @@ To install this module, you need to:
 
 #. Just install the module
 
-
 Credits
 =======
 
-Images
-------
-
 * |company| |icon|
-
