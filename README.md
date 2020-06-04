@@ -56,7 +56,7 @@ docker pull pandoo/odoo:13.0
 - l10n_ar_afipws_fe
 - l10n_ar_invoice_reports
 - l10n_ar_reports 
-- l01n_ar_bank
+- l10n_ar_bank
 - account_payment_fix
 - account_financial_amount
 - account_withholding
