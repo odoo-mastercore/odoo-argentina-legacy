@@ -6,6 +6,7 @@ from odoo import fields, models, api, _
 from odoo.exceptions import UserError
 import logging
 import sys
+import re
 import traceback
 from datetime import datetime
 _logger = logging.getLogger(__name__)
@@ -434,19 +435,20 @@ class AccountMove(models.Model):
                 # fex no acepta fecha
                 doc_number_parts = self._l10n_ar_get_document_number_parts(
                     CbteAsoc.l10n_latam_document_number, CbteAsoc.l10n_latam_document_type_id.code)
+                company_vat = re.sub('[^0-9]', '', self.company_id.vat)
                 if afip_ws == 'wsfex':
                     ws.AgregarCmpAsoc(
                         CbteAsoc.l10n_latam_document_type_id.document_type_id.code,
                         doc_number_parts['point_of_sale'],
                         doc_number_parts['invoice_number'],
-                        self.company_id.vat,
+                        company_vat,
                     )
                 else:
                     ws.AgregarCmpAsoc(
                         CbteAsoc.l10n_latam_document_type_id.code,
                         doc_number_parts['point_of_sale'],
                         doc_number_parts['invoice_number'],
-                        self.company_id.vat,
+                        company_vat,
                         afip_ws != 'wsmtxca' and self.date.strftime('%Y%m%d') or self.date.strftime('%Y-%m-%d'),
                     )
 
