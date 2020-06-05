@@ -80,7 +80,7 @@
                                 Comprobante de pago que origina la retención:
                             </td>
                             <td class="text-left">
-                                <span t-field="o.payment_group_id.document_number"/>
+                                <span t-field="o.payment_group_id.display_name"/>
                             </td>
                         </tr>
                         <tr>
