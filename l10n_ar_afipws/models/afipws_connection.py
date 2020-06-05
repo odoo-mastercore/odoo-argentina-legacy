@@ -5,6 +5,7 @@
 from odoo import fields, models, api, _
 from odoo.exceptions import UserError, RedirectWarning
 import logging
+import re
 
 _logger = logging.getLogger(__name__)
 
@@ -164,7 +165,7 @@ class AfipwsConnection(models.Model):
             raise UserError(
                 'There was a connection problem to AFIP. Contact your Odoo Provider. Error\n\n%s' % repr(error))
 
-        cuit = self.company_id.partner_id.ensure_vat()
+        cuit = re.sub('[^0-9]', '', self.company_id.partner_id.ensure_vat())
         ws.Cuit = cuit
         ws.Token = self.token
         ws.Sign = self.sign
