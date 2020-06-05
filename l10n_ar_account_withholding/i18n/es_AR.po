@@ -52,9 +52,9 @@ msgstr "% No Inscripto"
 #. module: l10n_ar_account_withholding
 #: model:ir.actions.report,print_report_name:l10n_ar_account_withholding.action_report_withholding_certificate
 msgid ""
-"'Certificado de Retención Slip - %s' % (object.withholding_number or '')"
+"'Certificado de Retención - %s' % (object.withholding_number or '')"
 msgstr ""
-"'Certificado de Retención Slip - %s' % (object.withholding_number or '')"
+"'Certificado de Retención - %s' % (object.withholding_number or '')"
 
 #. module: l10n_ar_account_withholding
 #: model_terms:ir.ui.view,arch_db:l10n_ar_account_withholding.view_res_partner_arba_alicuot_form
@@ -496,8 +496,8 @@ msgstr "Regímenes Ganancias Compañia"
 
 #. module: l10n_ar_account_withholding
 #: model_terms:ir.ui.view,arch_db:l10n_ar_account_withholding.report_withholding_certificate_document
-msgid "Comprobante que origina la retención:"
-msgstr "Comprobante que origina la retención:"
+msgid "Comprobante de pago que origina la retención:"
+msgstr "Comprobante de pago que origina la retención:"
 
 #. module: l10n_ar_account_withholding
 #: model:ir.model.fields,field_description:l10n_ar_account_withholding.field_afip_tabla_ganancias_alicuotasymontos__concepto_referencia
