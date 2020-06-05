@@ -1,0 +1,576 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_ar_ux
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-06-05 05:15+0000\n"
+"PO-Revision-Date: 2020-06-05 05:15+0000\n"
+"Last-Translator: Reydi Hernandez <rhe@mastercore.net>\n"
+"Language-Team: Spanish (Argentina) MASTERCORE || SINAPSYS GLOBAL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_ar_ux
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.report_payment_group_document
+msgid "- Venc."
+msgstr "- Venc."
+
+#. module: l10n_ar_ux
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.report_payment_group_document
+msgid "<b>ORDEN DE PAGO</b>"
+msgstr "<b>ORDEN DE PAGO</b>"
+
+#. module: l10n_ar_ux
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.report_payment_group_document
+msgid "<b>RECIBO DE PAGO</b>"
+msgstr "<b>RECIBO DE PAGO</b>"
+
+#. module: l10n_ar_ux
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.report_payment_group_document
+msgid ""
+"<br/>\n"
+"                    Fecha:"
+msgstr ""
+"<br/>\n"
+"                    Fecha:"
+
+#. module: l10n_ar_ux
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.report_payment_group_document
+msgid "<span class=\"text-center\">Firma y Aclaración</span>"
+msgstr "<span class=\"text-center\">Firma y Aclaración</span>"
+
+#. module: l10n_ar_ux
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.report_payment_group_document
+msgid "<span>Comprobantes Imputados</span>"
+msgstr "<span>Comprobantes Imputados</span>"
+
+#. module: l10n_ar_ux
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.report_payment_group_document
+msgid "<span>Comprobantes Pendientes al</span>"
+msgstr "<span>Comprobantes Pendientes al</span>"
+
+#. module: l10n_ar_ux
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.report_payment_group_document
+msgid "<span>Fecha Venc.</span>"
+msgstr "<span>Fecha Venc.</span>"
+
+#. module: l10n_ar_ux
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.report_payment_group_document
+msgid "<span>Importe Imputado</span>"
+msgstr "<span>Importe Imputado</span>"
+
+#. module: l10n_ar_ux
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.report_payment_group_document
+msgid "<span>Importe Original</span>"
+msgstr "<span>Importe Original</span>"
+
+#. module: l10n_ar_ux
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.report_payment_group_document
+msgid "<span>Importe</span>"
+msgstr "<span>Importe</span>"
+
+#. module: l10n_ar_ux
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.report_payment_group_document
+msgid "<span>Pagos</span>"
+msgstr "<span>Pagos</span>"
+
+#. module: l10n_ar_ux
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.report_payment_group_document
+msgid "<span>Saldo</span>"
+msgstr "<span>Saldo</span>"
+
+#. module: l10n_ar_ux
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.report_payment_group_document
+msgid "<strong><span>Total Imputado</span></strong>"
+msgstr "<strong><span>Total Imputado</span></strong>"
+
+#. module: l10n_ar_ux
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.report_payment_group_document
+msgid "<strong><span>Total Pagado</span></strong>"
+msgstr "<strong><span>Total Pagado</span></strong>"
+
+#. module: l10n_ar_ux
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.report_payment_group_document
+msgid "<strong><span>Total Pendiente</span></strong>"
+msgstr "<strong><span>Total Pendiente</span></strong>"
+
+#. module: l10n_ar_ux
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.report_payment_group_document
+msgid "<strong>VAT Cond: </strong>"
+msgstr "<strong>Cond IVA: </strong>"
+
+#. module: l10n_ar_ux
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.report_payment_group_document
+msgid "A cuenta"
+msgstr "A cuenta"
+
+#. module: l10n_ar_ux
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.view_partner_property_form
+msgid "AFIP"
+msgstr "AFIP"
+
+#. module: l10n_ar_ux
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.partner_info
+msgid "AFIP Responsibility"
+msgstr "Responsabilidad AFIP"
+
+#. module: l10n_ar_ux
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.partner_info
+msgid "AFIP Responsibility..."
+msgstr "Responsabilidad AFIP..."
+
+#. module: l10n_ar_ux
+#: model:ir.actions.act_window,name:l10n_ar_ux.act_afip_activity
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.view_afip_activity_form
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.view_afip_activity_tree
+msgid "AFIP activity"
+msgstr "Actividad AFIP"
+
+#. module: l10n_ar_ux
+#: model:ir.actions.act_window,name:l10n_ar_ux.act_afip_concept
+msgid "AFIP concept"
+msgstr "Concepto AFIP"
+
+#. module: l10n_ar_ux
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.view_afip_concept_form
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.view_afip_concept_tree
+msgid "AFIP concepts"
+msgstr "Conceptos AFIP"
+
+#. module: l10n_ar_ux
+#: model:ir.actions.act_window,name:l10n_ar_ux.act_afip_tax
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.view_afip_tax_form
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.view_afip_tax_tree
+msgid "AFIP tax"
+msgstr "Impuesto AFIP"
+
+#. module: l10n_ar_ux
+#: model:ir.model,name:l10n_ar_ux.model_account_account
+msgid "Account"
+msgstr "Cuenta"
+
+#. module: l10n_ar_ux
+#: model:ir.model,name:l10n_ar_ux.model_account_chart_template
+msgid "Account Chart Template"
+msgstr "Plantilla de Plan de Cuentas"
+
+#. module: l10n_ar_ux
+#: model:ir.model,name:l10n_ar_ux.model_account_account_tag
+msgid "Account Tag"
+msgstr "Etiqueta de cuenta"
+
+#. module: l10n_ar_ux
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_afip_activity__active
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_afip_concept__active
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_afip_tax__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: l10n_ar_ux
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_res_partner__actividad_monotributo_padron
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_res_users__actividad_monotributo_padron
+msgid "Actividad Monotributo Padron"
+msgstr "Actividad Monotributo Padron"
+
+#. module: l10n_ar_ux
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_res_partner__actividades_padron
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_res_users__actividades_padron
+msgid "Actividades"
+msgstr "Actividades"
+
+#. module: l10n_ar_ux
+#: model:ir.ui.menu,name:l10n_ar_ux.menu_action_afip_activity
+msgid "Activities"
+msgstr "Actividades"
+
+#. module: l10n_ar_ux
+#: model:ir.model.fields.selection,name:l10n_ar_ux.selection__res_partner__imp_ganancias_padron__ac
+#: model:ir.model.fields.selection,name:l10n_ar_ux.selection__res_partner__imp_iva_padron__ac
+msgid "Activo"
+msgstr "Activo"
+
+#. module: l10n_ar_ux
+#: model:ir.model.fields.selection,name:l10n_ar_ux.selection__res_partner__imp_iva_padron__an
+msgid "Activo no alcanzado"
+msgstr "Activo no alcanzado"
+
+#. module: l10n_ar_ux
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.res_config_settings_view_form
+msgid "Argentina Localization"
+msgstr "Localización Argentina"
+
+#. module: l10n_ar_ux
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.partner_info
+msgid "Billing information"
+msgstr "Datos de facturación"
+
+#. module: l10n_ar_ux
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_res_company__arba_cit
+msgid "CIT ARBA"
+msgstr "CIT ARBA"
+
+#. module: l10n_ar_ux
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.partner_info
+msgid ""
+"Changing your document type is not allowed. Please contact us directly for "
+"this operation."
+msgstr "No está permitido cambiar el tipo de documento. Póngase en contacto "
+"con nosotros directamente para esta operación."
+
+#. module: l10n_ar_ux
+#: model:ir.model.fields,help:l10n_ar_ux.field_res_company__arba_cit
+msgid "Clave de Identificación Tributaria de ARBA"
+msgstr "Clave de Identificación Tributaria de ARBA"
+
+#. module: l10n_ar_ux
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_afip_activity__code
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_afip_concept__code
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_afip_tax__code
+msgid "Code"
+msgstr "Código"
+
+#. module: l10n_ar_ux
+#: model:ir.model,name:l10n_ar_ux.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: l10n_ar_ux
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.partner_info
+msgid "Company Name"
+msgstr "Nombre de la compañía"
+
+#. module: l10n_ar_ux
+#: model:ir.ui.menu,name:l10n_ar_ux.menu_action_afip_concept
+msgid "Concepts"
+msgstr "Conceptos"
+
+#. module: l10n_ar_ux
+#: model:ir.model,name:l10n_ar_ux.model_res_config_settings
+msgid "Config Settings"
+msgstr "Opciones de Configuración"
+
+#. module: l10n_ar_ux
+#: model:ir.model,name:l10n_ar_ux.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: l10n_ar_ux
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_res_config_settings__l10n_ar_country_code
+msgid "Country Code"
+msgstr "Código de país"
+
+#. module: l10n_ar_ux
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_afip_activity__create_uid
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_afip_concept__create_uid
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_afip_tax__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: l10n_ar_ux
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_afip_activity__create_date
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_afip_concept__create_date
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_afip_tax__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: l10n_ar_ux
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_account_move__computed_currency_rate
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.view_move_form
+msgid "Currency Rate (preview)"
+msgstr "Tasa de cambio (vista previa)"
+
+#. module: l10n_ar_ux
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_afip_activity__display_name
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_afip_concept__display_name
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_afip_tax__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: l10n_ar_ux
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.partner_info
+msgid "Document Number"
+msgstr "Número de Documento"
+
+#. module: l10n_ar_ux
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.partner_info
+msgid "Document Type"
+msgstr "Tipo de Documento"
+
+#. module: l10n_ar_ux
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.partner_info
+msgid "Document Type..."
+msgstr "Tipo de Documento..."
+
+#. module: l10n_ar_ux
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_res_partner__empleador_padron
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_res_users__empleador_padron
+msgid "Empleador Padron"
+msgstr "Empleador Padron"
+
+#. module: l10n_ar_ux
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_res_partner__estado_padron
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_res_users__estado_padron
+msgid "Estado AFIP"
+msgstr "Estado AFIP"
+
+#. module: l10n_ar_ux
+#: model:ir.model.fields.selection,name:l10n_ar_ux.selection__res_partner__imp_ganancias_padron__ex
+#: model:ir.model.fields.selection,name:l10n_ar_ux.selection__res_partner__imp_iva_padron__ex
+msgid "Exento"
+msgstr "Exento"
+
+#. module: l10n_ar_ux
+#: model:ir.model.fields.selection,name:l10n_ar_ux.selection__res_partner__imp_iva_padron__xn
+msgid "Exento no alcanzado"
+msgstr "Exento no alcanzado"
+
+#. module: l10n_ar_ux
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.view_partner_property_form
+msgid "Fiscal Data"
+msgstr "Data Fiscal"
+
+#. module: l10n_ar_ux
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_res_partner__imp_ganancias_padron
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_res_users__imp_ganancias_padron
+msgid "Ganancias"
+msgstr "Ganancias"
+
+#. module: l10n_ar_ux
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.view_partner_property_form
+msgid "Gross Income"
+msgstr "Ingreso Bruto"
+
+#. module: l10n_ar_ux
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_res_company__gross_income_jurisdiction_ids
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_res_partner__gross_income_jurisdiction_ids
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_res_users__gross_income_jurisdiction_ids
+msgid "Gross Income Jurisdictions"
+msgstr "Jurisdicciones de ingresos brutos"
+
+#. module: l10n_ar_ux
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_afip_activity__id
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_afip_concept__id
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_afip_tax__id
+msgid "ID"
+msgstr "ID"
+
+#. module: l10n_ar_ux
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_res_partner__imp_iva_padron
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_res_users__imp_iva_padron
+msgid "IVA"
+msgstr "IVA"
+
+#. module: l10n_ar_ux
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_res_partner__impuestos_padron
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_res_users__impuestos_padron
+msgid "Impuestos"
+msgstr "Impuestos"
+
+#. module: l10n_ar_ux
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_res_partner__integrante_soc_padron
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_res_users__integrante_soc_padron
+msgid "Integrante Sociedad"
+msgstr "Integrante Sociedad"
+
+#. module: l10n_ar_ux
+#: model:ir.model,name:l10n_ar_ux.model_account_move
+msgid "Journal Entries"
+msgstr "Asientos contables"
+
+#. module: l10n_ar_ux
+#: code:addons/l10n_ar_ux/models/res_partner.py:0
+#, python-format
+msgid ""
+"Jurisdiction %s is considered the main jurisdiction because it is the state "
+"of the company, please remove it from the jurisdiction list"
+msgstr "La jurisdicción %s se considera la jurisdicción principal porque es "
+"el estado de la empresa, elimínela de la lista de jurisdicciones"
+
+#. module: l10n_ar_ux
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_account_account_tag__jurisdiction_code
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_account_tax__jurisdiction_code
+msgid "Jurisdiction Code"
+msgstr "Código de jurisdicción"
+
+#. module: l10n_ar_ux
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_afip_activity____last_update
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_afip_concept____last_update
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_afip_tax____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: l10n_ar_ux
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_res_partner__last_update_padron
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_res_users__last_update_padron
+msgid "Last Update Padron"
+msgstr "Última actualización Padron"
+
+#. module: l10n_ar_ux
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_afip_activity__write_uid
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_afip_concept__write_uid
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_afip_tax__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: l10n_ar_ux
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_afip_activity__write_date
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_afip_concept__write_date
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_afip_tax__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: l10n_ar_ux
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_res_partner__monotributo_padron
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_res_users__monotributo_padron
+msgid "Monotributo"
+msgstr "Monotributo"
+
+#. module: l10n_ar_ux
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_afip_activity__name
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_afip_concept__name
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_afip_tax__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: l10n_ar_ux
+#: model:ir.model.fields.selection,name:l10n_ar_ux.selection__res_partner__integrante_soc_padron__n
+#: model:ir.model.fields.selection,name:l10n_ar_ux.selection__res_partner__monotributo_padron__n
+msgid "No"
+msgstr "No"
+
+#. module: l10n_ar_ux
+#: model:ir.model.fields.selection,name:l10n_ar_ux.selection__res_partner__imp_ganancias_padron__ni
+#: model:ir.model.fields.selection,name:l10n_ar_ux.selection__res_partner__imp_iva_padron__ni
+msgid "No Inscripto"
+msgstr "No Inscripto"
+
+#. module: l10n_ar_ux
+#: model:ir.model.fields.selection,name:l10n_ar_ux.selection__res_partner__imp_iva_padron__na
+msgid "No alcanzado"
+msgstr "No alcanzado"
+
+#. module: l10n_ar_ux
+#: model:ir.model.fields.selection,name:l10n_ar_ux.selection__res_partner__imp_ganancias_padron__nc
+msgid "No corresponde"
+msgstr "No corresponde"
+
+#. module: l10n_ar_ux
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.view_partner_property_form
+msgid "Number..."
+msgstr "Número..."
+
+#. module: l10n_ar_ux
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.report_payment_group_document
+msgid "Observaciones:"
+msgstr "Observaciones:"
+
+#. module: l10n_ar_ux
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.view_company_form
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.view_partner_property_form
+msgid "Other Jurisdictions"
+msgstr "Otras jurisdicciones"
+
+#. module: l10n_ar_ux
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.view_partner_property_form
+msgid "Others"
+msgstr "Otros"
+
+#. module: l10n_ar_ux
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.report_payment_group_document
+msgid "Page: <span class=\"page\"/> / <span class=\"topage\"/>"
+msgstr "Página: <span class=\"page\"/> / <span class=\"topage\"/>"
+
+#. module: l10n_ar_ux
+#: code:addons/l10n_ar_ux/controllers/portal.py:0
+#, python-format
+msgid "Please add the document number."
+msgstr "Por favor agregue el número de documento."
+
+#. module: l10n_ar_ux
+#: code:addons/l10n_ar_ux/controllers/portal.py:0
+#, python-format
+msgid "Please add the type of document."
+msgstr "Por favor agregue el tipo de documento."
+
+#. module: l10n_ar_ux
+#: model_terms:ir.ui.view,arch_db:l10n_ar_ux.base_view_partner_form
+msgid "Reference/Name fantasy"
+msgstr "Referencia/Nombre fantasía"
+
+#. module: l10n_ar_ux
+#: model:account.tax.group,name:l10n_ar_ux.tax_group_retencion_drei
+msgid "Retención DREI"
+msgstr "Retención DREI"
+
+#. module: l10n_ar_ux
+#: model:account.tax.group,name:l10n_ar_ux.tax_group_retencion_ganancias
+msgid "Retención Ganancias"
+msgstr "Retención Ganancias"
+
+#. module: l10n_ar_ux
+#: model:account.tax.group,name:l10n_ar_ux.tax_group_retencion_iibb
+msgid "Retención IIBB"
+msgstr "Retención IIBB"
+
+#. module: l10n_ar_ux
+#: model:account.tax.group,name:l10n_ar_ux.tax_group_retencion_iva
+msgid "Retención IVA"
+msgstr "Retención IVA"
+
+#. module: l10n_ar_ux
+#: model:ir.model.fields.selection,name:l10n_ar_ux.selection__res_partner__integrante_soc_padron__s
+#: model:ir.model.fields.selection,name:l10n_ar_ux.selection__res_partner__monotributo_padron__s
+msgid "Si"
+msgstr "Si"
+
+#. module: l10n_ar_ux
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_res_partner__start_date
+#: model:ir.model.fields,field_description:l10n_ar_ux.field_res_users__start_date
+msgid "Start-up Date"
+msgstr "Iniciar la actualización"
+
+#. module: l10n_ar_ux
+#: model:ir.model,name:l10n_ar_ux.model_account_tax
+msgid "Tax"
+msgstr "Impuesto"
+
+#. module: l10n_ar_ux
+#: model:ir.ui.menu,name:l10n_ar_ux.menu_action_afip_tax
+msgid "Taxes"
+msgstr "Impuestos"
+
+#. module: l10n_ar_ux
+#: model:ir.model.fields,help:l10n_ar_ux.field_res_config_settings__l10n_ar_country_code
+msgid ""
+"The ISO country code in two chars. \n"
+"You can use this field for quick search."
+msgstr ""
+"EL código ISO del país en dos caracteres.\n"
+"Puede utilizar este campo para la búsqueda rápida."
+
+#. module: l10n_ar_ux
+#: model:ir.model.fields,help:l10n_ar_ux.field_res_company__gross_income_jurisdiction_ids
+#: model:ir.model.fields,help:l10n_ar_ux.field_res_partner__gross_income_jurisdiction_ids
+#: model:ir.model.fields,help:l10n_ar_ux.field_res_users__gross_income_jurisdiction_ids
+msgid "The state of the company is cosidered the main jurisdiction"
+msgstr "El estado de la empresa se considera la jurisdicción principal."
+
+#. module: l10n_ar_ux
+#: model:ir.model,name:l10n_ar_ux.model_afip_activity
+msgid "afip.activity"
+msgstr "Actividad AFIP"
+
+#. module: l10n_ar_ux
+#: model:ir.model,name:l10n_ar_ux.model_afip_concept
+msgid "afip.concept"
+msgstr "Concepto AFIP"
+
+#. module: l10n_ar_ux
+#: model:ir.model,name:l10n_ar_ux.model_afip_tax
+msgid "afip.tax"
+msgstr "Impuesto AFIP"

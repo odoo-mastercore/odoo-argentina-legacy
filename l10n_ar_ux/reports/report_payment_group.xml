@@ -24,9 +24,26 @@
                 </div>
             </t>
         </t>
+        <div id="informations" position="before">
+            <div class="text-center">
+                <h1><strong><t t-esc="document_letter"/></strong></h1>
+                <p style="font-size: 10px;"><t t-esc="document_legend"/></p>
+            </div>
+            <div class="text-right">
+                <t t-if="o.partner_type == 'supplier' and 'Proveedor'">
+                    <h4><b>ORDEN DE PAGO</b></h4>
+                </t>
+                <t t-else="o.partner_type == 'Cliente'">
+                    <h4><b>RECIBO DE PAGO</b></h4>
+                </t>
+                <p style="font-size: 14px;">
+                    N°: <span t-field="o.name"/><br/>
+                    Fecha: <span t-field="o.payment_date"/>
+                </p>
+            </div>
+        </div>
         <div id="informations" position="inside">
             <div class="col-6">
-
                 <!-- IDENTIFICACION (ADQUIRIENTE-LOCATARIO-PRESTARIO) -->
 
                 <!-- (14) Apellido uy Nombre: Denominicacion o Razon Soclial -->

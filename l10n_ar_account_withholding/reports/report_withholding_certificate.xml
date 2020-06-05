@@ -21,6 +21,16 @@
                     </div>
                 </t>
             <div class="page">
+                <div>
+                    <div class="text-right">
+                        <h4><b>CERTIFICADO DE RETENCIÓN</b></h4>
+                        <p style="font-size: 14px;">
+                            Resolución General 830 - AFIP<br/>
+                            N°: <span t-field="o.name"/><br/>
+                            Fecha: <span t-field="o.payment_date"/>
+                        </p>
+                    </div>
+                </div><br/>
                 <div id="informations" class="row mt8 mb8">
                     <div class="col-6">
 
