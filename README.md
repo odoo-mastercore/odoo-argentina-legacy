@@ -62,7 +62,11 @@ pip3 install -r requirements.txt
 docker pull pandoo/odoo:13.0
 ```
 
-### Instalar los módulos en este orden:
+### Simplemente instalar el módulo:
+
+- l10n_ar_bundle
+
+### O si no, instalar los módulos en este orden:
 
 - l10n_ar (embebido en Odoo Community edition)
 - l10n_ar_afipws
