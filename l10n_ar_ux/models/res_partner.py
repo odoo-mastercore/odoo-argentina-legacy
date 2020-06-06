@@ -150,7 +150,12 @@ class ResPartner(models.Model):
         _logger.debug("____Calling ws_sr_padron_a5_____")
         padron = company.get_connection('ws_sr_padron_a5').connect()
         _logger.debug("____Called ws_sr_padron_a5_____")
-        padron.Consultar(cuit)
+        
+        try:
+            padron.Consultar(cuit)
+        except Exception as exception_error:
+            raise UserError("Error en la Consulta: " + exception_error)
+        
         # porque imp_iva activo puede ser S o AC
         imp_iva = padron.imp_iva
         if imp_iva == 'S':
