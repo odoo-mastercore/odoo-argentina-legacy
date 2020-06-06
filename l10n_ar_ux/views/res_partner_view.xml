@@ -18,7 +18,7 @@
                 string="-> Consultar Datos en AFIP"
                 class="oe_link oe_inline"
                 type="action"
-                attrs="{'invisible': [('vat', '=', False),('l10n_latam_identification_type_id.l10n_ar_afip_code', '=', 80)]}"
+                attrs="{'invisible': [('vat', '=', False), ('l10n_latam_identification_type_id.l10n_ar_afip_code', '!=', 80)]}"
                 />
             </field>
         </field>
