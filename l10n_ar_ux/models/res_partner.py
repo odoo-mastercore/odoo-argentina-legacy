@@ -1,6 +1,7 @@
 from odoo import models, fields, api, _
 from odoo.exceptions import ValidationError
 import logging
+import re
 _logger = logging.getLogger(__name__)
 
 
@@ -128,7 +129,7 @@ class ResPartner(models.Model):
 
     def get_data_from_padron_afip(self):
         self.ensure_one()
-        cuit = self.vat
+        cuit = re.sub('[^0-9]', '', self.vat)
         # GET COMPANY
         # if there is certificate for user company, use that one, if not
         # use the company for the first certificate found
