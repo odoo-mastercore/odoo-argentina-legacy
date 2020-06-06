@@ -23,6 +23,7 @@
         'views/portal_templates.xml',
         'views/account_move_view.xml',
         'views/res_company_view.xml',
+        'wizard/res_partner_update_from_padron_wizard_view.xml',
         'views/res_partner_view.xml',
         'views/afip_concept_view.xml',
         'views/afip_activity_view.xml',
