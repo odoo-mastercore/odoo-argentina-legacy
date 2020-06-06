@@ -29,10 +29,10 @@ Versión 13.0 Community edition
 - Impuestos de retención, cómputo automático de ellas y certificados
 - Mejoras en UX
 #### 13.0/FEImp (WIP)
-- Fix en conexión AFIP y formato de CUIT
-- Incorporación de consulta de padrón A5
+- Mejora en conexión AFIP y formato de CUIT
 - Incorporación de consulta de Actividades, Conceptos e Impuestos AFIP
-- Consulta de Comprobantes AFIP (web service AFIP de constatación de comprobantes )
+- Incorporación de consulta de padrón A5
+- Consulta de Comprobantes AFIP (web service AFIP de constatación de comprobantes)
 - Actualización automática de cotización USD
 <!--
 #### 13.0/RegInfAFIP (Future)

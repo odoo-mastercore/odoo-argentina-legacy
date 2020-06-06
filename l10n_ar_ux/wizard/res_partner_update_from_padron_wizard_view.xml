@@ -12,6 +12,11 @@
     <field name='model'>res.partner.update.from.padron.wizard</field>
     <field name='arch' type='xml'>
       <form string='Actualizar desde el Padron AFIP' edit="0" create="0" delete="0" copy="0">
+        <script>
+          $(document).ready(function(){
+          $(".modal-footer").hide();
+          });
+        </script>
         <field name="state" invisible="1" />
         <header widget="statusbar">
         </header>
