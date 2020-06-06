@@ -80,9 +80,9 @@
             <field name="partner_id" attrs="{'required': [('state', '=', 'selection')]}"/>
             <field name="field_ids" nolabel="1">
               <tree create="false">
-                <field name="field"/>
-                <field name="old_value"/>
-                <field name="new_value"/>
+                <field name="field" string='Campo'/>
+                <field name="old_value" string='Valor Actual'/>
+                <field name="new_value" string='Nuevo Valor'/>
               </tree>
             </field>
           </group>
