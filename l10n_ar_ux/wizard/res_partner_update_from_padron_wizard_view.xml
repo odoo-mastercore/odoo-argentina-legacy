@@ -36,7 +36,7 @@
               Seleccione la lista de campos que desea actualizar.
             </p>
           </div>
-          <div class="oe_right oe_button_box" name="buttons">
+          <div class="oe_left oe_button_box" name="buttons">
             <button name='update_selection'
               string='Actualizar selección'
               class="oe_inline oe_stat_button"
@@ -67,7 +67,7 @@
               icon="fa-gears"
               style="width: 154px !important"
               type='object'
-              confirm="Are you sure to execute the automatic update of your partners?"
+              confirm="Está seguro de realizar actualización automática de los partners?"
               attrs="{'invisible': [('state', '!=', 'option')]}"
               />
           </div>
@@ -76,7 +76,7 @@
             <field name="update_constancia"/>
             <field name="title_case"/>
           </group>
-          <group attrs="{'invisible': [('state', 'in', ('option', 'finished'))]}" col="1">
+          <group attrs="{'invisible': [('state', 'in', ('option', 'finished'))]}" col="2">
             <field name="partner_id" attrs="{'required': [('state', '=', 'selection')]}"/>
             <field name="field_ids" nolabel="1">
               <tree create="false">
