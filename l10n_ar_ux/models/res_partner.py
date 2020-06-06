@@ -212,13 +212,13 @@ class ResPartner(models.Model):
                 vals['state_id'] = state.id
         if imp_iva == 'NI' and padron.monotributo == 'S':
             vals['afip_responsability_type_id'] = self.env.ref(
-                'l10n_ar_account.res_RM').id
+                'l10n_ar.res_RM').id
         elif imp_iva == 'AC':
             vals['afip_responsability_type_id'] = self.env.ref(
-                'l10n_ar_account.res_IVARI').id
+                'l10n_ar.res_IVARI').id
         elif imp_iva == 'EX':
             vals['afip_responsability_type_id'] = self.env.ref(
-                'l10n_ar_account.res_IVAE').id
+                'l10n_ar.res_IVAE').id
         else:
             _logger.debug(
                 "We couldn't infer the AFIP responsability from padron, you"
