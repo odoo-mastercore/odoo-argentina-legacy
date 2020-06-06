@@ -11,7 +11,7 @@
     <field name='name'>res.partner.update.from.padron.wizard.form</field>
     <field name='model'>res.partner.update.from.padron.wizard</field>
     <field name='arch' type='xml'>
-      <form string='Update From Padron AFIP' edit="0" create="0" delete="0" copy="0">
+      <form string='Actualizar desde el Padron AFIP' edit="0" create="0" delete="0" copy="0">
         <field name="state" invisible="1" />
         <header widget="statusbar">
         </header>
@@ -26,35 +26,35 @@
               <!-- 	<button string="Close" class="oe_link oe_inline" special="cancel"/> -->
               <!-- </span> -->
             <group attrs="{'invisible': [('state', '!=', 'finished')]}" col="1">
-              <h2>There are no more partners to update for this request...</h2>
+              <h2>No hay más partners por actualizar...</h2>
               <!-- <button name="%(action_base_partner_update_from_padron)d" string="Update the other partners" class="oe_highlight"
                 type="action"/> -->
             </group>
             <p class="oe_grey" attrs="{'invisible': [('state', '!=', ('option'))]}">
               <!-- Sólo los Partners con CUIT serán actualizados. Seleccione la lista de campos que quiere actualizar. -->
-              Only Partners with cuit are going to be updated.
-              Select the list of fields you want to update.
+              Sólo partners con CUIT serán actualizados.
+              Seleccione la lista de campos que desea actualizar.
             </p>
           </div>
           <div class="oe_right oe_button_box" name="buttons">
             <button name='update_selection'
-              string='Update Selection'
+              string='Actualizar selección'
               class="oe_inline oe_stat_button"
-              icon="fa-gears"
+              icon="fa-pencil"
               style="width: 154px !important"
               type='object'
               attrs="{'invisible': [('state', 'in', ('option', 'finished' ))]}"
               />
             <button name='next_cb'
-              string='Skip these partner'
+              string='Saltar actualización'
               class="oe_inline oe_stat_button"
-              icon="fa-gears"
+              icon="fa-exclamation-triangle"
               style="width: 154px !important"
               type='object'
               attrs="{'invisible': [('state', '!=', 'selection')]}"
               />
             <button name='start_process_cb'
-              string='Update with Manual Check'
+              string='Actualizar con chequeo manual'
               class="oe_inline oe_stat_button"
               icon="fa-gears"
               style="width: 154px !important"
@@ -62,7 +62,7 @@
               attrs="{'invisible': [('state', '!=', 'option')]}"
               />
             <button name='automatic_process_cb'
-              string='Update Automatically'
+              string='Actualizar automáticamente'
               class="oe_inline oe_stat_button"
               icon="fa-gears"
               style="width: 154px !important"
@@ -96,5 +96,5 @@
     binding_model="res.partner"
     target="new" 
     view_mode="form" 
-    name="Automatic Update from Padron"/>
+    name="Actualización Automática desde el Padron AFIP"/>
 </odoo>
