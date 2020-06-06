@@ -18,11 +18,10 @@
                     <div class="o_setting_right_pane">
                         <label for="refresh_activities_from_padron" string="Datos del Padron AFIP" />
                         <div class="text-muted">
-                            Al hacer click en los botones de mas abajo se van a 
-                            sincronizar desde afip las Actividades, Impuestos y 
-                            Conceptos. Estos datos son solo informativos y se 
-                            utilizan para clasificar al partner al consultar 
-                            datos del partner en el padron AFIP.
+                            Al hacer click en los enlaces de abajo se van a 
+                            sincronizar desde AFIP las Actividades, Impuestos y 
+                            Conceptos. Estos datos se utilizan para clasificar 
+                            al partner al consultar sus datos en el padron AFIP.
                         </div>
                         <div class="content-group">
                             <button name="refresh_activities_from_padron" string="-> Actividades" type="object" class="oe_link"/>
