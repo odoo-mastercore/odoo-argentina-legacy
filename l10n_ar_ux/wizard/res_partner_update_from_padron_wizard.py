@@ -80,7 +80,7 @@ class ResPartnerUpdateFromPadronWizard(models.TransientModel):
             'empleador_padron',
             'integrante_soc_padron',
             'last_update_padron',
-            'afip_responsability_type_id',
+            'l10n_ar_afip_responsability_type_id',
             # 'constancia',
         ]
         return [
