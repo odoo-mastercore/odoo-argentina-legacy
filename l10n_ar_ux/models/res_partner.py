@@ -211,13 +211,13 @@ class ResPartner(models.Model):
             if state:
                 vals['state_id'] = state.id
         if imp_iva == 'NI' and padron.monotributo == 'S':
-            vals['l10n_ar_afip_responsability_type_id'] = self.env.ref(
+            vals['l10n_ar_afip_responsibility_type_id'] = self.env.ref(
                 'l10n_ar.res_RM').id
         elif imp_iva == 'AC':
-            vals['l10n_ar_afip_responsability_type_id'] = self.env.ref(
+            vals['l10n_ar_afip_responsibility_type_id'] = self.env.ref(
                 'l10n_ar.res_IVARI').id
         elif imp_iva == 'EX':
-            vals['l10n_ar_afip_responsability_type_id'] = self.env.ref(
+            vals['l10n_ar_afip_responsibility_type_id'] = self.env.ref(
                 'l10n_ar.res_IVAE').id
         else:
             _logger.debug(
