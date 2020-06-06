@@ -163,7 +163,7 @@ class ResPartnerUpdateFromPadronWizard(models.TransientModel):
                     new_value = new_value and new_value.title()
                 if key in ('impuestos_padron', 'actividades_padron'):
                     old_value = old_value.ids
-                elif key in ('state_id', 'afip_responsability_type_id'):
+                elif key in ('state_id', 'l10n_ar_afip_responsability_type_id'):
                     old_value = old_value.id
                 if new_value and key in fields_names and \
                         old_value != new_value:
@@ -171,13 +171,11 @@ class ResPartnerUpdateFromPadronWizard(models.TransientModel):
                         'wizard_id': self.id,
                         'field': key,
                         'old_value': old_value,
-                        # 'new_value': new_value,
                         'new_value': new_value or False,
                     }
                     lines.append((0, False, line_vals))
             self.field_ids = lines
 
-    # @mute_logger('openerp.osv.expression', 'openerp.models')
     def _update(self):
         self.ensure_one()
         vals = {}
