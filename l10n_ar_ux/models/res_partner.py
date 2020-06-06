@@ -155,7 +155,7 @@ class ResPartner(models.Model):
         try:
             padron.Consultar(cuit)
         except Exception as exception_error:
-            raise UserError("Error en la Consulta: " + exception_error)
+            raise UserError("Error en la Consulta: " + str(exception_error))
         
         # porque imp_iva activo puede ser S o AC
         imp_iva = padron.imp_iva
