@@ -220,3 +220,7 @@ class ResPartner(models.Model):
                 "We couldn't infer the AFIP responsability from padron, you"
                 "must set it manually.")
         return vals
+
+    def update_constancia_from_padron_afip(self):
+        self.ensure_one()
+        return True
