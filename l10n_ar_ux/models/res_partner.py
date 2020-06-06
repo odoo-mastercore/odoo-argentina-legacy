@@ -148,10 +148,8 @@ class ResPartner(models.Model):
                 raise UserError(_(
                     'Not confirmed certificate found on database'))
             company = certificate.alias_id.company_id
-        _logger.debug("____Calling ws_sr_padron_a5_____")
         padron = company.get_connection('ws_sr_padron_a5').connect()
-        _logger.debug("____Called ws_sr_padron_a5_____")
-        
+       
         try:
             padron.Consultar(cuit)
         except Exception as exception_error:
