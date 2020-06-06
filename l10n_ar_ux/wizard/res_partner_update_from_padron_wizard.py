@@ -80,7 +80,7 @@ class ResPartnerUpdateFromPadronWizard(models.TransientModel):
             'empleador_padron',
             'integrante_soc_padron',
             'last_update_padron',
-            'l10n_ar_afip_responsability_type_id',
+            'l10n_ar_afip_responsibility_type_id',
             # 'constancia',
         ]
         return [
@@ -163,7 +163,7 @@ class ResPartnerUpdateFromPadronWizard(models.TransientModel):
                     new_value = new_value and new_value.title()
                 if key in ('impuestos_padron', 'actividades_padron'):
                     old_value = old_value.ids
-                elif key in ('state_id', 'l10n_ar_afip_responsability_type_id'):
+                elif key in ('state_id', 'l10n_ar_afip_responsibility_type_id'):
                     old_value = old_value.id
                 if new_value and key in fields_names and \
                         old_value != new_value:
