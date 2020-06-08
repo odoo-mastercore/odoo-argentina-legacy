@@ -1,35 +1,26 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * account_withholding
-# 
-# Translators:
-# Juan José Scarafía <scarafia.juanjose@gmail.com>, 2019
-# Federico La Torre <3doeste@gmail.com>, 2019
-# 
+# 	* account_withholding
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 12.0\n"
+"Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-26 00:25+0000\n"
-"PO-Revision-Date: 2019-07-26 19:27+0000\n"
-"Last-Translator: Federico La Torre <3doeste@gmail.com>, 2019\n"
-"Language-Team: Spanish (https://www.transifex.com/adhoc/teams/46451/es/)\n"
+"POT-Creation-Date: 2020-06-08 00:33+0000\n"
+"PO-Revision-Date: 2020-06-07 21:34-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
-"Language: es\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_AR\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #. module: account_withholding
 #: model:ir.model,name:account_withholding.model_account_chart_template
 msgid "Account Chart Template"
-msgstr "Plantilla de Plan de Cuenta"
-
-#. module: account_withholding
-#: selection:account.tax,type_tax_use:0
-#: selection:account.tax.template,type_tax_use:0
-msgid "Adjustment"
-msgstr "Ajuste"
+msgstr "Plantilla de Plan de Cuentas"
 
 #. module: account_withholding
 #: model:ir.model.fields,field_description:account_withholding.field_account_tax__amount
@@ -37,23 +28,38 @@ msgid "Amount"
 msgstr "Importe"
 
 #. module: account_withholding
-#: selection:account.tax,type_tax_use:0
-#: selection:account.tax.template,type_tax_use:0
+#: model:ir.model,name:account_withholding.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: account_withholding
+#: model:ir.model.fields.selection,name:account_withholding.selection__account_tax__type_tax_use__customer
+#: model:ir.model.fields.selection,name:account_withholding.selection__account_tax_template__type_tax_use__customer
 #: model_terms:ir.ui.view,arch_db:account_withholding.view_account_tax_search
 msgid "Customer Payment"
 msgstr "Pago de Cliente"
 
 #. module: account_withholding
-#: model:ir.model.fields,help:account_withholding.field_account_tax__type_tax_use
 #: model:ir.model.fields,help:account_withholding.field_account_tax_template__type_tax_use
+msgid ""
+"Determines where the tax is selectable. Note : 'None' means a tax can't be "
+"used by itself, however it can still be used in a group."
+msgstr ""
+"Determina dónde puede seleccionarse un impuesto. Nota : 'Ninguno' significa "
+"que un impuesto no puede ser usado por sí mismo; aun así, puede utilizarse "
+"en un grupo."
+
+#. module: account_withholding
+#: model:ir.model.fields,help:account_withholding.field_account_tax__type_tax_use
 msgid ""
 "Determines where the tax is selectable. Note : 'None' means a tax can't be "
 "used by itself, however it can still be used in a group. 'adjustment' is "
 "used to perform tax adjustment."
 msgstr ""
-"Determina si un impuesto es seleccionable. Nota: 'Ninguno' significa que un "
-"impuesto no puede ser usado por si mismo, sin embargo puede ser usado en un "
-"grupo. 'Ajuste' para realizar ajustes de impuestos."
+"Determina dónde el impuesto puede ser seleccionado. Nota: \"Ninguno\" "
+"significa que un impuesto no puede ser usado por sí mismo, sin embargo aún "
+"puede ser usado en un grupo. \"Ajuste\" es usado para realizar un ajuste de "
+"impuesto. "
 
 #. module: account_withholding
 #: model:ir.model.fields,help:account_withholding.field_account_tax__withholding_sequence_id
@@ -67,14 +73,14 @@ msgstr ""
 #. module: account_withholding
 #: model:ir.model.fields,help:account_withholding.field_account_payment__withholding_number
 msgid ""
-"If you don't set a number we will add a number automatically from a sequence"
-" that should be configured on the Withholding Tax"
+"If you don't set a number we will add a number automatically from a "
+"sequence that should be configured on the Withholding Tax"
 msgstr ""
-"Si no establece un número, agregaremos un número automáticamente a partir de"
-" una secuencia que debe configurarse en la retención de impuestos."
+"Si no establece un número, agregaremos un número automáticamente a partir "
+"de una secuencia que debe configurarse en la retención de impuestos."
 
 #. module: account_withholding
-#: code:addons/account_withholding/models/account_payment.py:38
+#: code:addons/account_withholding/models/account_payment.py:0
 #, python-format
 msgid ""
 "No puede validar pagos con retenciones que no tengan número de retención. "
@@ -83,31 +89,13 @@ msgid ""
 msgstr ""
 
 #. module: account_withholding
-#: selection:account.tax,type_tax_use:0
-#: selection:account.tax.template,type_tax_use:0
-msgid "None"
-msgstr "Ninguna"
-
-#. module: account_withholding
 #: model:ir.model,name:account_withholding.model_account_payment
 msgid "Payments"
 msgstr "Pagos"
 
 #. module: account_withholding
-#: selection:account.tax,type_tax_use:0
-#: selection:account.tax.template,type_tax_use:0
-msgid "Purchases"
-msgstr "Compras"
-
-#. module: account_withholding
-#: selection:account.tax,type_tax_use:0
-#: selection:account.tax.template,type_tax_use:0
-msgid "Sales"
-msgstr "Ventas"
-
-#. module: account_withholding
-#: selection:account.tax,type_tax_use:0
-#: selection:account.tax.template,type_tax_use:0
+#: model:ir.model.fields.selection,name:account_withholding.selection__account_tax__type_tax_use__supplier
+#: model:ir.model.fields.selection,name:account_withholding.selection__account_tax_template__type_tax_use__supplier
 #: model_terms:ir.ui.view,arch_db:account_withholding.view_account_tax_search
 msgid "Supplier Payment"
 msgstr "Pagos de Proveedor"
@@ -121,12 +109,12 @@ msgstr "Impuesto"
 #: model:ir.model.fields,field_description:account_withholding.field_account_tax__type_tax_use
 #: model:ir.model.fields,field_description:account_withholding.field_account_tax_template__type_tax_use
 msgid "Tax Scope"
-msgstr "Alcance Fiscal"
+msgstr "Ámbito del impuesto"
 
 #. module: account_withholding
 #: model:ir.model,name:account_withholding.model_account_tax_template
 msgid "Templates for Taxes"
-msgstr "Plantillas para Impuestos"
+msgstr "Plantilla de impuestos"
 
 #. module: account_withholding
 #: model:account.payment.method,name:account_withholding.account_payment_method_in_withholding
@@ -161,12 +149,7 @@ msgid "Withholding Taxes"
 msgstr "Impuestos de Retención"
 
 #. module: account_withholding
-#: model_terms:ir.ui.view,arch_db:account_withholding.view_account_payment_form
-msgid "Withholding data"
-msgstr "Datos de la Retención"
-
-#. module: account_withholding
-#: code:addons/account_withholding/models/account_payment.py:56
+#: code:addons/account_withholding/models/account_payment.py:0
 #, python-format
 msgid "You can not use withholdings on transfers!"
 msgstr "¡No puede usar retenciones en las transferencias!"
