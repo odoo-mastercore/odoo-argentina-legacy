@@ -1,5 +1,5 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
-from odoo import models, fields, api
+from odoo import models, fields, api, _
 from odoo.exceptions import UserError
 import logging
 
@@ -14,7 +14,8 @@ class ResConfigSettings(models.TransientModel):
 
     _inherit = 'res.config.settings'
 
-    l10n_ar_country_code = fields.Char(related='company_id.country_id.code', string='Country Code')
+    l10n_ar_country_code = fields.Char(
+        related='company_id.country_id.code', string='Country Code')
 
     def refresh_taxes_from_padron(self):
         self.refresh_from_padron("impuestos")
@@ -43,21 +44,25 @@ class ResConfigSettings(models.TransientModel):
         padron = PadronAFIP()
         separator = ';'
         data = padron.ObtenerTablaParametros(resource_type, separator)
-        _logger.warning(data)
-        codes = []
-        for line in data:
-            code, name = line.split(separator)[1:3]
-            vals = {
-                'code': code,
-                'name': name,
-                'active': True,
-            }
-            record = self.env[model].search([('code', '=', code)], limit=1)
-            codes.append(code)
-            if record:
-                record.write(vals)
-            else:
-                record.create(vals)
-        # deactivate the ones that are not in afip
-        self.env[model].search([('code', 'not in', codes)]).write(
-            {'active': False})
+        if not data:
+            raise UserError(_(
+                'Tipo de Recurso -%s- no obtiene respuesta del AFIP!') % (
+                resource_type))
+        else:
+            codes = []
+            for line in data:
+                code, name = line.split(separator)[1:3]
+                vals = {
+                    'code': code,
+                    'name': name,
+                    'active': True,
+                }
+                record = self.env[model].search([('code', '=', code)], limit=1)
+                codes.append(code)
+                if record:
+                    record.write(vals)
+                else:
+                    record.create(vals)
+            # deactivate the ones that are not in afip
+            self.env[model].search([('code', 'not in', codes)]).write(
+                {'active': False})
