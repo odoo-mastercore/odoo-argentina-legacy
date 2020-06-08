@@ -59,20 +59,20 @@
               attrs="{'invisible': [('state', '!=', 'selection')]}"
               />
             <button name='start_process_cb'
-              string='Actualizar con chequeo manual'
+              string='Actualización manual'
               class="oe_inline oe_stat_button"
-              icon="fa-gears"
-              style="width: 154px !important"
+              icon="fa-thumbs-o-up"
+              style="width: 154px; margin: 2px; !important"
               type='object'
               attrs="{'invisible': [('state', '!=', 'option')]}"
               />
             <button name='automatic_process_cb'
-              string='Actualizar automáticamente'
+              string='Actualización automática'
               class="oe_inline oe_stat_button"
-              icon="fa-gears"
-              style="width: 154px !important"
+              icon="fa-magic"
+              style="width: 154px; margin: 2px; !important"
               type='object'
-              confirm="Está seguro de realizar actualización automática de los partners?"
+              confirm="Está seguro de realizar la actualización automática de los partners?"
               attrs="{'invisible': [('state', '!=', 'option')]}"
               />
           </div>
@@ -103,5 +103,5 @@
     binding_model="res.partner"
     target="new" 
     view_mode="form" 
-    name="Actualización Automática desde el Padron AFIP"/>
+    name="Actualización de Datos desde el Padrón AFIP"/>
 </odoo>
