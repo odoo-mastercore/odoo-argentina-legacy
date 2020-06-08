@@ -50,6 +50,36 @@
                         <page string="Journals" name="journal_ids">
                             <field name="journal_ids" domain="[('type', '=', type), ('company_id', '=', company_id), ('l10n_latam_use_documents', '=', True)]"/>
                         </page>
+                        <!-- RG3685 exCITI-->
+                        <page string="CITI" name="CITI">
+                            <button name="compute_citi_data" type="object" string="Compute Citi Data" states="draft"/>
+                            <group>
+                                <field name="vouchers_filename" invisible="1"/>
+                                <field name="aliquots_filename" invisible="1"/>
+                                <field name="import_aliquots_filename" invisible="1"/>
+                                <!-- <group>
+                                    <field name="citi_skip_invoice_tests"/>
+                                    <label for="citi_skip_lines"/>
+                                    <div>
+                                        <field name="citi_skip_lines" class="oe_inline"/>
+                                        <button name="action_see_skiped_invoices" class="oe_inline oe_link" type="object" string="(Ver facturas salteadas)" attrs="{'invisible': [('citi_skip_lines', '=', False)]}"/>
+                                    </div>
+                                </group> -->
+                                <group>
+                                    <field name="vouchers_file" filename="vouchers_filename"/>
+                                </group>
+                                <group>
+                                    <field name="aliquots_file" filename="aliquots_filename"/>
+                                    <field name="import_aliquots_file" filename="import_aliquots_filename"/>
+                                </group>
+                            </group>
+                            <group col="1">
+                                <!-- <field name="REGINFO_CV_CABECERA"/> -->
+                                <field name="REGINFO_CV_CBTE"/>
+                                <field name="REGINFO_CV_ALICUOTAS"/>
+                                <field name="REGINFO_CV_COMPRAS_IMPORTACIONES" attrs="{'invisible': [('type', '!=', 'purchase')]}"/>
+                            </group>
+                        </page>
                         <page string="Notes" name="notes">
                             <field name="note"/>
                         </page>

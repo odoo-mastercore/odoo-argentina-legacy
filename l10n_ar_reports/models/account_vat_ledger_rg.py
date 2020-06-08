@@ -79,7 +79,6 @@ class AccountVatLedger(models.Model):
         'Rectificativa y su orden'
     )
 
-    @api.multi
     def format_amount(self, amount, padding=15, decimals=2, invoice=False):
         # get amounts on correct sign despite conifiguration on taxes and tax
         # codes
@@ -100,7 +99,6 @@ class AccountVatLedger(models.Model):
         return template.format(
             int(round(abs(amount) * 10**decimals, decimals)))
 
-    @api.multi
     @api.depends(
         'REGINFO_CV_CBTE',
         'REGINFO_CV_ALICUOTAS',
@@ -112,6 +110,8 @@ class AccountVatLedger(models.Model):
         # segun vimos aca la afip espera "ISO-8859-1" en vez de utf-8
         # http://www.planillasutiles.com.ar/2015/08/
         # como-descargar-los-archivos-de.html
+        # NEW : Se incluye valor en False si no existe operacion para evitar 
+        # error al guardar
         if self.REGINFO_CV_ALICUOTAS:
             self.aliquots_filename = _('Alicuots_%s_%s.txt') % (
                 self.type,
@@ -120,6 +120,10 @@ class AccountVatLedger(models.Model):
             )
             self.aliquots_file = base64.encodestring(
                 self.REGINFO_CV_ALICUOTAS.encode('ISO-8859-1'))
+        else:
+            self.aliquots_file = False
+            self.aliquots_filename = False
+
         if self.REGINFO_CV_COMPRAS_IMPORTACIONES:
             self.import_aliquots_filename = _('Import_Alicuots_%s_%s.txt') % (
                 self.type,
@@ -128,6 +132,10 @@ class AccountVatLedger(models.Model):
             )
             self.import_aliquots_file = base64.encodestring(
                 self.REGINFO_CV_COMPRAS_IMPORTACIONES.encode('ISO-8859-1'))
+        else:
+            self.import_aliquots_file = False
+            self.import_aliquots_filename = False
+
         if self.REGINFO_CV_CBTE:
             self.vouchers_filename = _('Vouchers_%s_%s.txt') % (
                 self.type,
@@ -136,8 +144,10 @@ class AccountVatLedger(models.Model):
             )
             self.vouchers_file = base64.encodestring(
                 self.REGINFO_CV_CBTE.encode('ISO-8859-1'))
+        else:
+            self.vouchers_file = False
+            self.vouchers_filename = False
 
-    @api.multi
     def compute_citi_data(self):
         alicuotas = self.get_REGINFO_CV_ALICUOTAS()
         # sacamos todas las lineas y las juntamos
@@ -200,12 +210,11 @@ class AccountVatLedger(models.Model):
                     'numbers like "1, 2, 3". This is the error we get: %s') % (
                         repr(e)))
 
-    @api.multi
     def get_citi_invoices(self, return_skiped=False):
         self.ensure_one()
         invoices = self.env['account.move'].search([
-            ('document_type_id.export_to_citi', '=', True),
-            ('id', 'in', self.invoice_ids.ids)], order='date_invoice asc')
+            ('l10n_latam_document_type_id.export_to_citi', '=', True),
+            ('id', 'in', self.invoice_ids.ids)], order='invoice_date asc')
         if self.citi_skip_lines:
             skip_lines = literal_eval(self.citi_skip_lines)
             if isinstance(skip_lines, int):
@@ -218,13 +227,14 @@ class AccountVatLedger(models.Model):
             invoices -= to_skip
         return invoices
 
-    @api.multi
     def get_REGINFO_CV_CBTE(self, alicuotas):
         self.ensure_one()
         res = []
         invoices = self.get_citi_invoices()
-        if not self.citi_skip_invoice_tests:
-            invoices.check_argentinian_invoice_taxes()
+        _logger.warning('HELLLOOOOO MOTOOO')
+        _logger.warning(invoices)
+        # if not self.citi_skip_invoice_tests:
+        #     invoices.check_argentinian_invoice_taxes()
         if self.type == 'purchase':
             partners = invoices.mapped('commercial_partner_id').filtered(
                 lambda r: r.l10n_latam_identification_type_id.l10n_ar_afip_code in (
@@ -460,7 +470,6 @@ class AccountVatLedger(models.Model):
             res.append(''.join(row))
         self.REGINFO_CV_CBTE = '\r\n'.join(res)
 
-    @api.multi
     def get_tax_row(self, invoice, base, code, tax_amount, impo=False):
         self.ensure_one()
         inv = invoice
@@ -528,7 +537,6 @@ class AccountVatLedger(models.Model):
             ]
         return row
 
-    @api.multi
     def get_REGINFO_CV_ALICUOTAS(self, impo=False):
         """
         Devolvemos un dict para calcular la cantidad de alicuotas cuando
