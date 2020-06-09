@@ -72,22 +72,22 @@ class AccountVatLedgerXlsx(models.AbstractModel):
                     sheet.write(row, 12, '0,00', line)
                 else:
                     # Creating environment variables
-                    taxed = (invoice.type == 'purchase' and 1.0
+                    taxed = (invoice.type == 'in_invoice' and 1.0
                         or -1.0) * (invoice.base_21+invoice.base_25 +
                         invoice.base_10+invoice.base_27+invoice.base_5)
-                    untaxed = (invoice.type == 'purchase' and 1.0
+                    untaxed = (invoice.type == 'in_invoice' and 1.0
                         or -1.0) * invoice.not_taxed
-                    tax_10 = (invoice.type == 'purchase' and 1.0
+                    tax_10 = (invoice.type == 'in_invoice' and 1.0
                         or -1.0) * invoice.vat_10
-                    tax_21 = (invoice.type == 'purchase' and 1.0
+                    tax_21 = (invoice.type == 'in_invoice' and 1.0
                         or -1.0) * invoice.vat_21
-                    tax_27 = (invoice.type == 'purchase' and 1.0
+                    tax_27 = (invoice.type == 'in_invoice' and 1.0
                         or 1.0) * invoice.vat_27
-                    perc = (invoice.type == 'purchase' and 1.0
+                    perc = (invoice.type == 'in_invoice' and 1.0
                         or -1.0) * invoice.vat_per
-                    other_tax = (invoice.type == 'purchase' and 1.0
+                    other_tax = (invoice.type == 'in_invoice' and 1.0
                         or -1.0) * invoice.other_taxes
-                    total = (invoice.type == 'purchase' and 1.0
+                    total = (invoice.type == 'in_invoice' and 1.0
                         or -1.0) * invoice.total
 
                     # Write line 
