@@ -419,11 +419,8 @@ class AccountVatLedger(models.Model):
 
                 row += [
                     # Campo 22: Otros Tributos
-                    self.format_amount(
-                        sum(inv.tax_line_ids.filtered(lambda r: (
-                            r.tax_id.tax_group_id.application \
-                            == 'others')).mapped(
-                            'cc_amount')), invoice=inv),
+                    self.format_amount((inv.type == 'in_invoice' and 1.0
+                        or -1.0) * inv.other_taxes, invoice=inv),
 
                     # TODO implementar estos 3
                     # Campo 23: CUIT Emisor / Corredor
