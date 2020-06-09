@@ -190,7 +190,8 @@ class AccountVatLedger(models.Model):
 
     @api.model
     def get_point_of_sale(self, invoice):
-        point_of_sale = invoice.journal_id.code
+        point_of_sale = str(
+            invoice.move_id.l10n_latam_document_number).split('-')[0]
         return point_of_sale
 
     def action_see_skiped_invoices(self):
