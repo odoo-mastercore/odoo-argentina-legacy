@@ -532,45 +532,46 @@ class AccountVatLedger(models.Model):
         for inv in invoices:
             afip_code = 80
             lines = []
+            type = (inv.type == 'in_invoice' and 1.0 or -1.0)
             is_zero = inv.company_currency_id.is_zero
-            if (inv.type == 'in_invoice' and 1.0 or -1.0) * inv.base_21 > 0.0:
+            if  type * inv.base_21 > 0.0:
                 lines.append(''.join(self.get_tax_row(
                     inv,
-                    inv.base_21,
+                    type * inv.base_21,
                     afip_code,
-                    inv.vat_21,
+                    type * inv.vat_21,
                     impo=impo,
                 )))
-            if (inv.type == 'in_invoice' and 1.0 or -1.0) * inv.base_27 > 0.0:
+            if type * inv.base_27 > 0.0:
                 lines.append(''.join(self.get_tax_row(
                     inv,
-                    inv.base_27,
+                    type * inv.base_27,
                     afip_code,
-                    inv.vat_27,
+                    type * inv.vat_27,
                     impo=impo,
                 )))
-            if (inv.type == 'in_invoice' and 1.0 or -1.0) * inv.base_25 > 0.0:
+            if type * inv.base_25 > 0.0:
                 lines.append(''.join(self.get_tax_row(
                     inv,
-                    inv.base_25,
+                    type * inv.base_25,
                     afip_code,
-                    inv.vat_25,
+                    type * inv.vat_25,
                     impo=impo,
                 )))
-            if (inv.type == 'in_invoice' and 1.0 or -1.0) * inv.base_10 > 0.0:
+            if type * inv.base_10 > 0.0:
                 lines.append(''.join(self.get_tax_row(
                     inv,
-                    inv.base_10,
+                    type * inv.base_10,
                     afip_code,
-                    inv.vat_10,
+                    type * inv.vat_10,
                     impo=impo,
                 )))
             if (inv.type == 'in_invoice' and 1.0 or -1.0) * inv.base_5 > 0.0:
                 lines.append(''.join(self.get_tax_row(
                     inv,
-                    inv.base_5,
+                    type * inv.base_5,
                     afip_code,
-                    inv.vat_5,
+                    type * inv.vat_5,
                     impo=impo,
                 )))
             res[inv] = lines
