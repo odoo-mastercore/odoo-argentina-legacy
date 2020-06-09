@@ -411,8 +411,11 @@ class AccountVatLedger(models.Model):
                             'correspondiente en el campo "Crédito Fiscal '
                             'Computable"'))
                 else:
+                    vat_amout = (inv.type == 'in_invoice' and 1.0
+                        or -1.0) * (inv.vat_21+inv.vat_25 +
+                        inv.vat_10+inv.vat_27+inv.vat_5)
                     row.append(self.format_amount(
-                        inv.cc_vat_amount, invoice=inv))
+                        vat_amout, invoice=inv))
 
                 row += [
                     # Campo 22: Otros Tributos
