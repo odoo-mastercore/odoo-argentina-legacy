@@ -174,7 +174,7 @@ class AccountVatLedger(models.Model):
         # DNI, LE, LC, CI o pasaporte
         if partner.l10n_ar_afip_responsibility_type_id.code == '5':
             return "{:0>2d}".format(
-                partner.l10n_latam_identification_type_id.l10n_ar_afip_code)
+                int(partner.l10n_latam_identification_type_id.l10n_ar_afip_code))
         return '80'
 
     @api.model
