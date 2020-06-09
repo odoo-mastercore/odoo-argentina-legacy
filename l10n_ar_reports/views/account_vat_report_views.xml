@@ -34,7 +34,7 @@
                 </header>
                 <sheet>
                     <group>
-                        <group col="3">
+                        <group col="2">
                             <field name="company_id" widget="selection" groups="base.group_multi_company"/>
                             <field name="name" readonly="1"/>
                             <field name="date_from"/>
@@ -63,7 +63,7 @@
                         </page>
                         <!-- RG3685 exCITI-->
                         <page string="Rég. de Inf. de Compras Ventas (R.G. 3685)" name="CITI">
-                            <button name="compute_citi_data" type="object" string="Compute Data" states="draft"/>
+                            <button name="compute_citi_data" type="object" string="Compute TXT File" states="draft"/>
                             <group>
                                 <field name="vouchers_filename" invisible="1"/>
                                 <field name="aliquots_filename" invisible="1"/>
@@ -76,12 +76,18 @@
                                         <button name="action_see_skiped_invoices" class="oe_inline oe_link" type="object" string="(Ver facturas salteadas)" attrs="{'invisible': [('citi_skip_lines', '=', False)]}"/>
                                     </div>
                                 </group> -->
+                                <!-- TODO Borrar -->
+                                <!--
                                 <group>
                                     <field name="vouchers_file" filename="vouchers_filename"/>
                                 </group>
+                                -->
                                 <group>
                                     <field name="aliquots_file" filename="aliquots_filename"/>
+                                    <!-- TODO Borrar -->
+                                    <!--
                                     <field name="import_aliquots_file" filename="import_aliquots_filename"/>
+                                    -->
                                 </group>
                             </group>
                             <group col="1">
