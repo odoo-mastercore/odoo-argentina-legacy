@@ -7,9 +7,13 @@
             <tree string="VAT Ledger">
                 <field name="name"/>
                 <field name="company_id" groups="base.group_multi_company"/>
+                <!-- TODO Borrar -->
+                <!--
                 <field name="first_page"/>
                 <field name="last_page"/>
+                -->
                 <field name="state"/>
+                <field name="create_date" string="Creado el"/>
             </tree>
         </field>
     </record>
@@ -21,27 +25,34 @@
             <form string="VAT Ledger">
                 <field name="type" invisible="1"/>
                 <header>
-                    <button name="action_print" string="Print" states="draft" type="object" class="oe_highlight"/>
-                    <button name="action_print" string="Print" states="cancel,presented" type="object"/>
-                    <button name="action_present" string="Present" states="draft" type="object" class="oe_highlight"/>
+                    <button name="action_print" string="Download XLSX" states="draft" type="object" class="oe_highlight"/>
+                    <button name="action_print" string="Download XLSX" states="cancel,presented" type="object"/>
+                    <button name="action_present" string="Set as Presented" states="draft" type="object" class="oe_highlight"/>
                     <button name="action_cancel" string="Cancel" states="draft,presented" type="object"/>
                     <button name="action_to_draft" string="To Draft" states="cancel" type="object"/>
                     <field name="state" widget="statusbar" statusbar_visible="draft,presented"/>
                 </header>
                 <sheet>
                     <group>
-                        <group>
+                        <group col="3">
                             <field name="company_id" widget="selection" groups="base.group_multi_company"/>
+                            <field name="name" readonly="1"/>
                             <field name="date_from"/>
                             <field name="date_to"/>
+                            <field name="reference"/>
+                            <!--TODO Borrar-->
+                            <!--
                             <field name="presented_ledger_name" invisible="1"/>
                             <field name="presented_ledger" filename="presented_ledger_name"/>
+                            -->
                         </group>
+                        <!--TODO Borrar-->
+                        <!--    
                         <group>
                             <field name="first_page"/>
                             <field name="last_page"/>
-                            <field name="reference"/>
                         </group>
+                        -->
                     </group>
                     <notebook>
                         <page string="Invoices" name="invoices">
@@ -51,7 +62,7 @@
                             <field name="journal_ids" domain="[('type', '=', type), ('company_id', '=', company_id), ('l10n_latam_use_documents', '=', True)]"/>
                         </page>
                         <!-- RG3685 exCITI-->
-                        <page string="Régimen de Información de Compras y Ventas (RG 3685)" name="CITI">
+                        <page string="Rég. de Inf. de Compras Ventas (R.G. 3685)" name="CITI">
                             <button name="compute_citi_data" type="object" string="Compute Data" states="draft"/>
                             <group>
                                 <field name="vouchers_filename" invisible="1"/>
@@ -79,6 +90,9 @@
                                 <field name="REGINFO_CV_ALICUOTAS"/>
                                 <field name="REGINFO_CV_COMPRAS_IMPORTACIONES" attrs="{'invisible': [('type', '!=', 'purchase')]}"/>
                             </group>
+                        </page>
+                        <page string="Rég. IVA Digital (R.G. 4597)" name="IVA_DIGITAL">
+                            
                         </page>
                         <page string="Notes" name="notes">
                             <field name="note"/>

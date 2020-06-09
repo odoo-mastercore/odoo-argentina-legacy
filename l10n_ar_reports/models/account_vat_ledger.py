@@ -47,24 +47,30 @@ class AccountVatLedger(models.Model):
         readonly=True,
         states={'draft': [('readonly', False)]},
     )
+    # TODO BORRAR
     first_page = fields.Integer(
         "First Page",
         required=True,
         readonly=True,
         states={'draft': [('readonly', False)]},
     )
+    # TODO BORRAR
     last_page = fields.Integer(
         "Last Page",
         readonly=True,
         states={'draft': [('readonly', False)]},
     )
+
+    # TODO BORRAR
     presented_ledger = fields.Binary(
         "Presented Ledger",
         readonly=True,
         states={'draft': [('readonly', False)]},
     )
+    # TODO BORRAR
     presented_ledger_name = fields.Char(
     )
+
     state = fields.Selection(
         [('draft', 'Draft'), ('presented', 'Presented'), ('cancel', 'Cancel')],
         'State',
@@ -74,9 +80,10 @@ class AccountVatLedger(models.Model):
     note = fields.Html(
         "Notes"
     )
-# Computed fields
+    
+    # Computed fields
     name = fields.Char(
-        'Titile',
+        'Title',
         compute='_compute_name'
     )
     reference = fields.Char(
@@ -112,7 +119,7 @@ class AccountVatLedger(models.Model):
                 ledger_type = _('Sales')
             elif rec.type == 'purchase':
                 ledger_type = _('Purchases')
-            name = _("%s VAT Ledger %s - %s") % (
+            name = _("VAT Ledger (%s)  %s - %s") % (
                 ledger_type,
                 rec.date_from and fields.Date.from_string(
                     rec.date_from).strftime(date_format) or '',

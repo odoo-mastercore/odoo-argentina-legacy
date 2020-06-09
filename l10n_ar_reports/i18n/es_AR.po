@@ -484,8 +484,8 @@ msgstr "Apuntes de diario publicados"
 
 #. module: l10n_ar_reports
 #: model_terms:ir.ui.view,arch_db:l10n_ar_reports.account_vat_ledger_form
-msgid "Present"
-msgstr "Presentar"
+msgid "Set as Presented"
+msgstr "Marcar como Presentado"
 
 #. module: l10n_ar_reports
 #: model:ir.model.fields.selection,name:l10n_ar_reports.selection__account_vat_ledger__state__presented
@@ -504,8 +504,8 @@ msgstr "Nombre del libro presentado"
 
 #. module: l10n_ar_reports
 #: model_terms:ir.ui.view,arch_db:l10n_ar_reports.account_vat_ledger_form
-msgid "Print"
-msgstr "Imprimir"
+msgid "Download XLSX"
+msgstr "Descargar XLSX"
 
 #. module: l10n_ar_reports
 #: model:ir.model.fields,field_description:l10n_ar_reports.field_account_vat_ledger__prorate_tax_credit
@@ -723,7 +723,7 @@ msgstr "Nota de crédito del proveedor"
 #. module: l10n_ar_reports
 #: model:ir.model.fields,field_description:l10n_ar_reports.field_account_vat_ledger__vouchers_file
 msgid "Vouchers File"
-msgstr "Archivo de Recibos"
+msgstr "Archivo de Comprobantes"
 
 #. module: l10n_ar_reports
 #: model:ir.model.fields,field_description:l10n_ar_reports.field_account_vat_ledger__vouchers_filename
