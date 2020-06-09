@@ -73,8 +73,8 @@ class AccountVatLedgerXlsx(models.AbstractModel):
                 else:
                     # Creating environment variables
                     taxed = (invoice.type == 'in_invoice' and 1.0
-                        or -1.0) * (invoice.base_21+invoice.base_25 +
-                        invoice.base_10+invoice.base_27+invoice.base_5)
+                        or -1.0) * (invoice.vat_21+invoice.vat_25 +
+                        invoice.vat_10+invoice.vat_27+invoice.vat_5)
                     untaxed = (invoice.type == 'in_invoice' and 1.0
                         or -1.0) * invoice.not_taxed
                     tax_10 = (invoice.type == 'in_invoice' and 1.0
