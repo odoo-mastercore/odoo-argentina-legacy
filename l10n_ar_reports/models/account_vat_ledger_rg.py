@@ -234,7 +234,7 @@ class AccountVatLedger(models.Model):
         # if not self.citi_skip_invoice_tests:
         #     invoices.check_argentinian_invoice_taxes()
         if self.type == 'purchase':
-            partners = invoices.mapped('commercial_partner_id').filtered(
+            partners = invoices.mapped('partner_id').filtered(
                 lambda r: r.l10n_latam_identification_type_id.l10n_ar_afip_code in (
                     False, 99) or not r.vat)
             if partners:
