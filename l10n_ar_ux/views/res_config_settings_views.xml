@@ -24,9 +24,9 @@
                             al partner al consultar sus datos en el padron AFIP.
                         </div>
                         <div class="content-group">
-                            <button name="refresh_activities_from_padron" string="-> Actividades" type="object" class="oe_link"/>
-                            <button name="refresh_taxes_from_padron" string="-> Impuestos" type="object" class="oe_link"/>
-                            <button name="refresh_concepts_from_padron" string="-> Conceptos" type="object" class="oe_link"/>
+                            <button name="refresh_activities_from_padron" string="-> Actividades" type="object" style="margin: 2px;" class="shadow-sm btn btn-info btn-sm"/>
+                            <button name="refresh_taxes_from_padron" string="-> Impuestos" type="object" style="margin: 2px;" class="shadow-sm btn btn-info btn-sm"/>
+                            <button name="refresh_concepts_from_padron" string="-> Conceptos" type="object" style="margin: 2px;" class="shadow-sm btn btn-info btn-sm"/>
                         </div>
                     </div>
                 </div>
