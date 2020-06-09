@@ -51,7 +51,7 @@ msgstr "Nombre Tipo de Responsabilidad AFIP"
 #: code:addons/l10n_ar_reports/models/account_vat_ledger_rg.py:0
 #, python-format
 msgid "Alicuots_%s_%s.txt"
-msgstr ""
+msgstr "Alicuotas_%s_%s.txt"
 
 #. module: l10n_ar_reports
 #: model:ir.model.fields,field_description:l10n_ar_reports.field_account_vat_ledger__aliquots_file
@@ -744,7 +744,7 @@ msgstr "Nombre de Archivo"
 #: code:addons/l10n_ar_reports/models/account_vat_ledger_rg.py:0
 #, python-format
 msgid "Vouchers_%s_%s.txt"
-msgstr ""
+msgstr "Comprobantes_%s_%s.txt"
 
 #. module: l10n_ar_reports
 #: model:ir.model.fields,field_description:l10n_ar_reports.field_account_vat_ledger__website_message_ids
