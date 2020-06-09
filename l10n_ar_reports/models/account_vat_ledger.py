@@ -50,6 +50,7 @@ class AccountVatLedger(models.Model):
     # TODO BORRAR
     first_page = fields.Integer(
         "First Page",
+        default=1,
         required=True,
         readonly=True,
         states={'draft': [('readonly', False)]},
