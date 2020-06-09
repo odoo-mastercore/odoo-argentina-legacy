@@ -369,7 +369,7 @@ class AccountVatLedger(models.Model):
                 # TODO ADIVINAR E IMPLEMENTAR, VA A DAR ERROR
                 #Revisar asi estaba en v12 
                 #inv.fiscal_position_id.l10n_ar_afip_code or '0',
-                inv.move_id.fiscal_position_id or '0',
+                ' ',
             ]
 
             if self.type == 'sale':
