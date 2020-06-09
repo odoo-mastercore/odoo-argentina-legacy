@@ -173,29 +173,30 @@ class AccountVatLedger(models.Model):
         # TODO si es mayor a 1000 habria que validar reportar
         # DNI, LE, LC, CI o pasaporte
         if partner.l10n_ar_afip_responsibility_type_id.code == '5':
-            return "{:0>2d}".format(partner.l10n_latam_identification_type_id.l10n_ar_afip_code)
+            return "{:0>2d}".format(
+                partner.l10n_latam_identification_type_id.l10n_ar_afip_code)
         return '80'
 
     @api.model
     def get_partner_document_number(self, partner):
         # se exige cuit para todo menos consumidor final.
         # TODO si es mayor a 1000 habria que validar reportar
-        # DNI, LE, LC, CI o pasaporte
-        if partner.l10n_ar_afip_responsibility_type_id.code == '5':
-            number = partner.vat or ''
-            # por las dudas limpiamos letras
-            number = re.sub("[^0-9]", "", number)
-        else:
-            number = partner.cuit_required()
+        # CUIT, DNI, LE, LC, CI o pasaporte
+        number = partner.vat or ''
+        # por las dudas limpiamos letras
+        number = re.sub("[^0-9]", "", number)
+
         return number.rjust(20, '0')
 
     @api.model
     def get_point_of_sale(self, invoice):
-        return "{:0>5d}".format(invoice.point_of_sale_number)
+        point_of_sale = invoice.journal_id.code
+        return point_of_sale
 
     def action_see_skiped_invoices(self):
         invoices = self.get_citi_invoices(return_skiped=True)
-        raise ValidationError(_('Facturas salteadas:\n%s') % ', '.join(invoices.mapped('display_name')))
+        raise ValidationError(_(
+        'Facturas salteadas:\n%s') % ', '.join(invoices.mapped('display_name')))
 
     @api.constrains('citi_skip_lines')
     def _check_citi_skip_lines(self):
@@ -212,8 +213,7 @@ class AccountVatLedger(models.Model):
 
     def get_citi_invoices(self, return_skiped=False):
         self.ensure_one()
-        invoices = self.env['account.move'].search([
-            ('l10n_latam_document_type_id.export_to_citi', '=', True),
+        invoices = self.env['account.ar.vat.line'].search([
             ('id', 'in', self.invoice_ids.ids)], order='invoice_date asc')
         if self.citi_skip_lines:
             skip_lines = literal_eval(self.citi_skip_lines)
@@ -231,8 +231,6 @@ class AccountVatLedger(models.Model):
         self.ensure_one()
         res = []
         invoices = self.get_citi_invoices()
-        _logger.warning('HELLLOOOOO MOTOOO')
-        _logger.warning(invoices)
         # if not self.citi_skip_invoice_tests:
         #     invoices.check_argentinian_invoice_taxes()
         if self.type == 'purchase':
@@ -252,12 +250,12 @@ class AccountVatLedger(models.Model):
             # si no existe la factura en alicuotas es porque no tienen ninguna
             cant_alicuotas = len(alicuotas.get(inv))
 
-            currency_rate = inv.currency_rate
-            currency_code = inv.currency_id.l10n_ar_afip_code
+            currency_rate = inv.company_currency_id.rate
+            currency_code = inv.company_currency_id.l10n_ar_afip_code
 
             row = [
                 # Campo 1: Fecha de comprobante
-                fields.Date.from_string(inv.date_invoice).strftime('%Y%m%d'),
+                fields.Date.from_string(inv.invoice_date).strftime('%Y%m%d'),
 
                 # Campo 2: Tipo de Comprobante.
                 "{:0>3d}".format(int(inv.document_type_id.code)),
@@ -275,14 +273,14 @@ class AccountVatLedger(models.Model):
                 # En el supuesto de registrar de manera agrupada por totales
                 # diarios, se deberá consignar el primer número de comprobante
                 # del rango a considerar.
-                "{:0>20d}".format(inv.invoice_number)
+                "{:0>20d}".format(int(str(inv.move_name).split('-')[2]))
             ]
 
             if self.type == 'sale':
                 # Campo 5: Número de Comprobante Hasta.
                 # TODO agregar esto En el resto de los casos se consignará el
                 # dato registrado en el campo 4
-                row.append("{:0>20d}".format(inv.invoice_number))
+                row.append("{:0>20d}".format(int(str(inv.move_name).split('-')[2])))
             else:
                 # Campo 5: Despacho de importación
                 if inv.document_type_id.code == '66':
@@ -294,89 +292,65 @@ class AccountVatLedger(models.Model):
 
             row += [
                 # Campo 6: Código de documento del comprador.
-                self.get_partner_document_code(inv.commercial_partner_id),
+                self.get_partner_document_code(inv.partner_id),
 
                 # Campo 7: Número de Identificación del comprador
-                self.get_partner_document_number(inv.commercial_partner_id),
+                self.get_partner_document_number(inv.partner_id),
 
                 # Campo 8: Apellido y Nombre del comprador.
-                inv.commercial_partner_id.name.ljust(30, ' ')[:30],
+                inv.partner_id.name.ljust(30, ' ')[:30],
                 # inv.commercial_partner_id.name.encode(
                 #     'ascii', 'replace').ljust(30, ' ')[:30],
 
                 # Campo 9: Importe Total de la Operación.
-                self.format_amount(inv.cc_amount_total, invoice=inv),
+                self.format_amount(
+                    (inv.type == 'in_invoice' and 1.0 or -1.0) * inv.total, invoice=inv),
 
                 # Campo 10: Importe total de conceptos que no integran el
                 # precio neto gravado
                 self.format_amount(
-                    inv.cc_vat_untaxed_base_amount, invoice=inv),
+                    (inv.type == 'in_invoice' and 1.0 or -1.0) * inv.not_taxed, invoice=inv),
             ]
 
             if self.type == 'sale':
                 row += [
                     # Campo 11: Percepción a no categorizados
                     self.format_amount(
-                        sum(inv.tax_line_ids.filtered(lambda r: (
-                            r.tax_id.tax_group_id.type == 'perception' and
-                            r.tax_id.tax_group_id.tax == 'vat' and
-                            r.tax_id.tax_group_id.application \
-                            == 'national_taxes')
-                        ).mapped('cc_amount')), invoice=inv),
+                        (inv.type == 'in_invoice' and 1.0 or -1.0) * inv.vat_per, invoice=inv),
 
                     # Campo 12: Importe de operaciones exentas
                     self.format_amount(
-                        inv.cc_vat_exempt_base_amount, invoice=inv),
+                        (inv.type == 'in_invoice' and 1.0 or -1.0) * inv.not_taxed, invoice=inv),
                 ]
             else:
                 row += [
                     # Campo 11: Importe de operaciones exentas
                     self.format_amount(
-                        inv.cc_vat_exempt_base_amount, invoice=inv),
+                        (inv.type == 'in_invoice' and 1.0 or -1.0) * inv.not_taxed, invoice=inv),
 
                     # Campo 12: Importe de percepciones o pagos a cuenta del
                     # Impuesto al Valor Agregado
                     self.format_amount(
-                        sum(inv.tax_line_ids.filtered(lambda r: (
-                            r.tax_id.tax_group_id.type == 'perception' and
-                            r.tax_id.tax_group_id.tax == 'vat' and
-                            r.tax_id.tax_group_id.application \
-                            == 'national_taxes')
-                        ).mapped(
-                            'cc_amount')), invoice=inv),
+                        (inv.type == 'in_invoice' and 1.0 or -1.0) * inv.vat_per, invoice=inv),
                 ]
 
             row += [
                 # Campo 13: Importe de percepciones o pagos a cuenta de
                 # impuestos nacionales
                 self.format_amount(
-                    sum(inv.tax_line_ids.filtered(lambda r: (
-                        r.tax_id.tax_group_id.type == 'perception' and
-                        r.tax_id.tax_group_id.tax != 'vat' and
-                        r.tax_id.tax_group_id.application == 'national_taxes')
-                    ).mapped('cc_amount')), invoice=inv),
+                    (inv.type == 'in_invoice' and 1.0 or -1.0) * inv.vat_per, invoice=inv),
 
                 # Campo 14: Importe de percepciones de ingresos brutos
                 self.format_amount(
-                    sum(inv.tax_line_ids.filtered(lambda r: (
-                        r.tax_id.tax_group_id.type == 'perception' and
-                        r.tax_id.tax_group_id.application \
-                        == 'provincial_taxes')
-                    ).mapped('cc_amount')), invoice=inv),
+                    (inv.type == 'in_invoice' and 1.0 or -1.0) * inv.iibb_per, invoice=inv),
 
                 # Campo 15: Importe de percepciones de impuestos municipales
                 self.format_amount(
-                    sum(inv.tax_line_ids.filtered(lambda r: (
-                        r.tax_id.tax_group_id.type == 'perception' and
-                        r.tax_id.tax_group_id.application == 'municipal_taxes')
-                    ).mapped('cc_amount')), invoice=inv),
+                    (inv.type == 'in_invoice' and 1.0 or -1.0) * inv.municipal_per, invoice=inv),
 
                 # Campo 16: Importe de impuestos internos
                 self.format_amount(
-                    sum(inv.tax_line_ids.filtered(
-                        lambda r: r.tax_id.tax_group_id.application \
-                        == 'internal_taxes'
-                    ).mapped('cc_amount')), invoice=inv),
+                    (inv.type == 'in_invoice' and 1.0 or -1.0) * inv.internal_tax, invoice=inv),
 
                 # Campo 17: Código de Moneda
                 str(currency_code),
@@ -393,17 +367,15 @@ class AccountVatLedger(models.Model):
                 # TODO ver que no se informe un codigo si no correpsonde,
                 # tal vez da error
                 # TODO ADIVINAR E IMPLEMENTAR, VA A DAR ERROR
-                inv.fiscal_position_id.l10n_ar_afip_code or '0',
+                #Revisar asi estaba en v12 
+                #inv.fiscal_position_id.l10n_ar_afip_code or '0',
+                inv.move_id.fiscal_position_id or '0',
             ]
 
             if self.type == 'sale':
                 row += [
                     # Campo 21: Otros Tributos
-                    self.format_amount(
-                        sum(inv.tax_line_ids.filtered(
-                            lambda r: r.tax_id.tax_group_id.application \
-                            == 'others'
-                        ).mapped('cc_amount')), invoice=inv),
+                    self.format_amount(inv.other_taxes, invoice=inv),
 
                     # Campo 22: vencimiento comprobante (no figura en
                     # instructivo pero si en aplicativo) para tique y factura
@@ -416,8 +388,8 @@ class AccountVatLedger(models.Model):
                         '206', '207', '208', '211', '212', '213'] and
                         '00000000' or
                         fields.Date.from_string(
-                            inv.date_due or inv.date_invoice).strftime(
-                            '%Y%m%d')),
+                            inv.move_id.invoice_date_due or 
+                            inv.invoice_date).strftime('%Y%m%d')),
                 ]
             else:
                 # Campo 21: Crédito Fiscal Computable
@@ -482,7 +454,7 @@ class AccountVatLedger(models.Model):
                 self.get_point_of_sale(inv),
 
                 # Campo 3: Número de Comprobante
-                "{:0>20d}".format(inv.invoice_number),
+                "{:0>20d}".format(int(str(inv.move_name).split('-')[2])),
 
                 # Campo 4: Importe Neto Gravado
                 self.format_amount(base, invoice=inv),
@@ -516,15 +488,15 @@ class AccountVatLedger(models.Model):
                 self.get_point_of_sale(inv),
 
                 # Campo 3: Número de Comprobante
-                "{:0>20d}".format(inv.invoice_number),
+                "{:0>20d}".format(int(str(inv.move_name).split('-')[2])),
 
                 # Campo 4: Código de documento del vendedor
                 self.get_partner_document_code(
-                    inv.commercial_partner_id),
+                    inv.partner_id),
 
                 # Campo 5: Número de identificación del vendedor
                 self.get_partner_document_number(
-                    inv.commercial_partner_id),
+                    inv.partner_id),
 
                 # Campo 6: Importe Neto Gravado
                 self.format_amount(base, invoice=inv),
@@ -558,34 +530,47 @@ class AccountVatLedger(models.Model):
             invoices = self.get_citi_invoices().filtered(
                 lambda r: r.document_type_id.code != '66')
         for inv in invoices:
+            afip_code = 80
             lines = []
-            is_zero = inv.currency_id.is_zero
-            # reportamos como linea de iva si:
-            # * el impuesto es iva cero
-            # * el impuesto es iva 21, 27 etc pero tiene impuesto liquidado,
-            # si no tiene impuesto liquidado (is_zero), entonces se inventa
-            # una linea
-            vat_taxes = inv.vat_tax_ids.filtered(
-                lambda r: r.tax_id.tax_group_id.l10n_ar_afip_code == 3 or (
-                    r.tax_id.tax_group_id.l10n_ar_afip_code in [
-                        4, 5, 6, 8, 9] and not is_zero(r.amount)))
-
-            if not vat_taxes and inv.vat_tax_ids.filtered(
-                    lambda r: r.tax_id.tax_group_id.l10n_ar_afip_code):
-                lines.append(''.join(self.get_tax_row(
-                    inv, 0.0, 3, 0.0, impo=impo)))
-
-            # we group by afip_code
-            for afip_code in vat_taxes.mapped('tax_id.tax_group_id.l10n_ar_afip_code'):
-                taxes = vat_taxes.filtered(
-                    lambda x: x.tax_id.tax_group_id.l10n_ar_afip_code == afip_code)
-                imp_neto = sum(taxes.mapped('cc_base'))
-                imp_liquidado = sum(taxes.mapped('cc_amount'))
+            is_zero = inv.company_currency_id.is_zero
+            if (inv.type == 'in_invoice' and 1.0 or -1.0) * inv.base_21 > 0.0:
                 lines.append(''.join(self.get_tax_row(
                     inv,
-                    imp_neto,
+                    inv.base_21,
                     afip_code,
-                    imp_liquidado,
+                    inv.vat_21,
+                    impo=impo,
+                )))
+            if (inv.type == 'in_invoice' and 1.0 or -1.0) * inv.base_27 > 0.0:
+                lines.append(''.join(self.get_tax_row(
+                    inv,
+                    inv.base_27,
+                    afip_code,
+                    inv.vat_27,
+                    impo=impo,
+                )))
+            if (inv.type == 'in_invoice' and 1.0 or -1.0) * inv.base_25 > 0.0:
+                lines.append(''.join(self.get_tax_row(
+                    inv,
+                    inv.base_25,
+                    afip_code,
+                    inv.vat_25,
+                    impo=impo,
+                )))
+            if (inv.type == 'in_invoice' and 1.0 or -1.0) * inv.base_10 > 0.0:
+                lines.append(''.join(self.get_tax_row(
+                    inv,
+                    inv.base_10,
+                    afip_code,
+                    inv.vat_10,
+                    impo=impo,
+                )))
+            if (inv.type == 'in_invoice' and 1.0 or -1.0) * inv.base_5 > 0.0:
+                lines.append(''.join(self.get_tax_row(
+                    inv,
+                    inv.base_5,
+                    afip_code,
+                    inv.vat_5,
                     impo=impo,
                 )))
             res[inv] = lines

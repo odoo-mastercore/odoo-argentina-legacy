@@ -18,7 +18,6 @@
         'views/account_vat_report_views.xml',
         'security/ir.model.access.csv',
         'security/security.xml',
-        'data/l10n_latam.document.type.csv',
     ],
     'demo': [
     ],

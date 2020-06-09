@@ -44,6 +44,12 @@ class AccountArVatLine(models.Model):
     vat_5 = fields.Monetary(readonly=True, string='VAT 5%', currency_field='company_currency_id')
     vat_per = fields.Monetary(
         readonly=True, string='VAT Perc.', currency_field='company_currency_id')
+    iibb_per = fields.Monetary(
+        readonly=True, string='IIBB Perc.', currency_field='company_currency_id')
+    municipal_per = fields.Monetary(
+        readonly=True, string='Municipal Taxes Perc.', currency_field='company_currency_id')
+    internal_tax = fields.Monetary(
+        readonly=True, string='Internal Taxes.', currency_field='company_currency_id')
     not_taxed = fields.Monetary(
         readonly=True, string='Not taxed/ex', currency_field='company_currency_id')
     other_taxes = fields.Monetary(
@@ -95,7 +101,10 @@ SELECT
     sum(CASE WHEN btg.l10n_ar_vat_afip_code = '8' THEN aml.balance ELSE Null END) as base_5,
     sum(CASE WHEN ntg.l10n_ar_vat_afip_code = '8' THEN aml.balance ELSE Null END) as vat_5,
     sum(CASE WHEN btg.l10n_ar_vat_afip_code in ('0', '1', '2', '3', '7') THEN aml.balance ELSE Null END) as not_taxed,
+    sum(CASE WHEN ntg.l10n_ar_tribute_afip_code = '04' THEN aml.balance ELSE Null END) as internal_tax,
     sum(CASE WHEN ntg.l10n_ar_tribute_afip_code = '06' THEN aml.balance ELSE Null END) as vat_per,
+    sum(CASE WHEN ntg.l10n_ar_tribute_afip_code = '07' THEN aml.balance ELSE Null END) as iibb_per,
+    sum(CASE WHEN ntg.l10n_ar_tribute_afip_code = '08' THEN aml.balance ELSE Null END) as municipal_per,
     sum(CASE WHEN ntg.l10n_ar_vat_afip_code is null and ntg.l10n_ar_tribute_afip_code != '06'
         THEN aml.balance ELSE Null END) as other_taxes,
     sum(aml.balance) as total
