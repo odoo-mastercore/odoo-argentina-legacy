@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-09 17:06+0000\n"
-"PO-Revision-Date: 2020-06-09 14:15-0300\n"
+"POT-Creation-Date: 2020-06-09 20:17+0000\n"
+"PO-Revision-Date: 2020-06-09 17:20-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,12 +16,6 @@ msgstr ""
 "Plural-Forms: \n"
 "Language: es_AR\n"
 "X-Generator: Poedit 2.2.1\n"
-
-#. module: l10n_ar_reports
-#: code:addons/l10n_ar_reports/models/account_vat_ledger.py:0
-#, python-format
-msgid "%s VAT Ledger %s - %s"
-msgstr "%s Libro de IVA %s - %s"
 
 #. module: l10n_ar_reports
 #: model:ir.model.fields,field_description:l10n_ar_reports.field_account_ar_vat_line__afip_responsibility_type_id
@@ -62,7 +56,7 @@ msgstr ""
 #. module: l10n_ar_reports
 #: model:ir.model.fields,field_description:l10n_ar_reports.field_account_vat_ledger__aliquots_file
 msgid "Aliquots File"
-msgstr "Archivo de Alicuotas"
+msgstr "Archivo TXT de Alicuotas"
 
 #. module: l10n_ar_reports
 #: model:ir.model.fields,field_description:l10n_ar_reports.field_account_vat_ledger__aliquots_filename
@@ -107,8 +101,13 @@ msgstr "Compañia"
 
 #. module: l10n_ar_reports
 #: model_terms:ir.ui.view,arch_db:l10n_ar_reports.account_vat_ledger_form
-msgid "Compute Data"
-msgstr "Calcular Datos"
+msgid "Compute TXT File"
+msgstr "Generar Archivo TXT"
+
+#. module: l10n_ar_reports
+#: model_terms:ir.ui.view,arch_db:l10n_ar_reports.account_vat_ledger_tree
+msgid "Creado el"
+msgstr ""
 
 #. module: l10n_ar_reports
 #: model:ir.model.fields,field_description:l10n_ar_reports.field_account_vat_ledger__create_uid
@@ -165,6 +164,11 @@ msgid "Document Type"
 msgstr "Tipo de documento"
 
 #. module: l10n_ar_reports
+#: model_terms:ir.ui.view,arch_db:l10n_ar_reports.account_vat_ledger_form
+msgid "Download XLSX"
+msgstr "Descargar XLSX"
+
+#. module: l10n_ar_reports
 #: model:ir.model.fields.selection,name:l10n_ar_reports.selection__account_vat_ledger__state__draft
 msgid "Draft"
 msgstr "Borrador"
@@ -183,7 +187,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_ar_reports.field_account_ar_vat_line__move_id
 #: model_terms:ir.ui.view,arch_db:l10n_ar_reports.view_account_ar_vat_line_search
 msgid "Entry"
-msgstr "Asiento"
+msgstr "Entrada"
 
 #. module: l10n_ar_reports
 #: code:addons/l10n_ar_reports/models/account_vat_ledger_rg.py:0
@@ -380,7 +384,7 @@ msgstr "Mensajes"
 #. module: l10n_ar_reports
 #: model:ir.model.fields,field_description:l10n_ar_reports.field_account_ar_vat_line__move_name
 msgid "Move Name"
-msgstr "Nombre de asiento"
+msgstr "Nombre Movimiento"
 
 #. module: l10n_ar_reports
 #: model:ir.model.fields,field_description:l10n_ar_reports.field_account_ar_vat_line__municipal_per
@@ -480,12 +484,7 @@ msgstr "Publicado"
 #. module: l10n_ar_reports
 #: model_terms:ir.ui.view,arch_db:l10n_ar_reports.view_account_ar_vat_line_search
 msgid "Posted Journal Items"
-msgstr "Apuntes de diario publicados"
-
-#. module: l10n_ar_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ar_reports.account_vat_ledger_form
-msgid "Set as Presented"
-msgstr "Marcar como Presentado"
+msgstr "Items de diario publicados"
 
 #. module: l10n_ar_reports
 #: model:ir.model.fields.selection,name:l10n_ar_reports.selection__account_vat_ledger__state__presented
@@ -501,11 +500,6 @@ msgstr "Libro presentado"
 #: model:ir.model.fields,field_description:l10n_ar_reports.field_account_vat_ledger__presented_ledger_name
 msgid "Presented Ledger Name"
 msgstr "Nombre del libro presentado"
-
-#. module: l10n_ar_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ar_reports.account_vat_ledger_form
-msgid "Download XLSX"
-msgstr "Descargar XLSX"
 
 #. module: l10n_ar_reports
 #: model:ir.model.fields,field_description:l10n_ar_reports.field_account_vat_ledger__prorate_tax_credit
@@ -571,7 +565,12 @@ msgstr "Referencia"
 
 #. module: l10n_ar_reports
 #: model_terms:ir.ui.view,arch_db:l10n_ar_reports.account_vat_ledger_form
-msgid "Régimen de Información de Compras y Ventas (RG 3685)"
+msgid "Rég. IVA Digital (R.G. 4597)"
+msgstr ""
+
+#. module: l10n_ar_reports
+#: model_terms:ir.ui.view,arch_db:l10n_ar_reports.account_vat_ledger_form
+msgid "Rég. de Inf. de Compras Ventas (R.G. 3685)"
 msgstr ""
 
 #. module: l10n_ar_reports
@@ -617,6 +616,11 @@ msgid "Sequence"
 msgstr "Secuencia"
 
 #. module: l10n_ar_reports
+#: model_terms:ir.ui.view,arch_db:l10n_ar_reports.account_vat_ledger_form
+msgid "Set as Presented"
+msgstr "Marcar como Presentado"
+
+#. module: l10n_ar_reports
 #: model:ir.model.fields,field_description:l10n_ar_reports.field_account_vat_ledger__citi_skip_invoice_tests
 msgid "Skip invoice tests?"
 msgstr ""
@@ -638,8 +642,8 @@ msgstr "Estatus"
 
 #. module: l10n_ar_reports
 #: model:ir.model.fields,field_description:l10n_ar_reports.field_account_vat_ledger__name
-msgid "Titile"
-msgstr "Título"
+msgid "Title"
+msgstr ""
 
 #. module: l10n_ar_reports
 #: model_terms:ir.ui.view,arch_db:l10n_ar_reports.account_vat_ledger_form
@@ -706,6 +710,12 @@ msgid "VAT Ledger"
 msgstr "Libro IVA"
 
 #. module: l10n_ar_reports
+#: code:addons/l10n_ar_reports/models/account_vat_ledger.py:0
+#, python-format
+msgid "VAT Ledger (%s)  %s - %s"
+msgstr "Libro IVA (%s)  %s - %s"
+
+#. module: l10n_ar_reports
 #: model:ir.model.fields,field_description:l10n_ar_reports.field_account_ar_vat_line__vat_per
 msgid "VAT Perc."
 msgstr "IVA Perc."
@@ -723,7 +733,7 @@ msgstr "Nota de crédito del proveedor"
 #. module: l10n_ar_reports
 #: model:ir.model.fields,field_description:l10n_ar_reports.field_account_vat_ledger__vouchers_file
 msgid "Vouchers File"
-msgstr "Archivo de Comprobantes"
+msgstr "Archivo TXT de Comprobantes"
 
 #. module: l10n_ar_reports
 #: model:ir.model.fields,field_description:l10n_ar_reports.field_account_vat_ledger__vouchers_filename
