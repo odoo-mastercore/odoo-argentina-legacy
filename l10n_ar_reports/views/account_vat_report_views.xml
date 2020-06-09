@@ -63,7 +63,7 @@
                         </page>
                         <!-- RG3685 exCITI-->
                         <page string="Rég. de Inf. de Compras Ventas (R.G. 3685)" name="CITI">
-                            <button name="compute_citi_data" type="object" string="Compute TXT File" states="draft"/>
+                            <button name="compute_citi_data" type="object" string="Compute TXT File" states="draft" style="margin: 2px;" class="shadow-sm btn btn-info btn-sm"/>
                             <group>
                                 <field name="vouchers_filename" invisible="1"/>
                                 <field name="aliquots_filename" invisible="1"/>
@@ -77,18 +77,18 @@
                                     </div>
                                 </group> -->
                                 <!-- TODO Borrar -->
-                                <!--
+                                
                                 <group>
                                     <field name="vouchers_file" filename="vouchers_filename"/>
+                                    <field name="aliquots_file" filename="aliquots_filename"/>
+                                </group>
+                                
+                                <!-- TODO Borrar -->   
+                                <!--
+                                <group>
+                                    <field name="import_aliquots_file" filename="import_aliquots_filename"/>
                                 </group>
                                 -->
-                                <group>
-                                    <field name="aliquots_file" filename="aliquots_filename"/>
-                                    <!-- TODO Borrar -->
-                                    <!--
-                                    <field name="import_aliquots_file" filename="import_aliquots_filename"/>
-                                    -->
-                                </group>
                             </group>
                             <group col="1">
                                 <!-- <field name="REGINFO_CV_CABECERA"/> -->
