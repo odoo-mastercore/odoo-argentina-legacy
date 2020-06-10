@@ -1,7 +1,7 @@
 
 # Odoo Localization for Argentinians Partners
 
-For Entrepreneurs, MiPyme's, SME, Companies, Autónomos. 
+For Entrepreneurs, MiPyme's, SME, Companies, Autónomos and Monotributistas. 
 Work made from:
 
  - [ingadhoc/odoo-argentina-ce](https://github.com/ingadhoc/odoo-argentina-ce)
