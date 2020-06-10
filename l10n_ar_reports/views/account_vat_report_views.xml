@@ -27,6 +27,7 @@
                 <header>
                     <button name="action_print" string="Download XLSX" states="draft" type="object" class="oe_highlight"/>
                     <button name="action_print" string="Download XLSX" states="cancel,presented" type="object"/>
+                    <button name="compute_citi_data" type="object" states="draft" string="Compute TXT File" class="oe_highlight"/>
                     <button name="action_present" string="Set as Presented" states="draft" type="object" class="oe_highlight"/>
                     <button name="action_cancel" string="Cancel" states="draft,presented" type="object"/>
                     <button name="action_to_draft" string="To Draft" states="cancel" type="object"/>
@@ -63,7 +64,6 @@
                         </page>
                         <!-- RG3685 exCITI-->
                         <page string="Rég. de Inf. de Compras Ventas (R.G. 3685)" name="CITI">
-                            <button name="compute_citi_data" type="object" string="Compute TXT File" states="draft" style="margin: 2px;" class="shadow-sm btn btn-info btn-sm"/>
                             <group>
                                 <field name="vouchers_filename" invisible="1"/>
                                 <field name="aliquots_filename" invisible="1"/>
@@ -76,12 +76,8 @@
                                         <button name="action_see_skiped_invoices" class="oe_inline oe_link" type="object" string="(Ver facturas salteadas)" attrs="{'invisible': [('citi_skip_lines', '=', False)]}"/>
                                     </div>
                                 </group> -->
-                                <!-- TODO Borrar -->
-                                
-                                <group>
-                                    <field name="vouchers_file" filename="vouchers_filename"/>
-                                    <field name="aliquots_file" filename="aliquots_filename"/>
-                                </group>
+                                <field name="vouchers_file" filename="vouchers_filename"/>
+                                <field name="aliquots_file" filename="aliquots_filename"/>
                                 
                                 <!-- TODO Borrar -->   
                                 <!--
@@ -97,8 +93,20 @@
                                 <field name="REGINFO_CV_COMPRAS_IMPORTACIONES" attrs="{'invisible': [('type', '!=', 'purchase')]}"/>
                             </group>
                         </page>
+                        <!-- RG4597 IVA DIGITAL-->
                         <page string="Rég. IVA Digital (R.G. 4597)" name="IVA_DIGITAL">
-                            
+                            <group>
+                                <field name="vouchers_filename" invisible="1"/>
+                                <field name="aliquots_filename" invisible="1"/>
+                                <field name="import_aliquots_filename" invisible="1"/>            
+                                <field name="vouchers_file" filename="vouchers_filename"/>
+                               <field name="aliquots_file" filename="aliquots_filename"/>
+                            </group>
+                            <group col="1">
+                                <field name="REGINFO_CV_CBTE" string="LIBRO_IVA_DIGITAL_CBTE"/>
+                                <field name="REGINFO_CV_ALICUOTAS" string="LIBRO_IVA_DIGITAL_ALICUOTAS"/>
+                                <field name="REGINFO_CV_COMPRAS_IMPORTACIONES" string="LIBRO_IVA_DIGITAL_IMPORTACION_BIENES_ALICUOTA" attrs="{'invisible': [('type', '!=', 'purchase')]}"/>
+                            </group>
                         </page>
                         <page string="Notes" name="notes">
                             <field name="note"/>
