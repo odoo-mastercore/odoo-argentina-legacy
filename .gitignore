@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+#Module Oca Dependens 
+report_xlsx/
+
 # C extensions
 *.so
 
