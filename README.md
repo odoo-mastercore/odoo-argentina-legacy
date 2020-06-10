@@ -39,7 +39,7 @@ Versión 13.0 Community edition
 - Mejora en conexión AFIP y formato de CUIT
 - Incorporación de consulta de Actividades, Conceptos e Impuestos AFIP
 - Incorporación de consulta de datos de padrón A5 para Contactos (Clientes y Proveedores)
-- Regimen de Información AFIP R.G. 3685 y Libro de IVA Digital Compras/Ventas -R.G. 4597-
+- Regimen de Información AFIP R.G. 3685 y [Libro de IVA Digital](https://www.afip.gob.ar/libro-iva-digital/) Compras/Ventas -R.G. 4597-
 <!--
 #### 13.0/MercadoPago (Future)
 - Método de Pago MercadoPago
