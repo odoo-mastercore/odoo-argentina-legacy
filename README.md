@@ -9,51 +9,47 @@ Work made from:
  - [ingadhoc/account-payment](https://github.com/ingadhoc/account-payment)
  - [ingadhoc/account-financial-tools](https://github.com/ingadhoc/account-financial-tools)
 
-Thanks to ingadhoc folks, for their efforts and dedication!
+**Thanks to ingadhoc folks, for their efforts and dedication! ¡Gracias totales!.**
 :star: :star: :star: :star: :star:
 
-
 # Localización Odoo Argentina (CE)
-Versión 13.0 Community edition
 
-------
+**For fast deployment** :zap: :zap: :zap:
 
-**Versión fork de los amigos de ADHOC, ¡Gracias totales!.**
+-----
 
-------
+## Releases incrementales:
 
-### Releases incrementales:
-
-#### [13.0/BaseEI](https://github.com/odoo-mastercore/odoo-argentina/releases/tag/13.0%2FBaseEI)
+### [13.0/BaseEI](https://github.com/odoo-mastercore/odoo-argentina/releases/tag/13.0%2FBaseEI)
 - WebServices Implementados para Factura Electrónica AFIP (+ND, +NC, +FCEMiPyme)
 - Duplicado y Triplicado de Facturas
 - Reporte de Libro IVA Ventas, Compras
 - Reporte de IIBB en Ventas y Compras por Jurisdicción
 - Agregado CBU a Bancos y listado de Bancos Argentinos
-#### [13.0/Withholding](https://github.com/odoo-mastercore/odoo-argentina/releases/tag/13.0%2FWithholding)
+### [13.0/Withholding](https://github.com/odoo-mastercore/odoo-argentina/releases/tag/13.0%2FWithholding)
 - Gestión de Cheques 
 - Operaciones de pagos con múltiples lineas/medios de pago
 - Impuestos de retención, cómputo automático de ellas y certificados
 - Mejoras en UX
-#### [13.0/RegInfAFIP](https://github.com/odoo-mastercore/odoo-argentina/releases/tag/13.0%2FRegInfAFIP)
+### [13.0/RegInfAFIP](https://github.com/odoo-mastercore/odoo-argentina/releases/tag/13.0%2FRegInfAFIP)
 - Mejora en conexión AFIP y formato de CUIT
 - Incorporación de consulta de Actividades, Conceptos e Impuestos AFIP
 - Incorporación de consulta de datos de padrón A5 para Contactos (Clientes y Proveedores)
 - Regimen de Información AFIP R.G. 3685 y [Libro de IVA Digital](https://www.afip.gob.ar/libro-iva-digital/) Compras/Ventas -R.G. 4597-
 <!--
-#### 13.0/MercadoPago (Future)
+### 13.0/MercadoPago (Future)
 - Método de Pago MercadoPago
-#### 13.0/CotizacionUSDAFIP (Future)
+### 13.0/CotizacionUSDAFIP (Future)
 - Actualización automática de cotización USD
-#### 13.0/ConsultComprobantes (Future)
+### 13.0/ConsultComprobantes (Future)
 - Consulta de Comprobantes AFIP (web service AFIP de constatación de comprobantes)
-#### 13.0/PercIIBB (Future)
+### 13.0/PercIIBB (Future)
 - TXT Reg. Inf. para Agentes de percepción IIBB
-#### 13.0/MercadoLibre (Future)
+### 13.0/MercadoLibre (Future)
 - Integración con MercadoLibre
 -->
 
-#### Dependencias externas:
+### Dependencias externas:
 
 - wheel
 - python3-openssl | pyOpenSSL
@@ -63,13 +59,13 @@ Versión 13.0 Community edition
 - git+https://github.com/pysimplesoap/pysimplesoap@stable_py3k
 - git+https://github.com/ingadhoc/pyafipws@py3k
 
-#### Instalar Dependencias externas:
+### Instalar Dependencias externas:
 
 ```
 pip3 install -r requirements.txt
 ```
 
-#### Usando Docker podeis serviros de la imagen:
+### Usando Docker podeis serviros de la imagen:
 
 ```
 docker pull pandoo/odoo:13.0
