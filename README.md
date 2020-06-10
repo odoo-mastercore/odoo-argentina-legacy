@@ -14,7 +14,7 @@ Work made from:
 
 # Localización Odoo Argentina (CE)
 
-**For fast deployment** :zap: :zap: :zap:
+:zap: :zap: :zap: **For fast deployment** :zap: :zap: :zap:
 
 -----
 
@@ -65,7 +65,7 @@ Work made from:
 pip3 install -r requirements.txt
 ```
 
-### Usando Docker podeis serviros de la imagen:
+### Usando Docker podeis serviros de la imagen (sustituye a odoo/odoo:13.0 -tiene las dependencias-):
 
 ```
 docker pull pandoo/odoo:13.0
