@@ -28,16 +28,22 @@ Versión 13.0 Community edition
 - Operaciones de pagos con múltiples lineas/medios de pago
 - Impuestos de retención, cómputo automático de ellas y certificados
 - Mejoras en UX
-#### 13.0/FEImp (WIP)
+#### 13.0/RegInfAFIP
 - Mejora en conexión AFIP y formato de CUIT
 - Incorporación de consulta de Actividades, Conceptos e Impuestos AFIP
-- Incorporación de consulta de padrón A5
-- Consulta de Comprobantes AFIP (web service AFIP de constatación de comprobantes)
-- Actualización automática de cotización USD
+- Incorporación de consulta de datos de padrón A5 para Contactos (Clientes y Proveedores)
+- Regimen de Información AFIP R.G. 3685 y Libro de IVA Digital Compras/Ventas -R.G. 4597-
 <!--
-#### 13.0/RegInfAFIP (Future)
-- TXT Reg. Inf. Compras/Ventas
+#### 13.0/MercadoPago (Future)
+- Método de Pago MercadoPago
+#### 13.0/CotizacionUSDAFIP (Future)
+- Actualización automática de cotización USD
+#### 13.0/ConsultComprobantes (Future)
+- Consulta de Comprobantes AFIP (web service AFIP de constatación de comprobantes)
+#### 13.0/PercIIBB (Future)
 - TXT Reg. Inf. para Agentes de percepción IIBB
+#### 13.0/MercadoLibre (Future)
+- Integración con MercadoLibre
 -->
 
 #### Dependencias externas:
