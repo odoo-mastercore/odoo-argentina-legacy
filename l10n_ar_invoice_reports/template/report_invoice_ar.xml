@@ -3,7 +3,8 @@
 <!-- TODO realizar compatibilidad en multilocalizaciones -->
   <template id="report_invoice_ar" inherit_id="account.report_invoice_document">
     <xpath expr="//t[@t-set='address']" position="replace">
-    <t t-if="o.company_id.country_id.name == 'Argentina'">      
+    <t t-if="o.company_id.country_id.name == 'Argentina'">
+      <t t-set="address">      
       <div style="margin:top;" class="text-center">
         <p>
           <h1>
@@ -32,6 +33,7 @@
         </p>
         <br/>
       </div>
+      </t>
     </t>
     </xpath>
 
