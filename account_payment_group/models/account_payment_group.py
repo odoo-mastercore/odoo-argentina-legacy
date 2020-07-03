@@ -424,7 +424,7 @@ class AccountPaymentGroup(models.Model):
             selected_finacial_debt = 0.0
             selected_debt = 0.0
             selected_debt_untaxed = 0.0
-            for line in rec.to_pay_move_line_ids:
+            for line in rec.to_pay_move_line_ids._origin:
                 selected_finacial_debt += line.financial_amount_residual
                 selected_debt += line.amount_residual
                 # factor for total_untaxed
@@ -447,14 +447,20 @@ class AccountPaymentGroup(models.Model):
         for rec in self:
             rec.unreconciled_amount = rec.to_pay_amount - rec.selected_debt
 
+    def onchange(self, values, field_name, field_onchange):
+        """ Fix this issue https://github.com/ingadhoc/account-payment/issues/189
+        """
+        fields = []
+        for field in field_onchange.keys():
+            if field.startswith(('to_pay_move_line_ids.')):
+                fields.append(field)
+        for field in fields:
+            del field_onchange[field]
+        return super().onchange(values, field_name, field_onchange)
+
     @api.onchange('partner_id', 'partner_type', 'company_id')
     def _refresh_payments_and_move_lines(self):
-        # clean actual invoice and payments
-        # no hace falta
-        if self._context.get('pop_up'):
-            return
         for rec in self:
-            rec.payment_ids = [(2, item.id, 0) for item in rec.payment_ids]
             rec.add_all()
 
     def _get_to_pay_move_lines_domain(self):
@@ -468,6 +474,7 @@ class AccountPaymentGroup(models.Model):
             ('reconciled', '=', False),
             ('full_reconcile_id', '=', False),
             ('company_id', '=', self.company_id.id),
+            ('move_id.state', '=', 'posted'),
             # '|',
             # ('amount_residual', '!=', False),
             # ('amount_residual_currency', '!=', False),
