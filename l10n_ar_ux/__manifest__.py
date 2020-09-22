@@ -1,9 +1,9 @@
 {
     'name': 'Argentinian Accounting UX',
-    'version': "13.0.1.0.0",
+    'version': "13.0.1.3.0",
     'category': 'Localization/Argentina',
     'sequence': 14,
-    'author': 'ADHOC SA',
+    'author': 'ADHOC SA, MASTERCORE SAS',
     'website': 'www.adhoc.com.ar',
     'license': 'AGPL-3',
     'summary': '',

@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 ################################################################################
-# Author      : SINPASYS GLOBAL SA || MASTERCORE SAS
+# Author      : SINAPSYS GLOBAL SA || MASTERCORE SAS
 # Copyright(c): 2019-Present.
-# License URL : MIT
+# License URL : AGPL-3
 ################################################################################
 
 {

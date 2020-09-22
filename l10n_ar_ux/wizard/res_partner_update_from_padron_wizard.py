@@ -1,11 +1,9 @@
 # -*- coding: utf-8 -*-
-################################################################################
-# Author      : SINPASYS GLOBAL SA || MASTERCORE SAS
-#
-# This program is copyright property of the author mentioned above.
-# You can`t redistribute it and/or modify it.
-#
-################################################################################
+###############################################################################
+# Author      : SINAPSYS GLOBAL SA || MASTERCORE SAS
+# Copyright(c): 2019-Present.
+# License URL : AGPL-3
+###############################################################################
 
 from odoo import models, api, fields, _
 from ast import literal_eval

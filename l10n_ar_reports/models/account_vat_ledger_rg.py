@@ -14,18 +14,9 @@ _logger = logging.getLogger(__name__)
 class AccountVatLedger(models.Model):
     _inherit = "account.vat.ledger"
 
-    citi_skip_invoice_tests = fields.Boolean(
-        string='Skip invoice tests?',
-        help='If you skip invoice tests probably you will have errors when '
-        'loading the files in citi.'
-    )
-    citi_skip_lines = fields.Char(
-        string="List of lines to skip con citi files",
-        help="Enter a list of lines, for eg '1, 2, 3'. If you skip some lines "
-        "you would need to enter them manually"
-    )
+
     REGINFO_CV_ALICUOTAS = fields.Text(
-        'REGINFO_CV_ALICUOTAS',
+        'LIBRO_IVA_DIGITAL_VENTAS_ALICUOTAS',
         readonly=True,
     )
     REGINFO_CV_COMPRAS_IMPORTACIONES = fields.Text(
@@ -33,7 +24,7 @@ class AccountVatLedger(models.Model):
         readonly=True,
     )
     REGINFO_CV_CBTE = fields.Text(
-        'REGINFO_CV_CBTE',
+        'LIBRO_IVA_DIGITAL_VENTAS_CBTE',
         readonly=True,
     )
     REGINFO_CV_CABECERA = fields.Text(
@@ -80,18 +71,6 @@ class AccountVatLedger(models.Model):
     )
 
     def format_amount(self, amount, padding=15, decimals=2, invoice=False):
-        # get amounts on correct sign despite conifiguration on taxes and tax
-        # codes
-        # TODO
-        # remove this and perhups invoice argument (we always send invoice)
-        # for invoice refund we dont change sign (we do this before)
-        # if invoice:
-        #     amount = abs(amount)
-        #     if invoice.type in ['in_refund', 'out_refund']:
-        #         amount = -1.0 * amount
-        # Al final volvimos a agregar esto, lo necesitabamos por ej si se pasa
-        # base negativa de no gravado
-
         if amount < 0:
             template = "-{:0>%dd}" % (padding - 1)
         else:
@@ -148,7 +127,7 @@ class AccountVatLedger(models.Model):
             self.vouchers_file = False
             self.vouchers_filename = False
 
-    def compute_citi_data(self):
+    def compute_txt_data(self):
         alicuotas = self.get_REGINFO_CV_ALICUOTAS()
         # sacamos todas las lineas y las juntamos
         lines = []
@@ -169,13 +148,28 @@ class AccountVatLedger(models.Model):
 
     @api.model
     def get_partner_document_code(self, partner):
-        # se exige cuit para todo menos consumidor final.
-        # TODO si es mayor a 1000 habria que validar reportar
-        # DNI, LE, LC, CI o pasaporte
+        """Para un partner devolver codigo de identificación y numero de 
+        identificación con el formato esperado
+        por los txt """
+        # se exige cuit para todo menos consumidor final
         if partner.l10n_ar_afip_responsibility_type_id.code == '5':
-            return "{:0>2d}".format(
-                int(partner.l10n_latam_identification_type_id.l10n_ar_afip_code))
-        return '80'
+            doc_code = "{:0>2d}".format(
+                int(partner.l10n_latam_identification_type_id.\
+                    l10n_ar_afip_code))
+            doc_number = partner.vat or ''
+            # limpiamos letras que no son soportadas
+            doc_number = re.sub("[^0-9]", "", doc_number)
+        elif partner.l10n_ar_afip_responsibility_type_id.code == '9':
+            commercial_partner = partner.commercial_partner_id
+            doc_number = partner.l10n_ar_vat or commercial_partner.country_id.\
+                l10n_ar_legal_entity_vat \
+                if commercial_partner.is_company else commercial_partner.\
+                    country_id.l10n_ar_natural_vat
+            doc_code = '80'
+        else:
+            doc_number = partner.ensure_vat()
+            doc_code = '80'
+        return doc_code, doc_number.rjust(20, '0')
 
     @api.model
     def get_partner_document_number(self, partner):
@@ -194,46 +188,17 @@ class AccountVatLedger(models.Model):
             invoice.move_id.l10n_latam_document_number).split('-')[0]
         return point_of_sale
 
-    def action_see_skiped_invoices(self):
-        invoices = self.get_citi_invoices(return_skiped=True)
-        raise ValidationError(_(
-        'Facturas salteadas:\n%s') % ', '.join(invoices.mapped('display_name')))
-
-    @api.constrains('citi_skip_lines')
-    def _check_citi_skip_lines(self):
-        for rec in self.filtered('citi_skip_lines'):
-            try:
-                res = literal_eval(rec.citi_skip_lines)
-                if not isinstance(res, int):
-                    assert isinstance(res, tuple)
-            except Exception as e:
-                raise ValidationError(_(
-                    'Bad format for Skip Lines. You need to enter a list of '
-                    'numbers like "1, 2, 3". This is the error we get: %s') % (
-                        repr(e)))
-
-    def get_citi_invoices(self, return_skiped=False):
+    def _get_txt_invoices(self):
         self.ensure_one()
-        invoices = self.env['account.ar.vat.line'].search([
-            ('id', 'in', self.invoice_ids.ids)], order='invoice_date asc')
-        if self.citi_skip_lines:
-            skip_lines = literal_eval(self.citi_skip_lines)
-            if isinstance(skip_lines, int):
-                skip_lines = [skip_lines]
-            to_skip = invoices.browse()
-            for line in skip_lines:
-                to_skip += invoices[line - 1]
-            if return_skiped:
-                return to_skip
-            invoices -= to_skip
-        return invoices
+        return self.env['account.move'].search([
+            ('id', 'in', self.invoice_ids.mapped('move_id').ids),
+            ('l10n_latam_document_type_id.code', '!=', False)], 
+            order='invoice_date asc, name asc, id asc')
 
     def get_REGINFO_CV_CBTE(self, alicuotas):
         self.ensure_one()
         res = []
-        invoices = self.get_citi_invoices()
-        # if not self.citi_skip_invoice_tests:
-        #     invoices.check_argentinian_invoice_taxes()
+        invoices = self._get_txt_invoices()
         if self.type == 'purchase':
             partners = invoices.mapped('partner_id').filtered(
                 lambda r: r.l10n_latam_identification_type_id.l10n_ar_afip_code in (
@@ -525,10 +490,10 @@ class AccountVatLedger(models.Model):
         # usamos mapped por si hay afip codes duplicados (ej. manual y
         # auto)
         if impo:
-            invoices = self.get_citi_invoices().filtered(
+            invoices = self._get_txt_invoices().filtered(
                 lambda r: r.document_type_id.code == '66')
         else:
-            invoices = self.get_citi_invoices().filtered(
+            invoices = self._get_txt_invoices().filtered(
                 lambda r: r.document_type_id.code != '66')
         for inv in invoices:
             afip_code = 80

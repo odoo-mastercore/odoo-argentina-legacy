@@ -1,13 +1,8 @@
 # -*- coding: utf-8 -*-
-################################################################################
-# Author      : SINPASYS GLOBAL SA || MASTERCORE SAS
-# License URL : 
-#
-#
-#
-# This program is copyright property of the author mentioned above.
-# You can`t redistribute it and/or modify it.
-#
-################################################################################
+###############################################################################
+# Author      : SINAPSYS GLOBAL SA || MASTERCORE SAS
+# Copyright(c): 2019-Present.
+# License URL : AGPL-3
+###############################################################################
 
 from . import res_partner_update_from_padron_wizard
