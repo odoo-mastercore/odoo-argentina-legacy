@@ -5,13 +5,7 @@
     <xpath expr="//t[@t-set='address']" position="replace">
     <t t-if="o.company_id.country_id.name == 'Argentina'">     
       <div style="margin:top;" class="text-center">
-        <p>
-          <h1>
-            <strong><span t-field="o.l10n_latam_document_type_id.l10n_ar_letter"/></strong>
-          </h1>
-          <h7>
-            Código: 0<span t-field="o.l10n_latam_document_type_id.code"/>
-          </h7><br/>
+        <p><br/>
           <t t-if="type_copy==2">
             <t t-set="copies">
             <t>DUPLICADO</t>
@@ -56,7 +50,9 @@
           Tipo de Responsabilidad:
           <span t-field="o.partner_id.l10n_ar_afip_responsibility_type_id"/>
           <!-- compatibility with other module -->
-          <address invisible="1"/> 
+          <t t-set="address">
+            <address invisible="1"/>
+          </t>
         </div>
         <br/><br/>
         <div name="reference">
