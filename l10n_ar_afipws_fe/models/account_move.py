@@ -423,7 +423,9 @@ class AccountMove(models.Model):
                         doc_number_parts['point_of_sale'],
                         doc_number_parts['invoice_number'],
                         company_vat,
-                        afip_ws != 'wsmtxca' and self.date.strftime('%Y%m%d') or self.date.strftime('%Y-%m-%d'),
+                        afip_ws != 'wsmtxca' and CbteAsoc.invoice_date.strftime(
+                            '%Y%m%d') or CbteAsoc.invoice_date.strftime(
+                                '%Y-%m-%d')
                     )
 
             # analize line items - invoice detail

@@ -230,11 +230,8 @@ class AccountTax(models.Model):
             self, base_amount, price_unit, quantity=1.0, product=None,
             partner=None):
         if self.amount_type == 'partner_tax':
-            # TODO obtener fecha de otra manera?
-            try:
-                date = self._context.invoice_date
-            except Exception:
-                date = fields.Date.context_today(self)
+            date = self._context.get(
+                'invoice_date', fields.Date.context_today(self))
             return base_amount * self.get_partner_alicuota_percepcion(
                 partner, date)
         else:
