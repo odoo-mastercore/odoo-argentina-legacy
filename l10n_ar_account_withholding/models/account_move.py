@@ -44,7 +44,8 @@ class AccountMoveLine(models.Model):
 
     def _get_price_total_and_subtotal(
             self, price_unit=None, quantity=None, discount=None, currency=None,
-            product=None, partner=None, taxes=None, move_type=None):
+            product=None, partner=None, taxes=None, move_type=None, 
+            force_computation=False):
         invoice = self.move_id.reversed_entry_id or self.move_id
         invoice_date = invoice.invoice_date or fields.Date.context_today(self)
         self = self.with_context(invoice_date=invoice_date)
@@ -54,7 +55,8 @@ class AccountMoveLine(models.Model):
 
     def _get_fields_onchange_balance(
             self, quantity=None, discount=None, balance=None, move_type=None,
-            currency=None, taxes=None, price_subtotal=None):
+            currency=None, taxes=None, price_subtotal=None, 
+            force_computation=False):
         invoice = self.move_id.reversed_entry_id or self.move_id
         invoice_date = invoice.invoice_date or fields.Date.context_today(self)
         self = self.with_context(invoice_date=invoice_date)
