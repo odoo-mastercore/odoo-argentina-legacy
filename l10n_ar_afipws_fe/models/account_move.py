@@ -7,6 +7,7 @@ from odoo.exceptions import UserError
 import logging
 import sys
 import re
+import base64
 import traceback
 from datetime import datetime
 _logger = logging.getLogger(__name__)
@@ -77,6 +78,10 @@ class AccountMove(models.Model):
         '- SI: sí el comprobante asociado (original) se encuentra rechazado por el comprador\n'
         '- NO: sí el comprobante asociado (original) NO se encuentra rechazado por el comprador'
     )
+    afip_qr_url = fields.Char(
+        compute='_compute_qr',
+        string='AFIP QR (RG 4892/2020)'
+    )
 
     @api.depends('journal_id', 'afip_auth_code')
     def _compute_validation_type(self):
@@ -108,6 +113,34 @@ class AccountMove(models.Model):
                         "%05d" % int(rec.journal_id.l10n_ar_afip_pos_number),
                         str(rec.afip_auth_code), cae_due])
                 rec.afip_barcode = barcode
+
+    @api.depends('afip_auth_code')
+    def _compute_qr(self):
+        for rec in self:
+            invoice = ''
+            if rec.afip_auth_code:
+                invoice = {
+                    'ver': '1',
+                    'fecha': str(rec.invoice_date),
+                    'cuit': int(rec.company_id.partner_id.vat),
+                    'ptoVta': int(rec.journal_id.l10n_ar_afip_pos_number),
+                    'tipoCmp': int(rec.l10n_latam_document_type_id.code),
+                    'nroCmp': int(rec.name.split('-')[2]),
+                    'importe': rec.amount_total,
+                    'moneda': str(rec.currency_id.l10n_ar_afip_code),
+                    'ctz': rec.l10n_ar_currency_rate,
+                    'tipoDocRec': int(rec.partner_id.\
+                        l10n_latam_identification_type_id.l10n_ar_afip_code),
+                    'nroDocRec': int(rec.partner_id.vat),
+                    'tipoCodAut': 'E',
+                    'codAut': int(rec.afip_auth_code),
+                }
+                rec.afip_qr_url = 'https://www.afip.gob.ar/fe/qr/?p=' + str(
+                    base64.b64encode(str(invoice).encode('ascii')).\
+                        decode('ascii'))
+
+            else:
+                rec.afip_qr_url = 'https://www.afip.gob.ar/fe/qr/ERROR'
 
     def get_related_invoices_data(self):
         """

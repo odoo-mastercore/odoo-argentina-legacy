@@ -86,22 +86,33 @@
           </td>
       </t>
     </xpath>
-    <xpath expr="//div[hasclass('clearfix')]" position="after">
-      <t t-if="o.company_id.country_id.name == 'Argentina' and o.afip_auth_code">
-        <br/>
-        <div id="barcode">
-          <div style="margin-left:-27px;">
-            <img t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', o.afip_barcode, 280, 50)" style=""/>
-          </div>
-          <br/>
-          CAE N°:
-          <span t-field="o.afip_auth_code"/><br/>
-          Fecha Vto CAE:
-          <span t-field="o.afip_auth_code_due"/><br/>
+    <xpath expr="//t[@name='account_invoice_line_accountable']" position="after">
+       <div class="footer o_company_#{o.company_id.id}_layout" >
+        <div class="row" style="padding-top: 5px; padding-bottom: 5px;">
+            <div name="footer_left_column" class="col-2">
+              <img t-if="o.afip_qr_url" t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;' % ('QR', o.afip_qr_url)" alt="QR" style="width:120px;height:120px" />
+            </div>
+            <div name="footer_center_column" class="col-6" style="vertical-align: middle;">
+              <img src="l10n_ar_invoice_reports/static/img/afip.jpg" alt="AFIP"  style="width:100px;"/><br/>
+              <strong><i class="text-dark">Comprobante Autorizado</i></strong><br/>
+              <strong><p class="text-muted" style="font-size:9px;">
+                <i>Esta Administración Federal no se responsabiliza por los datos ingresados en el detalle de la operación</i>
+              </p>
+              </strong>
+            </div>
+            <div name="footer_right_column" class="col-4 text-muted" style="vertical-align: middle;">
+              <div t-if="o.afip_auth_code">
+                  <strong>CAE N°: </strong><span t-field="o.afip_auth_code"/>
+              </div>
+              <div t-if="o.afip_auth_code_due">
+                  <strong>Fecha Vto. de CAE: </strong><span t-field="o.afip_auth_code_due"/>
+              </div>
+              <div name="pager" t-if="report_type == 'pdf'">
+                    <strong>Pág. <span class="page"/> / <span class="topage"/></strong>
+              </div>
+            </div>
         </div>
-        <!-- TODO Move QR to the right section-->
-        <!-- <img t-att-src="'/report/barcode/QR/%s' % 'https://mastercore.net/'" width="100" height="100"/> <br/> -->
-      </t>
+      </div>
     </xpath>
   </template>
 </odoo>

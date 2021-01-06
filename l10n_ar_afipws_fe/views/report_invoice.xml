@@ -8,7 +8,7 @@
             </p>
         </p>
         <div name="footer_left_column" position="inside">
-            <img t-if="o.l10n_ar_afip_barcode" t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;humanreadable=1' % ('I2of5', o.l10n_ar_afip_barcode)" alt="Barcode"  style="height:80px"/>
+            <img t-if="o.afip_qr_url" t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;' % ('QR', o.afip_qr_url)" alt="QR"  style="width:80px;height:80px"/>
         </div>
         <div name="pager" position="before">
             <div>
