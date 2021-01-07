@@ -122,7 +122,8 @@ class AccountMove(models.Model):
                 invoice = {
                     'ver': '1',
                     'fecha': str(rec.invoice_date),
-                    'cuit': int(rec.company_id.partner_id.vat),
+                    'cuit': int(
+                        str(rec.company_id.partner_id.vat).replace('-','')),
                     'ptoVta': int(rec.journal_id.l10n_ar_afip_pos_number),
                     'tipoCmp': int(rec.l10n_latam_document_type_id.code),
                     'nroCmp': int(rec.name.split('-')[2]),
@@ -131,7 +132,7 @@ class AccountMove(models.Model):
                     'ctz': rec.l10n_ar_currency_rate,
                     'tipoDocRec': int(rec.partner_id.\
                         l10n_latam_identification_type_id.l10n_ar_afip_code),
-                    'nroDocRec': int(rec.partner_id.vat),
+                    'nroDocRec': int(str(rec.partner_id.vat).replace('-','')),
                     'tipoCodAut': 'E',
                     'codAut': int(rec.afip_auth_code),
                 }
