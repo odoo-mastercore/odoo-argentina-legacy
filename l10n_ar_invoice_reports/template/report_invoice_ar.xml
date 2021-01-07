@@ -87,7 +87,8 @@
       </t>
     </xpath>
     <xpath expr="//t[@name='account_invoice_line_accountable']" position="after">
-       <div class="footer o_company_#{o.company_id.id}_layout" >
+      <t t-if="o.company_id.country_id.name == 'Argentina' and o.afip_auth_code">
+      <div class="footer o_company_#{o.company_id.id}_layout" >
         <div class="row" style="padding-top: 5px; padding-bottom: 5px;">
             <div name="footer_left_column" class="col-2">
               <img t-if="o.afip_qr_url" t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;' % ('QR', o.afip_qr_url)" alt="QR" style="width:120px;height:120px" />
@@ -113,6 +114,7 @@
             </div>
         </div>
       </div>
+      </t>
     </xpath>
   </template>
 </odoo>
