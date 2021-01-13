@@ -224,7 +224,7 @@ class AccountVatLedger(models.Model):
                 fields.Date.from_string(inv.invoice_date).strftime('%Y%m%d'),
 
                 # Campo 2: Tipo de Comprobante.
-                "{:0>3d}".format(int(inv.document_type_id.code)),
+                "{:0>3d}".format(int(inv.l10n_latam_document_type_id.code)),
 
                 # Campo 3: Punto de Venta
                 self.get_point_of_sale(inv),
@@ -249,7 +249,7 @@ class AccountVatLedger(models.Model):
                 row.append("{:0>20d}".format(int(str(inv.move_name).split('-')[2])))
             else:
                 # Campo 5: Despacho de importación
-                if inv.document_type_id.code == '66':
+                if inv.l10n_latam_document_type_id.code == '66':
                     row.append(
                         (inv.l10n_latam_document_number or inv.name or '').rjust(
                             16, '0'))
@@ -347,7 +347,7 @@ class AccountVatLedger(models.Model):
                     # instructivo pero si en aplicativo) para tique y factura
                     # de exportacion no se informa, tmb para algunos otros
                     # pero que tampoco tenemos implementados
-                    (inv.document_type_id.code in [
+                    (inv.l10n_latam_document_type_id.code in [
                         '19', '20', '21', '16', '55', '81', '82', '83',
                         '110', '111', '112', '113', '114', '115', '116',
                         '117', '118', '119', '120', '201', '202', '203',
@@ -414,7 +414,7 @@ class AccountVatLedger(models.Model):
         if self.type == 'sale':
             row = [
                 # Campo 1: Tipo de Comprobante
-                "{:0>3d}".format(int(inv.document_type_id.code)),
+                "{:0>3d}".format(int(inv.l10n_latam_document_type_id.code)),
 
                 # Campo 2: Punto de Venta
                 self.get_point_of_sale(inv),
@@ -448,7 +448,7 @@ class AccountVatLedger(models.Model):
         else:
             row = [
                 # Campo 1: Tipo de Comprobante
-                "{:0>3d}".format(int(inv.document_type_id.code)),
+                "{:0>3d}".format(int(inv.l10n_latam_document_type_id.code)),
 
                 # Campo 2: Punto de Venta
                 self.get_point_of_sale(inv),
@@ -491,10 +491,10 @@ class AccountVatLedger(models.Model):
         # auto)
         if impo:
             invoices = self._get_txt_invoices().filtered(
-                lambda r: r.document_type_id.code == '66')
+                lambda r: r.l10n_latam_document_type_id.code == '66')
         else:
             invoices = self._get_txt_invoices().filtered(
-                lambda r: r.document_type_id.code != '66')
+                lambda r: r.l10n_latam_document_type_id.code != '66')
         for inv in invoices:
             afip_code = 80
             lines = []
