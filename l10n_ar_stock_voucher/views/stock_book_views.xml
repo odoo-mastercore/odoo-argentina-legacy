@@ -1,0 +1,13 @@
+<odoo>
+    <!-- stock.book -->
+    <record id="view_stock_book_form_inherit" model="ir.ui.view">
+        <field name="name">stock.book.form.inherit</field>
+        <field name="model">stock.book</field>
+        <field name="inherit_id" ref="stock_voucher.view_stock_book_form"/>
+        <field name="arch" type="xml">
+             <field name="next_number" position="after">
+                <field name="pre_printed" />
+            </field>
+        </field>
+    </record>
+</odoo>

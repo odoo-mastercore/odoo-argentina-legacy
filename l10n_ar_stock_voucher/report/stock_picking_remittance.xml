@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <report
+        id="report_printed_remittance"
+        string="Remito Pre-impreso"
+        model="stock.picking"
+        report_type="qweb-pdf"
+        attachment_use="False"
+        name="l10n_ar_stock_voucher.template_printed_remittance"
+        file="l10n_ar_stock_voucher.stock_picking_remittance"
+        paperformat="l10n_ar_stock_voucher.l10n_ar_remittance_paperformat"
+        print_report_name="'REMITO - %s' % (object.name)"
+    />
+
+    <template id="template_printed_remittance">
+         <t t-foreach="docs" t-as="o">
+        <t t-foreach="o.get_data_report()" t-as="data_report">
+        <t t-call="web.basic_layout">
+            <div >
+            <br/>
+            <table style="width: 100%; font-size: small;">
+                <tbody>
+                    <tr>
+                    <td style="width: 70%;"/>
+                    <td colspan="3" style="text-align: left;">FECHA: <span t-esc="o.get_date()"/></td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+            <div class="page">
+ 
+            <table class="table table-sm" width="100%" style="font-size: small;">
+                <tr style="margin-bottom: 8px !important; margin-top: 38px !important;">
+                <td colspan="5" >
+                    <!-- IDENTIFICACION DEL PARTNER -->
+                    <strong><span t-esc="data_report['partner_name']"/></strong>
+                    <br/>
+                    <span t-esc="data_report['partner_id_l10n_ar_formatted_vat']"/>
+                    <br/>
+                    <span t-esc="data_report['partner_id_l10n_ar_afip_responsibility_type_id']"/>
+                </td>
+                <td colspan="7" style="padding-left: 3%;">
+                    <!-- DIRECCIÓN -->
+                    <span t-esc="data_report['partner_id_street']"/>
+                    <span t-esc="data_report['partner_id_city']"/>
+                    <span t-esc="data_report['partner_id_state_id']"/>
+                </td>
+                </tr>
+            </table>
+ 
+            <br/>
+            <table class="table table-sm" t-if="data_report['lines']" name="stock_move_line_table" style="width: 100%; border: 0px; font-size: small;">
+                <tbody>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <strong>Cant.</strong>
+                        </td>
+                        <td colspan="3" style="text-align: center;">
+                            <strong>Código</strong>
+                        </td>
+                        <td colspan="7" style="padding-left: 40px;">
+                            <strong>Descripcion</strong>
+                        </td>
+                    </tr>
+                    <tr t-foreach="data_report['lines']" t-as="line">
+                        <td colspan="2" style="text-align: center;">
+                            <t t-set="my_count" t-value="line['qty']"/>
+                            <span t-esc="my_count" t-options="{&quot;widget&quot;: &quot;float&quot;, &quot;precision&quot;: 0}"/>
+                        </td>
+                        <td colspan="3" style="text-align: center;">
+                            <strong><span t-esc="line['default_code']"/></strong>
+                        </td>
+                        <td colspan="7" style="padding-left: 40px;">
+                            <span t-esc="line['product_name']"/>
+                        </td>
+                    </tr>
+                </tbody>
+                
+            </table>
+            <br/>
+            </div>
+            <div class="footer">
+            <table style="font-size: small;">
+                    <tr>
+                        <td colspan="3" id="footer" style="width:100%;">
+                            <t t-if="data_report['declared_value']">
+                                <br/><strong>Valor Declarado:</strong>
+                                $<span t-esc="data_report['declared_value']"/>
+                            </t>
+                            <br/><strong>Total de Unidades:</strong>
+                            <t t-esc="data_report['number_of_packages']" t-options="{&quot;widget&quot;: &quot;float&quot;, &quot;precision&quot;: 0}"/>
+                        </td>
+                    </tr>
+            </table>
+            </div>
+        </t>
+        </t>
+        </t>
+    </template>
+</odoo>
