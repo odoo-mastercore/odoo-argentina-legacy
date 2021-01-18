@@ -13,7 +13,7 @@
     />
 
     <template id="template_printed_remittance">
-         <t t-foreach="docs" t-as="o">
+        <t t-foreach="docs" t-as="o">
         <t t-foreach="o.get_data_report()" t-as="data_report">
         <t t-call="web.basic_layout">
             <div >

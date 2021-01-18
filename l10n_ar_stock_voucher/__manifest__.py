@@ -22,8 +22,8 @@
         'stock_voucher',
     ],
     'data': [
-        'report/stock_picking_remittance.xml',
         'report/paperformat.xml',
+        'report/stock_picking_remittance.xml',
         'views/stock_book_views.xml',
     ],
     'auto_install': False,
