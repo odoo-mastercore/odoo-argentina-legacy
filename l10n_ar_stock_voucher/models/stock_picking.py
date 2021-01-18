@@ -36,16 +36,12 @@ class StockPicking(models.Model):
             lines = rec.book_id.lines_per_voucher
             i = 1
 
-            if rec.number_of_packages < 1:
-                raise ValidationError(_(
-                    'Error con el Talonario de Remitos. Chequee Configuración'))
-
             if rec.state == 'done':
                 move_lines = rec.move_line_ids_without_package
             else:
                 move_lines = rec.move_ids_without_package
 
-            for p in range(1,rec.number_of_packages):
+            for p in range(1, rec.get_estimated_number_of_pages()):
                 list_line = []
                 number_of_packages = declared_value = 0
                 for line in move_lines:

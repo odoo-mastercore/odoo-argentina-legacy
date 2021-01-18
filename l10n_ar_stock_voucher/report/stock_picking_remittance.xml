@@ -10,6 +10,7 @@
         file="l10n_ar_stock_voucher.stock_picking_remittance"
         paperformat="l10n_ar_stock_voucher.l10n_ar_remittance_paperformat"
         print_report_name="'REMITO - %s' % (object.name)"
+        menu="False"
     />
 
     <template id="template_printed_remittance">
