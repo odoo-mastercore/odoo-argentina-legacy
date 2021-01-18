@@ -41,7 +41,7 @@ class StockPicking(models.Model):
             else:
                 move_lines = rec.move_ids_without_package
 
-            for p in range(1, rec.get_estimated_number_of_pages()):
+            for p in range(rec.get_estimated_number_of_pages()):
                 list_line = []
                 number_of_packages = declared_value = 0
                 for line in move_lines:
