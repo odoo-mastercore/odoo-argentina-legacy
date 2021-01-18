@@ -76,6 +76,7 @@ class StockPicking(models.Model):
                     'lines': list_line,
                     'number_of_packages': number_of_packages,
                     'declared_value': rec.declared_value,
+                    'client_order_ref': rec.sale_id.client.order_ref,
                 }
                 data_report.append(page_vals)
         

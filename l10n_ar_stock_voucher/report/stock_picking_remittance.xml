@@ -31,7 +31,7 @@
  
             <table class="table table-sm" width="100%" style="font-size: small;">
                 <tr style="margin-bottom: 8px !important; margin-top: 38px !important;">
-                <td colspan="5" >
+                <td colspan="6" >
                     <!-- IDENTIFICACION DEL PARTNER -->
                     <strong><span t-esc="data_report['partner_name']"/></strong>
                     <br/>
@@ -39,11 +39,17 @@
                     <br/>
                     <span t-esc="data_report['partner_id_l10n_ar_afip_responsibility_type_id']"/>
                 </td>
-                <td colspan="7" style="padding-left: 3%;">
+                <td colspan="6" style="padding-left: 3%;">
                     <!-- DIRECCIÓN -->
                     <span t-esc="data_report['partner_id_street']"/>
                     <span t-esc="data_report['partner_id_city']"/>
+                    <br/>
                     <span t-esc="data_report['partner_id_state_id']"/>
+                    <span t-esc="data_report['partner_id_zip']"/>
+                    <t t-if="data_report['client_order_ref']">
+                        <br/><strong>Referencia del cliente:</strong>
+                            <span t-esc="data_report['client_order_ref']"/>
+                    </t>
                 </td>
                 </tr>
             </table>
