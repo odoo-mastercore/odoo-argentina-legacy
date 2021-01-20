@@ -34,7 +34,7 @@ class StockPicking(models.Model):
         for rec in self:
             data_report = []
             lines = rec.book_id.lines_per_voucher
-            i = 1
+            cp = i = 1
 
             if rec.state == 'done':
                 move_lines = rec.move_line_ids_without_package
@@ -45,7 +45,7 @@ class StockPicking(models.Model):
                 list_line = []
                 number_of_packages = declared_value = 0
                 for line in move_lines:
-                    if i < int(lines * p):
+                    if i < int(lines * cp):
                         number_of_packages += line.qty_done
                         if rec.state == 'done':
                             product_lot = line.lot_id.name or '',
@@ -60,7 +60,6 @@ class StockPicking(models.Model):
                         }
                         list_line.append(vals)
                         i+1
-               
                 partner = rec.partner_id
                 page_vals = {
                     'partner_name': partner.name,
@@ -79,5 +78,6 @@ class StockPicking(models.Model):
                     'client_order_ref': rec.sale_id.client_order_ref,
                 }
                 data_report.append(page_vals)
+                cp+1
         
         return data_report
