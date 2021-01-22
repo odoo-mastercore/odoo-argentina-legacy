@@ -62,7 +62,7 @@ class StockPicking(models.Model):
                         i+1
                 partner = rec.partner_id
                 page_vals = {
-                    'partner_name': partner.name,
+                    'partner_name': partner.display_name,
                     'partner_id_zip': partner.zip,
                     'partner_id_street': partner.street,
                     'partner_id_vat': partner.vat,
