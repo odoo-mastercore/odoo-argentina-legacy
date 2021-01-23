@@ -11,6 +11,9 @@ from odoo.tests import Form
 from dateutil.relativedelta import relativedelta
 from odoo.tools.translate import _
 from datetime import datetime
+import logging
+
+_logger = logging.getLogger(__name__)
 
 
 class StockPicking(models.Model):
@@ -33,8 +36,7 @@ class StockPicking(models.Model):
         '''This function get data to prints the voucher'''
         for rec in self:
             data_report = []
-            lines = rec.book_id.lines_per_voucher
-            cp = i = 1
+            limit = rec.book_id.lines_per_voucher
 
             if rec.state == 'done':
                 move_lines = rec.move_line_ids_without_package
@@ -42,11 +44,15 @@ class StockPicking(models.Model):
                 move_lines = rec.move_ids_without_package
 
             for p in range(rec.get_estimated_number_of_pages()):
+                i = 1
                 list_line = []
                 number_of_packages = declared_value = 0
                 for line in move_lines:
-                    if i < int(lines * cp):
+                    if i <= int(limit * (p+1)) and i > int(limit * p):
                         number_of_packages += line.qty_done
+                        declared_value += rec.sale_id.order_line.filtered(
+                            lambda x: x.product_id == line.product_id).\
+                                price_unit
                         if rec.state == 'done':
                             product_lot = line.lot_id.name or '',
                         else:
@@ -59,7 +65,7 @@ class StockPicking(models.Model):
                             'product_lot':  product_lot
                         }
                         list_line.append(vals)
-                        i+1
+                    i+=1
                 partner = rec.partner_id
                 page_vals = {
                     'partner_name': partner.display_name,
@@ -74,10 +80,9 @@ class StockPicking(models.Model):
                         partner.l10n_ar_afip_responsibility_type_id.name,
                     'lines': list_line,
                     'number_of_packages': number_of_packages,
-                    'declared_value': rec.declared_value,
+                    'declared_value': declared_value,
                     'client_order_ref': rec.sale_id.client_order_ref,
                 }
                 data_report.append(page_vals)
-                cp+1
         
         return data_report
