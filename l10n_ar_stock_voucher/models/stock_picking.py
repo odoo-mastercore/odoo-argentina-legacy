@@ -80,7 +80,7 @@ class StockPicking(models.Model):
                         partner.l10n_ar_afip_responsibility_type_id.name,
                     'lines': list_line,
                     'number_of_packages': number_of_packages,
-                    'declared_value': declared_value,
+                    'declared_value': "{:.2f}".format(declared_value),
                     'client_order_ref': rec.sale_id.client_order_ref,
                 }
                 data_report.append(page_vals)
