@@ -86,6 +86,15 @@
           </td>
       </t>
     </xpath>
+    <p name="comment" position="before">
+        <t t-if="o.currency_id != o.company_id.currency_id">
+            <br/> <p>El total de este comprobante expresado en moneda de curso legal, equivale a un total 
+            de <span t-field="o.amount_total_signed"/>
+            considerándose un tipo de cambio consignado de 
+            <span t-esc="o.currency_rate_inverted(o.l10n_ar_currency_rate)"/>
+            </p> 
+        </t>
+    </p>
     <xpath expr="//t[@name='account_invoice_line_accountable']" position="after">
       <t t-if="o.company_id.country_id.name == 'Argentina' and o.afip_auth_code">
       <div class="footer o_company_#{o.company_id.id}_layout" >

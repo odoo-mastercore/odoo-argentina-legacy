@@ -20,3 +20,11 @@ class AccountMove(models.Model):
             return res
         else:
             return super(AccountMove, self)._get_report_base_filename()
+
+    def currency_rate_inverted(self, currency_rate):
+        if currency_rate < 1.0:
+            currency_rate = 1.0 / float(currency_rate)
+            rate = round(currency_rate, 4)
+        else:
+            rate = currency_rate
+        return rate
