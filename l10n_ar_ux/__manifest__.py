@@ -8,6 +8,7 @@
     'license': 'AGPL-3',
     'summary': '',
     'depends': [
+        'account',
         'account_debit_note',
         'l10n_ar',
         'account_check',
