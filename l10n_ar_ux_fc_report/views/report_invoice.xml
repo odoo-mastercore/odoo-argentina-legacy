@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <data>
+  
+    <template id="inherit_report_invoice_document" inherit_id="account.report_invoice_document">
+      <xpath expr="//div[@id='total']/div[1]/table[1]/t[1]/tr[1]/t[2]/td[1]/span[2]" position="replace">
+        <span>&amp;nbsp;</span>
+      </xpath>
+    </template>
+
+  </data>
+</odoo>
