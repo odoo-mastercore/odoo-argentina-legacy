@@ -203,7 +203,7 @@ class ResCompany(models.Model):
                 # ticket (TRA)
                 tra = wsaa.CreateTRA(service=service, ttl=DEFAULT_TTL)
                 # cryptographically sing the access ticket
-                cms = wsaa.SignTRA(bytes(tra, encoding='utf-8'),
+                cms = wsaa.SignTRA(tra,
                     certificate, private_key)
                 # connect to the webservice:
                 wsaa.Conectar(cache, wsdl, proxy)
