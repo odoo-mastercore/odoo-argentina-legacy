@@ -35,16 +35,22 @@ class ResCurrency(models.Model):
 
     # This method is for use on ir.cron to automatic 
     # USD minorista vendor currency rate update
+    # options for currency_name 
+    # 'USD' for MEP rate (w/ arancel)
+    # 'BNA' for Minorist rate 
     @api.model
-    def automatic_usd_minorista_currency_rate(self, w_arancel=1.0):
+    def automatic_usd_minorista_currency_rate(self, currency_name='USD', w_arancel=1.0):
         currency = self.env['res.currency'].search(
-            [('name', '=', 'USD')],
-            limit=1)
-        values = {
-            'rate': float(1 / (currency.get_usd_of_minorista()*w_arancel)),
-            'currency_id': self.env.ref('base.USD').id
-        }
-        record = self.env['res.currency.rate'].create(values)
-        return record
+            [('name', '=', currency_name)],
+            limit=1) or False
+        
+        if currency:
+            rate = currency.get_usd_of_minorista()*w_arancel if currency_name=='USD' else currency.get_usd_of_minorista()
+            values = {
+                'rate': float(1 / rate),
+                'currency_id': currency.id
+            }
+            record = self.env['res.currency.rate'].create(values)
+        return record or False
 
         
