@@ -10,6 +10,8 @@ class AccountInvoiceReport(models.Model):
         string='Company Currency', readonly=True)  # change label
     invoice_currency_id = fields.Many2one(
         'res.currency', string='Invoice Currency', readonly=True)
+    line_id = fields.Many2one('account.move.line', string='Journal Item', 
+        readonly=True)
     price_unit = fields.Monetary(
         'Unit Price', readonly=True, currency_field='invoice_currency_id',)
     discount = fields.Float('Discount (%)', readonly=True)
@@ -29,7 +31,7 @@ class AccountInvoiceReport(models.Model):
     # use monetary field instead of float
     amount_total = fields.Monetary()
     price_subtotal = fields.Monetary()
-    price_average = fields.Monetary()
+    price_average = fields.Monetary(group_operator="avg")
 
     _depends = {'account.move': ['currency_id'],
                 'account.move.line': ['price_unit', 'discount']}
@@ -37,12 +39,17 @@ class AccountInvoiceReport(models.Model):
     def _select(self):
         return super()._select() + """,
             line.price_unit,
+            line.id as line_id,
             move.currency_id as invoice_currency_id,
             line.discount,
             line.price_unit * line.quantity * line.discount/100 *
-                (CASE WHEN move.type IN ('in_refund','out_refund','in_receipt') 
-                THEN -1 ELSE 1 END) as discount_amount
+                (CASE WHEN move.type IN (
+                    'in_refund','out_refund','in_receipt') THEN -1 ELSE 1 END) 
+                    as discount_amount
             """
 
     def _group_by(self):
         return super()._group_by() + ", move.currency_id"
+
+46990
+77290

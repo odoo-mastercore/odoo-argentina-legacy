@@ -576,11 +576,13 @@ class AccountPaymentGroup(models.Model):
 
             writeoff_acc_id = False
             writeoff_journal_id = False
-
+            # if the partner of the payment is different of ht payment group we change it.
+            rec.payment_ids.filtered(lambda p : p.partner_id != rec.partner_id).write(
+                {'partner_id': rec.partner_id.id})
             # al crear desde website odoo crea primero el pago y lo postea
             # y no debemos re-postearlo
             if not create_from_website and not create_from_expense:
-                rec.payment_ids.sorted(key=lambda l: l.signed_amount).filtered(lambda x: x.state == 'draft').post()
+                rec.payment_ids.filtered(lambda x: x.state == 'draft').post()
 
             counterpart_aml = rec.payment_ids.mapped('move_line_ids').filtered(
                 lambda r: not r.reconciled and r.account_id.internal_type in (

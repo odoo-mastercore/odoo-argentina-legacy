@@ -47,7 +47,7 @@
 
                         <!-- (17) CUIT -->
                         <t t-if="o.partner_id.vat and o.partner_id.l10n_latam_identification_type_id.name and o.partner_id.l10n_latam_identification_type_id.name != 'Sigd'">
-                            <br/><strong><t t-esc="o.partner_id.l10n_latam_identification_type_id.name or o.company_id.country_id.vat_label" id="inv_tax_id_label"/>:</strong> <span t-field="o.partner_id.l10n_ar_formatted_vat"/>
+                            <br/><strong><t t-esc="o.partner_id.l10n_latam_identification_type_id.name or o.company_id.country_id.vat_label" id="inv_tax_id_label"/>:</strong> <span t-esc="o.partner_id.l10n_ar_formatted_vat if o.partner_id.l10n_latam_identification_type_id.is_vat else o.partner_id.vat"/>
                         </t>
 
                     </div>
@@ -122,6 +122,7 @@
         name="l10n_ar_account_withholding.report_withholding_certificate"
         file="l10n_ar_account_withholding.report_withholding_certificate"
         print_report_name="'Certificado de Retención - %s' % (object.withholding_number or '')"
+        menu="False"
     />
 
 </odoo>
