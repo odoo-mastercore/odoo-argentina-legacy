@@ -3,5 +3,6 @@ pyOpenSSL
 M2Crypto
 cryptography
 httplib2
+openupgradelib
 git+https://github.com/pysimplesoap/pysimplesoap@stable_py3k
 git+https://github.com/ingadhoc/pyafipws@py3k
