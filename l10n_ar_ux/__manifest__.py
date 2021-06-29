@@ -32,7 +32,7 @@
         'views/account_payment_view.xml',
         'views/account_journal_views.xml',
         'wizard/res_partner_update_from_padron_wizard_view.xml',
-        'wizards/res_config_settings_views.xml',
+        'wizard/res_config_settings_views.xml',
         'views/res_config_settings_views.xml',
         'reports/account_invoice_report_view.xml',
         'reports/report_payment_group.xml',
