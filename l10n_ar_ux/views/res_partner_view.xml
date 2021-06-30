@@ -12,6 +12,17 @@
             <field name="parent_id" position="after">
                 <field name="ref" position="move"/>
             </field>
+            <field name="vat" position="after">
+               <button
+               name="%(action_partner_update)d"
+               string="-> Consultar en AFIP"
+               class="shadow-sm btn btn-info btn-sm"
+               type="action"
+               attrs="{'invisible': [
+                   '|',('vat', '=', False),
+                   ('l10n_latam_identification_type_id', '!=', %(l10n_ar.it_cuit)d )]}"
+               />
+           </field>
         </field>
     </record>
 
