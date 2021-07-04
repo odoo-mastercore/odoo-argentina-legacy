@@ -1,6 +1,6 @@
 {
     'name': 'Argentinian Accounting UX',
-    'version': "13.0.1.22.0",
+    'version': "13.0.1.23.0",
     'category': 'Localization/Argentina',
     'sequence': 14,
     'author': 'ADHOC SA, MASTERCORE SAS',
@@ -22,6 +22,9 @@
         'data/account_tax_group_data.xml',
         'data/account_chart_template_data.xml',
         'data/account_tax_template_data.xml',
+        'data/afip_concept_data.xml',
+        'data/afip_tax_data.xml',
+        'data/afip_activity_data.xml',
         'views/portal_templates.xml',
         'views/account_move_view.xml',
         'wizard/res_partner_update_from_padron_wizard_view.xml',
