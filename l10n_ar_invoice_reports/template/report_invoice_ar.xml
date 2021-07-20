@@ -91,7 +91,12 @@
             <br/> <p>El total de este comprobante expresado en moneda de curso legal, equivale a un total 
             de <span t-field="o.amount_total_signed"/>
             considerándose un tipo de cambio consignado de 
-            <span t-esc="o.currency_rate_inverted(o.l10n_ar_currency_rate)"/>
+            <t t-if="o.afip_auth_code_due">
+              <span t-esc="o.currency_rate_inverted(o.l10n_ar_currency_rate)"/>
+            </t>
+            <t t-else="">
+              <span t-esc="o.computed_currency_rate" />
+            </t>
             </p> 
         </t>
     </p>
