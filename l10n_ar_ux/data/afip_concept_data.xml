@@ -1,0 +1,2363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="afip_concept_3" model="afip.concept">
+        <field name="name">INFORMACION NO TRIBUTARIA</field>
+        <field name="code">3</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_4" model="afip.concept">
+        <field name="name">DNPYA PERMISOS Y PARTES DE PESCA.</field>
+        <field name="code">4</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_7" model="afip.concept">
+        <field name="name">INTERESES ACREDITACIONES TARDÍAS</field>
+        <field name="code">7</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_8" model="afip.concept">
+        <field name="name">MULTA RENDICIONES TARDÍAS</field>
+        <field name="code">8</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_9" model="afip.concept">
+        <field name="name">INFORME ESPECIAL DE CONTADOR PÚBLICO</field>
+        <field name="code">9</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_10" model="afip.concept">
+        <field name="name">OP.SUJETOS NO RESID. A TRAVÉS DE ENT. FINANCIERAS LOCALES</field>
+        <field name="code">10</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_12" model="afip.concept">
+        <field name="name">EXENCION EN EL IMPUESTO A LAS GANANCIAS</field>
+        <field name="code">12</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_19" model="afip.concept">
+        <field name="name">DECLARACIÓN JURADA</field>
+        <field name="code">19</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_26" model="afip.concept">
+        <field name="name">PAGO A CUENTA EMPRESAS TELEFÓNICAS</field>
+        <field name="code">26</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_27" model="afip.concept">
+        <field name="name">PAGO A CUENTA</field>
+        <field name="code">27</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_28" model="afip.concept">
+        <field name="name">PAGO A CUENTA JUGADORES DE FÚTBOL TÍTULO III CAPÍTULO A</field>
+        <field name="code">28</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_29" model="afip.concept">
+        <field name="name">PAGO A CUENTA JUGADORES DE FÚTBOL TÍTULO III CAPÍTULO B</field>
+        <field name="code">29</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_30" model="afip.concept">
+        <field name="name">RETENCION S/OP CON ACC QUE NO COTIZAN EN BOLSA</field>
+        <field name="code">30</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_31" model="afip.concept">
+        <field name="name">PAGO A CUENTA JUGADORES DE FÚTBOL TÍTULO III CAPÍTULO C</field>
+        <field name="code">31</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_33" model="afip.concept">
+        <field name="name">REGIMEN INFORMATIVO DE COMPRAS DE MATERIALES A RECICLAR</field>
+        <field name="code">33</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_35" model="afip.concept">
+        <field name="name">CUOTA PLAN</field>
+        <field name="code">35</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_36" model="afip.concept">
+        <field name="name">AJUSTE PRESUNTO POR FISCALIZACION LEY 26.476</field>
+        <field name="code">36</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_37" model="afip.concept">
+        <field name="name">AJUSTE PRESUPUESTO POR FISC. LEY 27260</field>
+        <field name="code">37</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_40" model="afip.concept">
+        <field name="name">PAGO ANTICIPADO CON REINTEGRO</field>
+        <field name="code">40</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_41" model="afip.concept">
+        <field name="name">MENSUALIDAD</field>
+        <field name="code">41</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_42" model="afip.concept">
+        <field name="name">CÓD INTERNO SDO A FAVOR PLANES JERÓNIMOS REFORMULADOS DTO 93</field>
+        <field name="code">42</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_43" model="afip.concept">
+        <field name="name">PAGO A CUENTA AUTORRETENCIÓN/AUTOPERCEPCIÓN</field>
+        <field name="code">43</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_44" model="afip.concept">
+        <field name="name">IVA POR PRESTACIONES DEL EXTERIOR</field>
+        <field name="code">44</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_47" model="afip.concept">
+        <field name="name">REGIMEN DE ADUANA EN FACTORIA DECRETO 688/02</field>
+        <field name="code">47</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_48" model="afip.concept">
+        <field name="name">REGIMEN EXCEPCIONAL DE INGRESO - ARTICULO 4 RG N°3818</field>
+        <field name="code">48</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_49" model="afip.concept">
+        <field name="name">COOPERATIVAS Y MUTUALES DEPÓSITOS AHORRO A TÉRMINO Y SALDOS</field>
+        <field name="code">49</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_50" model="afip.concept">
+        <field name="name">REG. INF. DE REORG. DE SOC. Y EMPRESAS-AUTORIZACION PREVIA</field>
+        <field name="code">50</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_51" model="afip.concept">
+        <field name="name">INTERESES RESARCITORIOS</field>
+        <field name="code">51</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_53" model="afip.concept">
+        <field name="name">CADUCIDADES</field>
+        <field name="code">53</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_54" model="afip.concept">
+        <field name="name">ARTICULO 27° INCISO C) - ADICIONAL 5% - LEY 26.476</field>
+        <field name="code">54</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_55" model="afip.concept">
+        <field name="name">LEY 26.476 - ARTICULO 3 - RG 2609 - 2%</field>
+        <field name="code">55</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_74" model="afip.concept">
+        <field name="name">AJUSTES ADMINISTRATIVOS PAGOS BANCARIOS - REMOTOS</field>
+        <field name="code">74</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_75" model="afip.concept">
+        <field name="name">ACUERDO PAGO A CUENTA</field>
+        <field name="code">75</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_76" model="afip.concept">
+        <field name="name">REGIMEN INFORMATIVO DE COMBUSTIBLES DESTINO INDUSTRIAL</field>
+        <field name="code">76</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_77" model="afip.concept">
+        <field name="name">ARTICULO 27° INCISO A) LEY 26.476</field>
+        <field name="code">77</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_78" model="afip.concept">
+        <field name="name">AJUSTES</field>
+        <field name="code">78</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_79" model="afip.concept">
+        <field name="name">ARTICULO 27° INCISO B) LEY 26.476</field>
+        <field name="code">79</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_80" model="afip.concept">
+        <field name="name">DEVOLUCIÓN POR NACIONALIZACIÓN DE VEHICULOS - LEY N° 19.486</field>
+        <field name="code">80</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_81" model="afip.concept">
+        <field name="name">ARTICULO 27° INCISO C) LEY 26.476</field>
+        <field name="code">81</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_82" model="afip.concept">
+        <field name="name">ARTICULO 27° INCISO D) LEY 26.476</field>
+        <field name="code">82</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_83" model="afip.concept">
+        <field name="name">ARTICULO 27° INCISO E) LEY 26.476</field>
+        <field name="code">83</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_86" model="afip.concept">
+        <field name="name">BOLETA DE DEUDA</field>
+        <field name="code">86</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_90" model="afip.concept">
+        <field name="name">REPOSICIÓN DE TOKEN</field>
+        <field name="code">90</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_91" model="afip.concept">
+        <field name="name">COMISIONES POR SERVICIOS DE RECAUDACIÓN</field>
+        <field name="code">91</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_94" model="afip.concept">
+        <field name="name">INTERESES PUNITORIOS</field>
+        <field name="code">94</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_96" model="afip.concept">
+        <field name="name">AFIP-DGI TARJETAS DE CRÉDITO OPERACIONES CON EL EXTERIOR</field>
+        <field name="code">96</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_97" model="afip.concept">
+        <field name="name">TARJETAS DE DÉBITO OPERACIONES EN EL EXTERIOR</field>
+        <field name="code">97</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_98" model="afip.concept">
+        <field name="name">INFORMACION DE CUENTAS FINANCIERAS DE NO RESIDENTES</field>
+        <field name="code">98</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_102" model="afip.concept">
+        <field name="name">EMERGENCIA AGROPECUARIA DECRETO 33/09</field>
+        <field name="code">102</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_103" model="afip.concept">
+        <field name="name">ONCCA CONSULTA SOBRE ESTADO DE DEUDA</field>
+        <field name="code">103</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_104" model="afip.concept">
+        <field name="name">RÉGIMEN INFORMATIVO MODELOS</field>
+        <field name="code">104</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_108" model="afip.concept">
+        <field name="name">MULTA</field>
+        <field name="code">108</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_109" model="afip.concept">
+        <field name="name">HONORARIOS DEFENSOR PÚBLICO OFICIAL</field>
+        <field name="code">109</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_110" model="afip.concept">
+        <field name="name">DTO.N° 1214/05 - INSCRIPCION DE IMPORTADORES Y EXPORTADORES</field>
+        <field name="code">110</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_111" model="afip.concept">
+        <field name="name">R.G. 1469 - SUSTITUCION MEDIDAS CAUTELARES IMP./EXPORT.</field>
+        <field name="code">111</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_113" model="afip.concept">
+        <field name="name">DECR.1001/82,ART 4° PUNTO 1, INC.B) GAR. ACT DESP ADUANA</field>
+        <field name="code">113</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_114" model="afip.concept">
+        <field name="name">DECR 1001/82 ART. 6° INC A)GARANT ACT. AG. TRANSP. ADUANERO</field>
+        <field name="code">114</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_115" model="afip.concept">
+        <field name="name">DECR 1001/82 ART. 57 GARANTÍA ACTUAC OPERADOR CONTENEDORES</field>
+        <field name="code">115</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_116" model="afip.concept">
+        <field name="name">DD.JJ DETERM. DE SALDO SIN INTERVENCIÓN AG. BOLSA</field>
+        <field name="code">116</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_117" model="afip.concept">
+        <field name="name">RG 7/97(AFIP) GARANTÍA DE ACTUAC TRANSPORT TRANSP INTERIOR</field>
+        <field name="code">117</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_118" model="afip.concept">
+        <field name="name">ART 208 INC.D) CÓD ADUAN. AG POSEEN DEPÓSITOS FISC HABILITAD</field>
+        <field name="code">118</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_119" model="afip.concept">
+        <field name="name">EMPR AUTORIZ OPERAR BAJO REGÍM PREVISTOS RG 596 Y 1673(AFIP)</field>
+        <field name="code">119</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_120" model="afip.concept">
+        <field name="name">R.G. 2665 ATA OPERADOR LOGISTICO SEGURO</field>
+        <field name="code">120</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_121" model="afip.concept">
+        <field name="name">R.G. 2665 TRANSPORTISTA OPERADOR LOGISTICO SEGURO</field>
+        <field name="code">121</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_122" model="afip.concept">
+        <field name="name">R.G 2721 PRESTADOR DE SERVICIOS DE ARCHIVOS Y DIGITALIZACION</field>
+        <field name="code">122</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_123" model="afip.concept">
+        <field name="name">LEY 26457 INCENTIVO FABRIC. MOTOS DESGRAVACION ARANCELARIA</field>
+        <field name="code">123</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_124" model="afip.concept">
+        <field name="name">NOTA INFORMATIVA RG 2784</field>
+        <field name="code">124</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_125" model="afip.concept">
+        <field name="name">LEY 26457 INCENTIVO FABRICACION MOTOS BONO FISCAL</field>
+        <field name="code">125</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_127" model="afip.concept">
+        <field name="name">LEY 26457 RES 11/2010 SICPYME ART 17 2° PARR - DESG. ARANC</field>
+        <field name="code">127</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_128" model="afip.concept">
+        <field name="name">LEY 26457 RES 11/2010 SICPYME ART 17 2° PARR - BONO FISCAL</field>
+        <field name="code">128</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_129" model="afip.concept">
+        <field name="name">PRESTADOR DE SERVICIOS POSTALES COURIER SEGURO</field>
+        <field name="code">129</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_130" model="afip.concept">
+        <field name="name">PRESTADOR DE SERVICIOS ISTA RG N° 3206</field>
+        <field name="code">130</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_131" model="afip.concept">
+        <field name="name">PRESTADOR DE SERVICIOS DE ESCANEO RG N° 3249</field>
+        <field name="code">131</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_132" model="afip.concept">
+        <field name="name">DD.JJ DETERMINATIVA DE SALDO C/ INTERV. AG. BOLSA</field>
+        <field name="code">132</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_133" model="afip.concept">
+        <field name="name">CONTRIBUCIÓN DIFERENCIAL DE SEGUROS Y BANCOS</field>
+        <field name="code">133</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_134" model="afip.concept">
+        <field name="name">CONTRIBUCIÓN DIFERENCIAL COMPANÍAS DE SEGURO</field>
+        <field name="code">134</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_135" model="afip.concept">
+        <field name="name">CONTRIBUCIÓN DIFERENCIAL DGI ADUANA</field>
+        <field name="code">135</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_137" model="afip.concept">
+        <field name="name">RÉGIMEN INFORMATIVO DE INSTRUMENTOS FINANCIEROS DERIVADOS</field>
+        <field name="code">137</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_138" model="afip.concept">
+        <field name="name">FACTURA ELECTRÓNICA-REGIMEN DE INFORMACIÓN DE OPERACIONES</field>
+        <field name="code">138</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_139" model="afip.concept">
+        <field name="name">SIST.DE REGISTROS Y ACT. DEDUC. DEL IMP. A LAS GANANCIAS</field>
+        <field name="code">139</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_140" model="afip.concept">
+        <field name="name">MULTA AUTOMATICA</field>
+        <field name="code">140</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_141" model="afip.concept">
+        <field name="name">ACTA DE INSPECCIÓN 1</field>
+        <field name="code">141</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_142" model="afip.concept">
+        <field name="name">ACTA DE INSPECCIÓN 2</field>
+        <field name="code">142</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_143" model="afip.concept">
+        <field name="name">ACTA DE INSPECCIÓN 3</field>
+        <field name="code">143</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_144" model="afip.concept">
+        <field name="name">ACTA DE INSPECCIÓN 4</field>
+        <field name="code">144</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_145" model="afip.concept">
+        <field name="name">ACTA DE INSPECCIÓN 5</field>
+        <field name="code">145</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_146" model="afip.concept">
+        <field name="name">ACTA DE INSPECCIÓN 6</field>
+        <field name="code">146</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_147" model="afip.concept">
+        <field name="name">ACTA DE INSPECCIÓN 7</field>
+        <field name="code">147</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_148" model="afip.concept">
+        <field name="name">ACTA DE INSPECCIÓN 8</field>
+        <field name="code">148</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_149" model="afip.concept">
+        <field name="name">ACTA DE INSPECCIÓN 9</field>
+        <field name="code">149</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_150" model="afip.concept">
+        <field name="name">ACTA DE INSPECCIÓN 10</field>
+        <field name="code">150</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_151" model="afip.concept">
+        <field name="name">REINTEGRO MALLA ANTIGRANIZO</field>
+        <field name="code">151</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_152" model="afip.concept">
+        <field name="name">REGIMEN ESPECIAL MINERIA</field>
+        <field name="code">152</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_153" model="afip.concept">
+        <field name="name">APUESTAS ON LINE - APOSTADORES</field>
+        <field name="code">153</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_158" model="afip.concept">
+        <field name="name">IMP.CEDULAR RENTAS/INT S/TIT Y VALORES DEP BANCARIOSART.90 1</field>
+        <field name="code">158</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_159" model="afip.concept">
+        <field name="name">REINTEGRO POR CANCELACIÓN DE INSCRIPCIÓN</field>
+        <field name="code">159</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_160" model="afip.concept">
+        <field name="name">GARANTÍA ENERGÍAS RENOVABLES DEVOLUCIÓN ANTICIPADA DE IVA</field>
+        <field name="code">160</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_161" model="afip.concept">
+        <field name="name">GARANTIA ENERGIAS RENOVABLES CERTIFICADO FISCAL (BONO)</field>
+        <field name="code">161</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_162" model="afip.concept">
+        <field name="name">GARANTÍA IFC TABACO COMPLEMENTO DEL ART. 40 RG 991/64 DGI</field>
+        <field name="code">162</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_163" model="afip.concept">
+        <field name="name">CONTRATACIONES MANTENIMIENTO DE OFERTA</field>
+        <field name="code">163</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_164" model="afip.concept">
+        <field name="name">CONTRATACION ADJUDIC, EJECUCIÓN O CUMPLIMIENTO DE CONTRATO</field>
+        <field name="code">164</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_165" model="afip.concept">
+        <field name="name">CONTRATACION ANTICIPO DEL CONTRATO DE SUMINISTRO Y/O SERVICI</field>
+        <field name="code">165</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_166" model="afip.concept">
+        <field name="name">CONTRATACION SUST FONDO DE REPARO</field>
+        <field name="code">166</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_167" model="afip.concept">
+        <field name="name">SEG SOC RG 1566 MULTAS POR MORA</field>
+        <field name="code">167</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_168" model="afip.concept">
+        <field name="name">SEG SOC RG 1566 MULTA P/INCUMPL OMISIONES ETC EXCEPTO MORA</field>
+        <field name="code">168</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_169" model="afip.concept">
+        <field name="name">BIOTECNOLOGIA DEVOLUCION ANTICIPADA DE IVA</field>
+        <field name="code">169</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_170" model="afip.concept">
+        <field name="name">SERVICIO RECEPCION DJ COBR Y RECA OBLIG IMPO ADU Y S. SOCIAL</field>
+        <field name="code">170</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_171" model="afip.concept">
+        <field name="name">VIVIENDA SOCIAL DEVOLUCION ANTICIPADA DE IVA</field>
+        <field name="code">171</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_173" model="afip.concept">
+        <field name="name">SALIDA Y ADMISIÓN TEMPORAL DE VEHÍCULOS EN ALQUILER (ENYSA)</field>
+        <field name="code">173</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_178" model="afip.concept">
+        <field name="name">CUOTA PRESENTACIÓN ESPONTÁNEA DTO. 1646/90</field>
+        <field name="code">178</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_179" model="afip.concept">
+        <field name="name">CUOTA RÉGIMEN PLAN DE FAC. DE PAGO DTO. 1809/90</field>
+        <field name="code">179</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_183" model="afip.concept">
+        <field name="name">CUOTA ANTICIPO</field>
+        <field name="code">183</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_191" model="afip.concept">
+        <field name="name">ANTICIPOS</field>
+        <field name="code">191</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_192" model="afip.concept">
+        <field name="name">ANTICIPOS PERSONAS FISICAS</field>
+        <field name="code">192</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_193" model="afip.concept">
+        <field name="name">OPCIÓN RESOLUCIÓN GENERAL 3646</field>
+        <field name="code">193</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_194" model="afip.concept">
+        <field name="name">OPCIÓN RESOLUCIÓN GENERAL 3683</field>
+        <field name="code">194</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_195" model="afip.concept">
+        <field name="name">PAGO A CUENTA FERIA FISCAL</field>
+        <field name="code">195</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_197" model="afip.concept">
+        <field name="name">EMISIÓN DE OBLIGACIONES NEGOCIABLES</field>
+        <field name="code">197</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_198" model="afip.concept">
+        <field name="name">SALIDAS NO DOCUMENTADAS</field>
+        <field name="code">198</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_199" model="afip.concept">
+        <field name="name">DJ INFORMATIVA DE MONOTRIBUTO</field>
+        <field name="code">199</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_203" model="afip.concept">
+        <field name="name">PRES.ESPONTANEA DTO.932/93</field>
+        <field name="code">203</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_209" model="afip.concept">
+        <field name="name">INFORME INSPECTOR</field>
+        <field name="code">209</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_211" model="afip.concept">
+        <field name="name">REGIMEN DE INFORMACIÓN DE OPERACIONES DE COMPRAS Y VENTAS</field>
+        <field name="code">211</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_213" model="afip.concept">
+        <field name="name">CUOTA DECRETO 271/89</field>
+        <field name="code">213</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_214" model="afip.concept">
+        <field name="name">LEY 25988-INVERSIONES BIENES DE CAPITAL-NUEVAS INVERSIONES</field>
+        <field name="code">214</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_215" model="afip.concept">
+        <field name="name">LIQ. GCIAS. 4TA. CAT. BAJO RELAC. DEP - RG 4003/17</field>
+        <field name="code">215</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_222" model="afip.concept">
+        <field name="name">1ER.PAGO PARCIAL DE CUOTA</field>
+        <field name="code">222</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_223" model="afip.concept">
+        <field name="name">2DO.PAGO PARCIAL DE CUOTA</field>
+        <field name="code">223</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_224" model="afip.concept">
+        <field name="name">3ER.PAGO PARCIAL DE CUOTA</field>
+        <field name="code">224</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_225" model="afip.concept">
+        <field name="name">4TO.PAGO PARCIAL DE CUOTA</field>
+        <field name="code">225</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_226" model="afip.concept">
+        <field name="name">5TO.PAGO PARCIAL DE CUOTA</field>
+        <field name="code">226</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_227" model="afip.concept">
+        <field name="name">6TO.PAGO PARCIAL DE CUOTA</field>
+        <field name="code">227</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_228" model="afip.concept">
+        <field name="name">7MO.PAGO PARCIAL DE CUOTA</field>
+        <field name="code">228</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_229" model="afip.concept">
+        <field name="name">8VO.PAGO PARCIAL DE CUOTA</field>
+        <field name="code">229</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_230" model="afip.concept">
+        <field name="name">9NO.PAGO PARCIAL DE CUOTA</field>
+        <field name="code">230</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_231" model="afip.concept">
+        <field name="name">10MO.PAGO PARCIAL DE CUOTA</field>
+        <field name="code">231</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_232" model="afip.concept">
+        <field name="name">11MO.PAGO PARCIAL DE CUOTA</field>
+        <field name="code">232</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_233" model="afip.concept">
+        <field name="name">12MO.PAGO PARCIAL DE CUOTA</field>
+        <field name="code">233</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_234" model="afip.concept">
+        <field name="name">13MO.PAGO PARCIAL DE CUOTA</field>
+        <field name="code">234</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_235" model="afip.concept">
+        <field name="name">14TO.PAGO PARCIAL DE CUOTA</field>
+        <field name="code">235</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_236" model="afip.concept">
+        <field name="name">15TO.PAGO PARCIAL DE CUOTA</field>
+        <field name="code">236</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_237" model="afip.concept">
+        <field name="name">16TO.PAGO PARCIAL DE CUOTA</field>
+        <field name="code">237</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_238" model="afip.concept">
+        <field name="name">17MO.PAGO PARCIAL DE CUOTA</field>
+        <field name="code">238</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_239" model="afip.concept">
+        <field name="name">18VO.PAGO PARCIAL DE CUOTA</field>
+        <field name="code">239</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_240" model="afip.concept">
+        <field name="name">DEVOLUCIÓN DE BONOS</field>
+        <field name="code">240</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_248" model="afip.concept">
+        <field name="name">DETERMINACIÓN DE INFRACCIÓN</field>
+        <field name="code">248</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_249" model="afip.concept">
+        <field name="name">DECLARACION HISTORICA PSP/COURIER</field>
+        <field name="code">249</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_251" model="afip.concept">
+        <field name="name">DECLARACION PARA CANCELAR TEMPORALES DE IMPORTACION</field>
+        <field name="code">251</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_252" model="afip.concept">
+        <field name="name">SOLICITUD PARA TRAMITES Y/OCONCSULTAS DE INDOLE ADUANERA</field>
+        <field name="code">252</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_253" model="afip.concept">
+        <field name="name">SOLICITUD DE DESTINACIÓN SIMPLIFICADA PSP/COURIER</field>
+        <field name="code">253</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_260" model="afip.concept">
+        <field name="name">LIQUIDACION ORIGINARIA-ADUANA</field>
+        <field name="code">260</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_261" model="afip.concept">
+        <field name="name">LIQUIDACION SUPLEMENTARIA-ADUANA</field>
+        <field name="code">261</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_264" model="afip.concept">
+        <field name="name">CUOTA DTO. 2413 - PRESENTACIÓN ESPONTÁNEA</field>
+        <field name="code">264</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_265" model="afip.concept">
+        <field name="name">CUOTA DTO. 631/92 - PRESENTACIÓN ESPONTÁNEA</field>
+        <field name="code">265</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_266" model="afip.concept">
+        <field name="name">CUOTA DTO. 932/93 - PRESENTACIÓN ESPONTÁNEA</field>
+        <field name="code">266</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_271" model="afip.concept">
+        <field name="name">CUOTA PLAN CON GARANTIA</field>
+        <field name="code">271</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_272" model="afip.concept">
+        <field name="name">PAGO A CUENTA CUOTA O TOTAL DE PLAN</field>
+        <field name="code">272</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_273" model="afip.concept">
+        <field name="name">RG 4002 RUBRO I (GANANCIAS-BS.PERS.)</field>
+        <field name="code">273</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_274" model="afip.concept">
+        <field name="name">FACILIDADES DE PAGO (GANANCIAS-BS.PERS.)</field>
+        <field name="code">274</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_279" model="afip.concept">
+        <field name="name">DDJJ RETRIBUCION A CONSUMIDORES FINALALES TARJETA DEBITO</field>
+        <field name="code">279</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_280" model="afip.concept">
+        <field name="name">CUOTA DTO. 2413 - FACILIDADES DE PAGO</field>
+        <field name="code">280</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_281" model="afip.concept">
+        <field name="name">CUOTA DTO. 631/92 - FACILIDADES DE PAGO</field>
+        <field name="code">281</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_282" model="afip.concept">
+        <field name="name">CUOTA DTO. 932/93 - FACILIDADES DE PAGO</field>
+        <field name="code">282</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_283" model="afip.concept">
+        <field name="name">CUOTA CONSOLIDADA ART.11</field>
+        <field name="code">283</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_284" model="afip.concept">
+        <field name="name">CUOTA DECRETO 1164/93</field>
+        <field name="code">284</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_285" model="afip.concept">
+        <field name="name">PLAN DE FACILIDADES</field>
+        <field name="code">285</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_294" model="afip.concept">
+        <field name="name">INF. COMP. IMP. GCIAS. TENEN. ACT. Y PASIVOS EN MON. EXTRAN.</field>
+        <field name="code">294</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_295" model="afip.concept">
+        <field name="name">INFORMACIÓN COMPLEMENTARIA AJUSTES GANANCIAS PERSONAS JURÍDI</field>
+        <field name="code">295</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_298" model="afip.concept">
+        <field name="name">NOTA DECLARATIVA</field>
+        <field name="code">298</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_299" model="afip.concept">
+        <field name="name">DDJJ.RESPONSABLES SUSTITUTOS RG 3348</field>
+        <field name="code">299</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_302" model="afip.concept">
+        <field name="name">CUOTA PRESENTACIÓN ESPONTÁNEA DTOS.271,272, 316/95</field>
+        <field name="code">302</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_310" model="afip.concept">
+        <field name="name">IVA REINTEGRO TURISTAS - IVATUR</field>
+        <field name="code">310</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_311" model="afip.concept">
+        <field name="name">CONFORMIDAD ACTA 1</field>
+        <field name="code">311</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_312" model="afip.concept">
+        <field name="name">CONFORMIDAD ACTA 2</field>
+        <field name="code">312</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_313" model="afip.concept">
+        <field name="name">CONFORMIDAD ACTA 3</field>
+        <field name="code">313</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_314" model="afip.concept">
+        <field name="name">CONFORMIDAD ACTA 4</field>
+        <field name="code">314</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_315" model="afip.concept">
+        <field name="name">CONFORMIDAD ACTA 5</field>
+        <field name="code">315</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_316" model="afip.concept">
+        <field name="name">CONFORMIDAD ACTA 6</field>
+        <field name="code">316</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_317" model="afip.concept">
+        <field name="name">CONFORMIDAD ACTA 7</field>
+        <field name="code">317</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_318" model="afip.concept">
+        <field name="name">CONFORMIDAD ACTA 8</field>
+        <field name="code">318</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_319" model="afip.concept">
+        <field name="name">CONFORMIDAD ACTA 9</field>
+        <field name="code">319</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_320" model="afip.concept">
+        <field name="name">CONFORMIDAD ACTA 10</field>
+        <field name="code">320</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_321" model="afip.concept">
+        <field name="name">IMPUESTO DE IGUALACIÓN NO RETENIDO.</field>
+        <field name="code">321</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_323" model="afip.concept">
+        <field name="name">AJUSTE PRESUNTO POR FISCALIZACIÓN LEY N° 26.860</field>
+        <field name="code">323</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_324" model="afip.concept">
+        <field name="name">PAGO GENERICO - BILLETERA ELECTRONICA</field>
+        <field name="code">324</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_329" model="afip.concept">
+        <field name="name">APORTE DIFERENCIAL DEL 10% - LEY 24.018</field>
+        <field name="code">329</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_330" model="afip.concept">
+        <field name="name">REG.DE INF.S/ PRESTADORES DE SALUD AD. AL REG. SIMPLIFICADO</field>
+        <field name="code">330</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_334" model="afip.concept">
+        <field name="name">TRANSFERENCIA BANCARIA INTERNACIONAL RECHAZADA</field>
+        <field name="code">334</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_335" model="afip.concept">
+        <field name="name">RG 3381 ACTUACIÓN RÉGIMEN EXPORTADORES CARBÓN VEGETAL</field>
+        <field name="code">335</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_337" model="afip.concept">
+        <field name="name">PERCEPCIÓN DE EMERGENCIA S/ PROD. AGROPECUARIOS</field>
+        <field name="code">337</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_345" model="afip.concept">
+        <field name="name">DETERMINACIÓN DE OFICIO</field>
+        <field name="code">345</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_353" model="afip.concept">
+        <field name="name">FACILIDADES DE PAGO DTOS. 271, 272 Y 316/95</field>
+        <field name="code">353</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_354" model="afip.concept">
+        <field name="name">DDJJ RETRIBUCION A CONSUMIDORES FINALALES TARJETA CREDITO</field>
+        <field name="code">354</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_355" model="afip.concept">
+        <field name="name">IVA TRANSF.DE CRÉDITOS DE EXPORTACIONES U OTRAS OPERACIONES</field>
+        <field name="code">355</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_356" model="afip.concept">
+        <field name="name">TRANSFERENCIA DE SALDOS A FAVOR IVA</field>
+        <field name="code">356</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_357" model="afip.concept">
+        <field name="name">TRANSFERENCIA SALDO A FAVOR IVA- REINTEGRO BIENES DE CAPITAL</field>
+        <field name="code">357</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_361" model="afip.concept">
+        <field name="name">ACTUALIZACIÓN</field>
+        <field name="code">361</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_363" model="afip.concept">
+        <field name="name">RÉGIMEN INFORMATIVO DE TRANSPORTADORAS DE CAUDALES</field>
+        <field name="code">363</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_364" model="afip.concept">
+        <field name="name">BENEFICIARIO DEL EXTERIOR</field>
+        <field name="code">364</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_365" model="afip.concept">
+        <field name="name">DECLARACION JURADA CONFIRMACION DE DATOS-ART.85 - LEY 27.260</field>
+        <field name="code">365</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_366" model="afip.concept">
+        <field name="name">TRANSFERENCIA BANCARIA DEL EXTERIOR</field>
+        <field name="code">366</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_371" model="afip.concept">
+        <field name="name">MONEDA EXT. - MONOTRIBUTO</field>
+        <field name="code">371</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_372" model="afip.concept">
+        <field name="name">MONEDA EXTRANJERA - DEMAS SUJETOS</field>
+        <field name="code">372</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_373" model="afip.concept">
+        <field name="name">PAGO ART DECRETO 1771/2015</field>
+        <field name="code">373</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_374" model="afip.concept">
+        <field name="name">REGIMEN LEY 27.341</field>
+        <field name="code">374</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_409" model="afip.concept">
+        <field name="name">DEVOLUCION</field>
+        <field name="code">409</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_413" model="afip.concept">
+        <field name="name">RESPONSABLE SOLIDARIO</field>
+        <field name="code">413</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_414" model="afip.concept">
+        <field name="name">SOLICITUD DE REINTEGRO POR VENTAS DE BIENES DE CAPITAL</field>
+        <field name="code">414</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_443" model="afip.concept">
+        <field name="name">REINTEGRO EXPORTACION</field>
+        <field name="code">443</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_445" model="afip.concept">
+        <field name="name">PAGO PUNTUAL ADMINISTRACIÓN GENERAL DE PUERTOS</field>
+        <field name="code">445</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_449" model="afip.concept">
+        <field name="name">REGIMEN DE ASISTENCIA FINANCIERA</field>
+        <field name="code">449</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_450" model="afip.concept">
+        <field name="name">DDJJ - ACTIVIDAD AGROPECUARIA</field>
+        <field name="code">450</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_451" model="afip.concept">
+        <field name="name">RÉGIMEN INFORMATIVO REGISTRO DE OPERACIONES INMOBILIARIAS</field>
+        <field name="code">451</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_469" model="afip.concept">
+        <field name="name">CUOTA RG. 3317</field>
+        <field name="code">469</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_470" model="afip.concept">
+        <field name="name">REG.INFORMATIVO DE IDENTIF.FISCAL DE SOPORTES PUBLICITARIOS</field>
+        <field name="code">470</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_471" model="afip.concept">
+        <field name="name">REGIMEN INFORMATIVO DE CONTRATOS DE PUBLICIDAD</field>
+        <field name="code">471</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_472" model="afip.concept">
+        <field name="name">REGIMEN INFORMATIVO DEL ANUNCIANTE</field>
+        <field name="code">472</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_477" model="afip.concept">
+        <field name="name">CUOTA RG 3318</field>
+        <field name="code">477</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_485" model="afip.concept">
+        <field name="name">CUOTA FACILIDADES DE PAGO RG. 3757</field>
+        <field name="code">485</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_493" model="afip.concept">
+        <field name="name">FACILIDADES DE PAGO DTOS. 271, 272 Y 316/95</field>
+        <field name="code">493</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_494" model="afip.concept">
+        <field name="name">RÉGIMEN INFORMATIVO DE COMISIONES SOBRE JUEGOS DE AZAR</field>
+        <field name="code">494</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_495" model="afip.concept">
+        <field name="name">REGIMEN INFORMATIVO - OPERACIONES MERC. INTERNO-SUJ. VINC.</field>
+        <field name="code">495</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_501" model="afip.concept">
+        <field name="name">DIFERENCIAS SEG. SOC. PRE SIPA POLICIA Y SERV. PEN. PROV.</field>
+        <field name="code">501</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_507" model="afip.concept">
+        <field name="name">FAENA ANIMALES DE TERCEROS PERCEPCION</field>
+        <field name="code">507</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_515" model="afip.concept">
+        <field name="name">PRESENTACIÓN ESPONTÁNEA DTOS.272, 316/95 PLANES VIGENTES</field>
+        <field name="code">515</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_523" model="afip.concept">
+        <field name="name">PERCEPCIÓN</field>
+        <field name="code">523</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_531" model="afip.concept">
+        <field name="name">PERCEPCIÓN</field>
+        <field name="code">531</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_541" model="afip.concept">
+        <field name="name">DESISTIMIENTO - ACTA 1</field>
+        <field name="code">541</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_542" model="afip.concept">
+        <field name="name">DESISTIMIENTO - ACTA 2</field>
+        <field name="code">542</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_543" model="afip.concept">
+        <field name="name">DESISTIMIENTO - ACTA 3</field>
+        <field name="code">543</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_544" model="afip.concept">
+        <field name="name">DESISTIMIENTO - ACTA 4</field>
+        <field name="code">544</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_545" model="afip.concept">
+        <field name="name">DESISTIMIENTO - ACTA 5</field>
+        <field name="code">545</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_546" model="afip.concept">
+        <field name="name">DESISTIMIENTO - ACTA 6</field>
+        <field name="code">546</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_547" model="afip.concept">
+        <field name="name">DESISTIMIENTO - ACTA 7</field>
+        <field name="code">547</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_548" model="afip.concept">
+        <field name="name">DESISTIMIENTO - ACTA 8</field>
+        <field name="code">548</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_549" model="afip.concept">
+        <field name="name">DESISTIMIENTO - ACTA 9</field>
+        <field name="code">549</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_550" model="afip.concept">
+        <field name="name">DESISTIMIENTO - ACTA 10</field>
+        <field name="code">550</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_553" model="afip.concept">
+        <field name="name">AFIP DGI LEY 24467 RÉG.INF. SOCIEDADES DE GARANTÍA RECÍPROCA</field>
+        <field name="code">553</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_566" model="afip.concept">
+        <field name="name">PERCEPCIÓN</field>
+        <field name="code">566</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_567" model="afip.concept">
+        <field name="name">PERCEPCIÓN</field>
+        <field name="code">567</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_574" model="afip.concept">
+        <field name="name">RETENCIONES GLOBALES CONSORCIOS</field>
+        <field name="code">574</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_582" model="afip.concept">
+        <field name="name">RETENCIONES GLOBALES COMPAÑIAS ASEGURADORAS</field>
+        <field name="code">582</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_590" model="afip.concept">
+        <field name="name">FACILIDADES PAGO - PLANES VIGENTES DTOS. 272, 316/95</field>
+        <field name="code">590</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_591" model="afip.concept">
+        <field name="name">DDJJ INFORMATIVA PADRON SENASA</field>
+        <field name="code">591</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_604" model="afip.concept">
+        <field name="name">NOTA INFORMATIVA</field>
+        <field name="code">604</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_609" model="afip.concept">
+        <field name="name">INVERSORES VINCULADOS CON FUTBOLISTAS PROF.- RÉG.DE INF.</field>
+        <field name="code">609</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_610" model="afip.concept">
+        <field name="name">REPRESENTANTES DE FUTBOLISTAS PROFESIONALES - REG. DE INF.</field>
+        <field name="code">610</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_612" model="afip.concept">
+        <field name="name">AMORTIZACIÓN DIFERIMIENTO</field>
+        <field name="code">612</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_613" model="afip.concept">
+        <field name="name">DIFERIMIENTOS - REG DE CANCELACIÓN ANTICIPADA</field>
+        <field name="code">613</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_620" model="afip.concept">
+        <field name="name">NOTA INFORMATIVA RG 3273</field>
+        <field name="code">620</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_621" model="afip.concept">
+        <field name="name">PAGO DE ARANCELES E INGRESOS VARIOS</field>
+        <field name="code">621</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_639" model="afip.concept">
+        <field name="name">NOTA INFORMATIVA RG 3274</field>
+        <field name="code">639</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_647" model="afip.concept">
+        <field name="name">NOTA INFORMATIVA RG 3316</field>
+        <field name="code">647</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_655" model="afip.concept">
+        <field name="name">NOTA INFORMATIVA RG.3311</field>
+        <field name="code">655</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_656" model="afip.concept">
+        <field name="name">PLAN DE FACILIDADES DE PAGO - CONVENIO DGI-AFA</field>
+        <field name="code">656</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_663" model="afip.concept">
+        <field name="name">NOTA INFORMATIVA RG.2784</field>
+        <field name="code">663</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_671" model="afip.concept">
+        <field name="name">PLANES CADUCOS - CUOTAS VENCIDAS E IMPAGAS DTOS.272, 316/95</field>
+        <field name="code">671</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_672" model="afip.concept">
+        <field name="name">REGIMEN INFORMATIVO - TITULARES PERMISO DE CATEO RG.3692</field>
+        <field name="code">672</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_673" model="afip.concept">
+        <field name="name">CAMBIO DE TITULARIDAD (SIN TRASLADO DE HACIENDA)</field>
+        <field name="code">673</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_674" model="afip.concept">
+        <field name="name">DOCUMENTO DE TRASLADO DE HACIENDA -DTE</field>
+        <field name="code">674</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_698" model="afip.concept">
+        <field name="name">PLANES CADUCOS - CUOTAS AL DÍA DTOS. 272, 316/95</field>
+        <field name="code">698</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_699" model="afip.concept">
+        <field name="name">SERVICIOS DIGITALES IVA - PRESTATARIOS</field>
+        <field name="code">699</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_701" model="afip.concept">
+        <field name="name">RETENCION TARJETAS DE CREDITO IMPUESTO A LAS GANANCIAS</field>
+        <field name="code">701</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_706" model="afip.concept">
+        <field name="name">SOLICITUD ACRED SALDOS A FAVOR IVA POR ADQUISICIÓN BS CAP</field>
+        <field name="code">706</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_728" model="afip.concept">
+        <field name="name">RETENCIONES SOBRE DIVIDENDOS Y ACCIONES</field>
+        <field name="code">728</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_729" model="afip.concept">
+        <field name="name">RETENCIÓN RG 3629</field>
+        <field name="code">729</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_735" model="afip.concept">
+        <field name="name">RETENCIONES</field>
+        <field name="code">735</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_736" model="afip.concept">
+        <field name="name">RETENCIONES</field>
+        <field name="code">736</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_740" model="afip.concept">
+        <field name="name">CONTRATO DE COMPRAVENTA DE GRANOS</field>
+        <field name="code">740</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_741" model="afip.concept">
+        <field name="name">CONTRATO OFERTA DE ENTREGA DE GRANOS</field>
+        <field name="code">741</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_744" model="afip.concept">
+        <field name="name">RETENCION SOBRE CONVENIOS DE RECAUDACION RG. 3130</field>
+        <field name="code">744</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_745" model="afip.concept">
+        <field name="name">DEVOLUCIÓN ANTICIPADA IVA</field>
+        <field name="code">745</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_752" model="afip.concept">
+        <field name="name">RETENCION SOBRE CONVENIOS DE RECAUDACION RG. 3130</field>
+        <field name="code">752</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_760" model="afip.concept">
+        <field name="name">RETENCIONES S/GRANOS Y OLEAGINOSAS RG. 3274</field>
+        <field name="code">760</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_779" model="afip.concept">
+        <field name="name">RETENCIÓN SOBRE HONORARIOS PROFESIONALES</field>
+        <field name="code">779</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_787" model="afip.concept">
+        <field name="name">RETENCION SOBRE TARJETAS DE CREDITO</field>
+        <field name="code">787</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_788" model="afip.concept">
+        <field name="name">VITIVINICOLA DE SAN JUAN</field>
+        <field name="code">788</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_789" model="afip.concept">
+        <field name="name">VITIVINICOLA DE MENDOZA</field>
+        <field name="code">789</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_790" model="afip.concept">
+        <field name="name">VITIVINICOLA DE RIO NEGRO</field>
+        <field name="code">790</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_791" model="afip.concept">
+        <field name="name">VITIVINICOLA DE NEUQUEN</field>
+        <field name="code">791</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_792" model="afip.concept">
+        <field name="name">VITIVINICOLA DE LA RIOJA</field>
+        <field name="code">792</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_793" model="afip.concept">
+        <field name="name">VITIVINICOLA CATAMARCA</field>
+        <field name="code">793</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_794" model="afip.concept">
+        <field name="name">VITIVINICOLA SALTA</field>
+        <field name="code">794</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_795" model="afip.concept">
+        <field name="name">DETERMINACIÓN DE DEUDA CONSOLIDADA DTOS.1829/94 Y 314/95</field>
+        <field name="code">795</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_796" model="afip.concept">
+        <field name="name">RÉGIMEN INFORMATIVO- CUOTAS DE MEDICINA PREPAGA</field>
+        <field name="code">796</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_797" model="afip.concept">
+        <field name="name">RENDICIÓN FACTURA ELECTRÓNICA SERVICIOS PÚBLICOS</field>
+        <field name="code">797</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_798" model="afip.concept">
+        <field name="name">RÉGIMEN INFORMATIVO DE LOCACIONES TEMPORARIAS</field>
+        <field name="code">798</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_800" model="afip.concept">
+        <field name="name">PAGO ADUANERO</field>
+        <field name="code">800</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_809" model="afip.concept">
+        <field name="name">DECLARACION JURADA</field>
+        <field name="code">809</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_810" model="afip.concept">
+        <field name="name">REGISTRACIÓN DE OPERACIONES DE GRANOS</field>
+        <field name="code">810</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_811" model="afip.concept">
+        <field name="name">FIRMA DIGITAL CONTRATOS</field>
+        <field name="code">811</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_817" model="afip.concept">
+        <field name="name">RETENCIONES INDIVIDUALES</field>
+        <field name="code">817</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_818" model="afip.concept">
+        <field name="name">FACILIDADES DE PAGO EMPLEADORES DTOS. 270, 314/95</field>
+        <field name="code">818</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_819" model="afip.concept">
+        <field name="name">FAC. DE PAGO-SERV. MÉDICO ASISTENCIALES DTOS. 270, 314/95</field>
+        <field name="code">819</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_820" model="afip.concept">
+        <field name="name">FACILIDADES DE PAGO - AUTÓNOMOS DTOS. 270, 314/95</field>
+        <field name="code">820</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_821" model="afip.concept">
+        <field name="name">FAC.DE PAGO-ASOC. SIND. DE TRAB. Y O.S. DTO. 270, 314/95</field>
+        <field name="code">821</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_822" model="afip.concept">
+        <field name="name">PAGO A CUENTA HACIENDAS Y CARNES PORCINAS</field>
+        <field name="code">822</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_823" model="afip.concept">
+        <field name="name">DETERMINACIÓN DE DEUDA CONSOLIDADA DTO.1829/94 Y 314/95</field>
+        <field name="code">823</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_824" model="afip.concept">
+        <field name="name">FAC. DE PAGO- OBRAS SOCIALES Y 1ER SEG.SOCIAL DTO. 270/95</field>
+        <field name="code">824</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_825" model="afip.concept">
+        <field name="name">FAC. DE PAGO- SEG. SOCIAL-CUOTAS RESTANTES DTO.270/95</field>
+        <field name="code">825</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_826" model="afip.concept">
+        <field name="name">FACILIDADES DE PAGO DTO. 493/95</field>
+        <field name="code">826</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_827" model="afip.concept">
+        <field name="name">REGIMEN LEY 26784</field>
+        <field name="code">827</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_828" model="afip.concept">
+        <field name="name">FACILIDADES DE PAGO OBRAS SOCIALES DTO.963/95</field>
+        <field name="code">828</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_829" model="afip.concept">
+        <field name="name">IVA LOCACIONES O PREST SUJETOS DEL EXTERIOR GRAVADAS EN PAIS</field>
+        <field name="code">829</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_831" model="afip.concept">
+        <field name="name">VALORES O DEPOSITO - PAGO UNICO</field>
+        <field name="code">831</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_832" model="afip.concept">
+        <field name="name">CONVENIOS DE CORRESPONS GREMIAL FORESTAL PROV DE CHACO</field>
+        <field name="code">832</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_833" model="afip.concept">
+        <field name="name">RETENCIONES S/OLEAGINOSAS RG.3274</field>
+        <field name="code">833</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_834" model="afip.concept">
+        <field name="name">REGIMEN DE INFORMACION DE OPERACIONES COMERCIALES MINORISTAS</field>
+        <field name="code">834</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_835" model="afip.concept">
+        <field name="name">CONVENIOS DE CORRESPONS GREMIAL - FORESTO INDUSTR PROV CHACO</field>
+        <field name="code">835</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_836" model="afip.concept">
+        <field name="name">CONVENIO DE CORRESPONSABILIDAD GREMIAL - TABACO PROV CHACO</field>
+        <field name="code">836</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_837" model="afip.concept">
+        <field name="name">CONVENIO DE CORRESPONSABILIDAD GREMIAL -MULTIPROD.PROV CHACO</field>
+        <field name="code">837</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_838" model="afip.concept">
+        <field name="name">CONVENIOS DE CORRESPONS GREMIAL TABACO PROV DE SALTA</field>
+        <field name="code">838</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_839" model="afip.concept">
+        <field name="name">CONVENIOS DE CORRESPONS GREMIAL - TABACO PROV DE JUJUY</field>
+        <field name="code">839</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_840" model="afip.concept">
+        <field name="name">CONVENIO DE CORRESP GREMIAL YERBA MATE MISIONES Y CORRIENTES</field>
+        <field name="code">840</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_841" model="afip.concept">
+        <field name="name">RESOLUCIÓN DE APELACIÓN - ACTA 1</field>
+        <field name="code">841</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_842" model="afip.concept">
+        <field name="name">RESOLUCIÓN DE APELACIÓN - ACTA 2</field>
+        <field name="code">842</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_843" model="afip.concept">
+        <field name="name">RESOLUCIÓN DE APELACIÓN - ACTA 3</field>
+        <field name="code">843</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_844" model="afip.concept">
+        <field name="name">RESOLUCIÓN DE APELACIÓN - ACTA 4</field>
+        <field name="code">844</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_845" model="afip.concept">
+        <field name="name">RESOLUCIÓN DE APELACIÓN - ACTA 5</field>
+        <field name="code">845</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_846" model="afip.concept">
+        <field name="name">RESOLUCIÓN DE APELACIÓN - ACTA 6</field>
+        <field name="code">846</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_847" model="afip.concept">
+        <field name="name">RESOLUCIÓN DE APELACIÓN - ACTA 7</field>
+        <field name="code">847</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_848" model="afip.concept">
+        <field name="name">RESOLUCIÓN DE APELACIÓN - ACTA 8</field>
+        <field name="code">848</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_849" model="afip.concept">
+        <field name="name">RESOLUCIÓN DE APELACIÓN - ACTA 9</field>
+        <field name="code">849</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_850" model="afip.concept">
+        <field name="name">RESOLUCIÓN DE APELACIÓN - ACTA 10</field>
+        <field name="code">850</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_851" model="afip.concept">
+        <field name="name">BAJA CONTROLADORES FISCALES Y/O RECAMBIO MEMORIA FISCAL</field>
+        <field name="code">851</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_852" model="afip.concept">
+        <field name="name">SOLICITUD DE RECUPERO DE SALDO A FAVOR POR LEY 25924</field>
+        <field name="code">852</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_853" model="afip.concept">
+        <field name="name">ADMINISTRADORES COUNTRIES Y CONSORCIOS:PAGO DE EXPENSAS</field>
+        <field name="code">853</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_854" model="afip.concept">
+        <field name="name">RÉGIMEN DE OP. DE COMERCIALIZACIÓN PRIMARIA DE LECHE CRUDA</field>
+        <field name="code">854</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_855" model="afip.concept">
+        <field name="name">MEMORIA, EST. CONTABLES E INF. DE AUDIT.</field>
+        <field name="code">855</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_856" model="afip.concept">
+        <field name="name">REGINEN INFROMARTIVO DE COMBPROBANTES CLASE A RG 3668</field>
+        <field name="code">856</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_857" model="afip.concept">
+        <field name="name">OPERADORES CON INCONSISTENCIAS EN DJAI</field>
+        <field name="code">857</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_858" model="afip.concept">
+        <field name="name">REGIMEN DE INFORMACION - TURIVA ALOJAMIENTO</field>
+        <field name="code">858</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_859" model="afip.concept">
+        <field name="name">IMP. EXTRAORDINARIO A LAS OPERAC. FINANCIERAS ESPECULATIVAS</field>
+        <field name="code">859</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_860" model="afip.concept">
+        <field name="name">REGIMEN DE INFORMACION - INFORME PAIS POR PAIS - RG 4130</field>
+        <field name="code">860</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_861" model="afip.concept">
+        <field name="name">RETEN CONTROLADORES FISC - RECOLECCIÓN ELECTRÓNICA DE DATOS</field>
+        <field name="code">861</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_862" model="afip.concept">
+        <field name="name">ITC-COMPROB.RESPALDATORIOS ADQUISICIONES GAS OIL</field>
+        <field name="code">862</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_863" model="afip.concept">
+        <field name="name">EXPORTACIONES POR CUENTA DE TERCEROS</field>
+        <field name="code">863</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_864" model="afip.concept">
+        <field name="name">REGIMEN INFORMACION UTE-F.2665</field>
+        <field name="code">864</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_865" model="afip.concept">
+        <field name="name">REGIMEN INFORMACION UTE-F.2666</field>
+        <field name="code">865</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_866" model="afip.concept">
+        <field name="name">RÉG DE FOMENTO NAC USO DE FUENTES RENOV ENERGIA LEY 26190</field>
+        <field name="code">866</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_867" model="afip.concept">
+        <field name="name">LEY 26092-AR-SAT- RÉGIMEN DE DEVOLUCIÓN, ACRED. Y/O TRANSF.</field>
+        <field name="code">867</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_868" model="afip.concept">
+        <field name="name">RG. 3125</field>
+        <field name="code">868</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_869" model="afip.concept">
+        <field name="name">AJUSTES POR DIF DE INVENTARIO/TENENCIA S/RESPALDO DOCUMENTAL</field>
+        <field name="code">869</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_870" model="afip.concept">
+        <field name="name">PÓLIZAS SEGUROS DE CAUCIÓN GARANTÍA - OPERACIONES ADUANERAS</field>
+        <field name="code">870</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_871" model="afip.concept">
+        <field name="name">PÓLIZAS SEGUROS DE CAUCIÓN GTIA-ACTUACIÓN AGENTES ADUANEROS</field>
+        <field name="code">871</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_872" model="afip.concept">
+        <field name="name">PÓLIZA ELECTRÓNICA: INSCRIPCIÓN DE IMPORTADORES/EXPORTADORES</field>
+        <field name="code">872</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_873" model="afip.concept">
+        <field name="name">REGIMEN DE INF. DE OPERAC DE VENTA DE VALORES NEGOCIABLES</field>
+        <field name="code">873</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_874" model="afip.concept">
+        <field name="name">REGIMEN INFORMACION UTE-F.2663</field>
+        <field name="code">874</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_875" model="afip.concept">
+        <field name="name">PÓLIZAS SEGUROS DE CAUCIÓN GARANTÍA-OPERACIONES IMPOSITIVAS</field>
+        <field name="code">875</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_876" model="afip.concept">
+        <field name="name">RETENCIÓN INDIVIDUAL</field>
+        <field name="code">876</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_877" model="afip.concept">
+        <field name="name">REGIMEN INFORMACION UTE-F.2664</field>
+        <field name="code">877</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_878" model="afip.concept">
+        <field name="name">RÉGIMEN DE INFORMACIÓN FIDEICOMISOS FINANC. Y NO FINANC.</field>
+        <field name="code">878</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_879" model="afip.concept">
+        <field name="name">PÓLIZAS DE SEGURO DE CAUCIÓN RES 11/2010 SICPYME 2° PERIODO</field>
+        <field name="code">879</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_880" model="afip.concept">
+        <field name="name">OBRAS SOCIALES</field>
+        <field name="code">880</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_881" model="afip.concept">
+        <field name="name">PROCEDIMIENTO DE SELECCIÓN DE CONTRATOS ADMINISTRATIVOS</field>
+        <field name="code">881</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_882" model="afip.concept">
+        <field name="name">OPERAC. CON INSTRUMENTOS Y/O CONTRATOS DERIVADOS FINANCIEROS</field>
+        <field name="code">882</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_883" model="afip.concept">
+        <field name="name">REGIMEN DE INFORMACION DE CONTRATOS MUSICALES</field>
+        <field name="code">883</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_884" model="afip.concept">
+        <field name="name">VALES ALIMENTARIOS</field>
+        <field name="code">884</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_885" model="afip.concept">
+        <field name="name">FIDEICOMISOS DEL PAIS Y DEL EXTERIOR</field>
+        <field name="code">885</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_886" model="afip.concept">
+        <field name="name">DEUDA APORTES MAGISTRADOS</field>
+        <field name="code">886</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_887" model="afip.concept">
+        <field name="name">RÉGIMEN DE REMATES Y SUBASTAS</field>
+        <field name="code">887</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_888" model="afip.concept">
+        <field name="name">COMERCIALIZACIÓN DE OBRAS DE ARTE</field>
+        <field name="code">888</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_889" model="afip.concept">
+        <field name="name">EXISTENCIA ANUAL DE OBRAS DE ARTE</field>
+        <field name="code">889</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_890" model="afip.concept">
+        <field name="name">REGIMEN DE FOMENTO DE INVERSIONES PARA PYMES</field>
+        <field name="code">890</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_891" model="afip.concept">
+        <field name="name">LEY 26190-IVA- APROB. DE COMPROBANTES VINCULADOS AL PROYECTO</field>
+        <field name="code">891</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_892" model="afip.concept">
+        <field name="name">APORTE VOLUNTARIO</field>
+        <field name="code">892</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_893" model="afip.concept">
+        <field name="name">COBERTURA GRUPO FAMILIAR PRIMARIO</field>
+        <field name="code">893</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_894" model="afip.concept">
+        <field name="name">APORTE POR ADHERENTES</field>
+        <field name="code">894</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_895" model="afip.concept">
+        <field name="name">DIFERENCIA PROGRAMA MEDICO OBLIGATORIO</field>
+        <field name="code">895</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_896" model="afip.concept">
+        <field name="name">DIFERENCIA DE CONTRIBUCIONES</field>
+        <field name="code">896</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_897" model="afip.concept">
+        <field name="name">PAGO A CUENTA HACIENDAS Y CARNES BOVINAS Y BUBALINAS</field>
+        <field name="code">897</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_898" model="afip.concept">
+        <field name="name">IVA COMPRAS - CRÉD. FISCAL TEÓRICO DEMERITADO</field>
+        <field name="code">898</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_899" model="afip.concept">
+        <field name="name">IVA SALDOS - CRÉDITO FISCAL TEÓRICO DEMERITADO</field>
+        <field name="code">899</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_900" model="afip.concept">
+        <field name="name">ENTIDADES INTERVINIENTES EN EL MERCADO DE CAPITALES</field>
+        <field name="code">900</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_901" model="afip.concept">
+        <field name="name">CONSULTA DE DATOS DE COMPROBANTES POR LOTE</field>
+        <field name="code">901</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_902" model="afip.concept">
+        <field name="name">CONSULTA DE MONTOS POR LOTE</field>
+        <field name="code">902</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_903" model="afip.concept">
+        <field name="name">CONSULTA GLOBAL DE DATOS DE COMPROBANTES POR LOTE</field>
+        <field name="code">903</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_904" model="afip.concept">
+        <field name="name">PADRÓN DE PRODUCTORES DE GRANOS MONOTRIBUTISTAS</field>
+        <field name="code">904</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_905" model="afip.concept">
+        <field name="name">DEVOLUCIONES EN EXCESO RG 3420</field>
+        <field name="code">905</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_906" model="afip.concept">
+        <field name="name">CAJAS DE ALIMENTOS</field>
+        <field name="code">906</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_907" model="afip.concept">
+        <field name="name">REPORTE RESUMEN DE TOTALES</field>
+        <field name="code">907</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_908" model="afip.concept">
+        <field name="name">REP.DUP.ELEC.CPTES CLASE A,A C/LEYENDA Y M</field>
+        <field name="code">908</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_909" model="afip.concept">
+        <field name="name">REPORTE INFORME DE OPERACIONES ORDENADO POR PRODUCTOS</field>
+        <field name="code">909</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_910" model="afip.concept">
+        <field name="name">RÉG.INF.TRANSACCIONES ECONÓMICAS RELEVANTES-DOMICILIOS</field>
+        <field name="code">910</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_911" model="afip.concept">
+        <field name="name">RÉG.INF.TRANSAC.ECONÓMICAS RELEVANTES-CUENTAS Y OPERACIONES</field>
+        <field name="code">911</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_912" model="afip.concept">
+        <field name="name">IMAGENES SATELITALES</field>
+        <field name="code">912</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_913" model="afip.concept">
+        <field name="name">SITER-CAPITULO B-TITULOS VALORES PUBLICOS Y PRIVADOS</field>
+        <field name="code">913</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_914" model="afip.concept">
+        <field name="name">DDJJ INFORMATIVA - RG 3130</field>
+        <field name="code">914</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_915" model="afip.concept">
+        <field name="name">SOLICITUD EXENCION DE RETENCION S/IMP TRANSF DE INMUEBLES</field>
+        <field name="code">915</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_916" model="afip.concept">
+        <field name="name">LEY 26360-APROBACIÓN DE COMPROBANTES VINCULADOS AL PROYECTO</field>
+        <field name="code">916</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_917" model="afip.concept">
+        <field name="name">LEY 26360-SOLICITUD DE RECUPERO DE SALDOS A FAVOR</field>
+        <field name="code">917</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_918" model="afip.concept">
+        <field name="name">AFIP DGI - REGIMEN INFORMATIVO DE CUOTAS ESCUELAS PRIVADAS.</field>
+        <field name="code">918</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_919" model="afip.concept">
+        <field name="name">LEY 26093 -APROBACIÓN DE COMPROBANTES VINCULADOS AL PROYECTO</field>
+        <field name="code">919</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_920" model="afip.concept">
+        <field name="name">LEY 26093 - SOLICITUD DE RECUPERO DE SALDOS A FAVOR</field>
+        <field name="code">920</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_921" model="afip.concept">
+        <field name="name">RÉGIMEN INFORMATIVO DE COMBUSTIBLES EXENTOS-COMBEX</field>
+        <field name="code">921</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_922" model="afip.concept">
+        <field name="name">DEVOLUCION EN EXCESO</field>
+        <field name="code">922</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_923" model="afip.concept">
+        <field name="name">INGRESOS Y FAENA DE ANIMALES</field>
+        <field name="code">923</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_924" model="afip.concept">
+        <field name="name">AFIP DGI-RÉGIMEN INFORMATIVO DE FERIAS</field>
+        <field name="code">924</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_925" model="afip.concept">
+        <field name="name">LEY 26566-RÉGIMEN ACREDIT.Y/O DEVOL. ANTICIPADA IVA</field>
+        <field name="code">925</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_926" model="afip.concept">
+        <field name="name">RÉGIMEN INFORMATIVO - CITI - EMPRESAS PROMOVIDAS</field>
+        <field name="code">926</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_927" model="afip.concept">
+        <field name="name">ESTUDIO DE PRECIOS DE TRANSFERENCIA- ANUAL</field>
+        <field name="code">927</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_928" model="afip.concept">
+        <field name="name">DDJJ INFORMATIVA ANUAL -PRECIOS DE TRANSFERENCIA-F 969</field>
+        <field name="code">928</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_929" model="afip.concept">
+        <field name="name">REG.INF. SECTOR PESQUERO MARÍTIMO</field>
+        <field name="code">929</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_930" model="afip.concept">
+        <field name="name">REGIMEN DE INFORMACION DE VENTAS ANUALES EN MERCADO INTERNO</field>
+        <field name="code">930</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_931" model="afip.concept">
+        <field name="name">REGIMEN DE INFORMACION DE ACTIVO NO CORRIENTE</field>
+        <field name="code">931</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_932" model="afip.concept">
+        <field name="name">DIFERENCIA ASEGURADORA RIESGOS DE TRABAJO</field>
+        <field name="code">932</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_934" model="afip.concept">
+        <field name="name">COOPERATIVAS Y MUTUALES OPERACIONES FINANCIERAS</field>
+        <field name="code">934</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_935" model="afip.concept">
+        <field name="name">NÓMINA SALARIAL EMPLEADOS PÚBLICOS NO ADHERIDOS AL SIPA</field>
+        <field name="code">935</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_936" model="afip.concept">
+        <field name="name">LEY 26190-IVA-SOLICITUD DE RECUPERO DE SALDOS A FAVOR</field>
+        <field name="code">936</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_937" model="afip.concept">
+        <field name="name">LEY26093-APROBACIÓN BENEFICIO AMORTIZACIÓN ACELERADA</field>
+        <field name="code">937</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_938" model="afip.concept">
+        <field name="name">LEY 26360-APROBACIÓN DEL BENEFICIO DE AMORTIZACION ACELERADA</field>
+        <field name="code">938</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_939" model="afip.concept">
+        <field name="name">AFIP DGI LEY 26190 - APROB. DEL BENEF. DE AMORTIZ. ACELERADA</field>
+        <field name="code">939</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_940" model="afip.concept">
+        <field name="name">SOLICITUD CONSTANCIAS DE EXCLUSION DE RETENCIONES GANANCIAS</field>
+        <field name="code">940</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_941" model="afip.concept">
+        <field name="name">RÉGIMEN INFORMATIVO DE TABACO</field>
+        <field name="code">941</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_942" model="afip.concept">
+        <field name="name">RÉG. INF. DE REORG. DE SOCIEDADES Y EMPRESAS - FUSIÓN</field>
+        <field name="code">942</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_943" model="afip.concept">
+        <field name="name">RÉG. INF. DE REORG. DE SOCIEDADES Y EMPRESAS - ESCISIÓN</field>
+        <field name="code">943</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_944" model="afip.concept">
+        <field name="name">RÉG. INF. DE REORG. DE SOCIEDADES Y EMPRESAS - VENTA Y TRANS</field>
+        <field name="code">944</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_945" model="afip.concept">
+        <field name="name">CONTROLADORES FISCALES- LECTURA DE DATOS DE MEMORIAS</field>
+        <field name="code">945</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_946" model="afip.concept">
+        <field name="name">RG 1277-FLOTA FLUVIAL REINT. IMPOSIT. TASA SOBRE EL GASOIL</field>
+        <field name="code">946</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_947" model="afip.concept">
+        <field name="name">LEY 25360 SALDOS A FAVOR</field>
+        <field name="code">947</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_948" model="afip.concept">
+        <field name="name">AFIP DGI-PADRON OPERADORES RUCA</field>
+        <field name="code">948</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_949" model="afip.concept">
+        <field name="name">DDJJ INFORMATIVA - RG 3202</field>
+        <field name="code">949</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_950" model="afip.concept">
+        <field name="name">AFIP DGI - CITI DERECHOS ECONOMIC Y OPERACIONES RELACIONADAS</field>
+        <field name="code">950</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_951" model="afip.concept">
+        <field name="name">REGISTRO FISCAL DE OPERADORES DE GRANOS</field>
+        <field name="code">951</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_952" model="afip.concept">
+        <field name="name">SOLICITUD DE EXCLUSION RETENCIONES/PERCEPCIONES IVA</field>
+        <field name="code">952</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_953" model="afip.concept">
+        <field name="name">MOVIMIENTO DE GRANOS</field>
+        <field name="code">953</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_954" model="afip.concept">
+        <field name="name">COMBUSTIBLES LIQUIDOS DECRETO 1016</field>
+        <field name="code">954</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_955" model="afip.concept">
+        <field name="name">REINTEGRO CONSUMO TARJETAS SOCIALES</field>
+        <field name="code">955</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_956" model="afip.concept">
+        <field name="name">TIT. PROY. PROM. NO INDUSTRIALES-INVERSIONES Y COSTO FISCAL</field>
+        <field name="code">956</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_957" model="afip.concept">
+        <field name="name">DEC.JURADA DETERMINATIVA DE IMPUESTO</field>
+        <field name="code">957</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_958" model="afip.concept">
+        <field name="name">DECLARACIÓN ADUANA</field>
+        <field name="code">958</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_959" model="afip.concept">
+        <field name="name">L. 25924 APROBACIÓN DE COMPROBANTES VINCULADOS AL PROYECTO</field>
+        <field name="code">959</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_960" model="afip.concept">
+        <field name="name">SICPYME-INFORMATIVO ART.28 LEY DE IVA</field>
+        <field name="code">960</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_961" model="afip.concept">
+        <field name="name">MERCADO CAMBIARIO</field>
+        <field name="code">961</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_962" model="afip.concept">
+        <field name="name">LEY 25.988- INVERSIONES EN BIENES DE CAPITAL</field>
+        <field name="code">962</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_963" model="afip.concept">
+        <field name="name">ONCCA - INFORMACION CARTAS DE PORTE RECIBIDAS</field>
+        <field name="code">963</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_964" model="afip.concept">
+        <field name="name">DDJJ INFORMATIVA ANUAL-ENTES INDEPENDIENTES F.741/A</field>
+        <field name="code">964</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_965" model="afip.concept">
+        <field name="name">DDJJ.INFORMATIVA RG.2793</field>
+        <field name="code">965</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_966" model="afip.concept">
+        <field name="name">CITI VENTAS</field>
+        <field name="code">966</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_967" model="afip.concept">
+        <field name="name">PERSONAL RELACION DEPENDENCIA INF BS PERSONALES RG 1465</field>
+        <field name="code">967</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_968" model="afip.concept">
+        <field name="name">RÉGIMEN INFORMATIVO DE RANCHO PRODUCTORES</field>
+        <field name="code">968</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_969" model="afip.concept">
+        <field name="name">RÉGIMEN INFORMATIVO DE RANCHO DISTRIBUIDORES</field>
+        <field name="code">969</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_970" model="afip.concept">
+        <field name="name">RÉGIMEN INFORMATIVO DE RANCHO ADQUIRENTES</field>
+        <field name="code">970</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_971" model="afip.concept">
+        <field name="name">DONACIONES EN DINERO O ESPECIE EMPLEADORES</field>
+        <field name="code">971</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_972" model="afip.concept">
+        <field name="name">RECE- SOLICITUD DE AUTORIZACIÓN DE EMISION DE COMPROBANTES</field>
+        <field name="code">972</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_973" model="afip.concept">
+        <field name="name">DONACIONES EN DINERO O ESPECIE - DONANTE</field>
+        <field name="code">973</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_974" model="afip.concept">
+        <field name="name">REAR-GENERACION DE INFO REQUERIDA SEGUN PTO 7)ANEXO3.RG1361</field>
+        <field name="code">974</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_975" model="afip.concept">
+        <field name="name">DDJJ INFORMATIVA ANUAL P.JURIDICA Y P.FISICA-F. 743</field>
+        <field name="code">975</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_976" model="afip.concept">
+        <field name="name">DDJJ INFORMATIVA SEMESTRAL - ENTES INDEPENDIENTES F. 741</field>
+        <field name="code">976</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_977" model="afip.concept">
+        <field name="name">DDJJ INFORMATIVA SEMESTRAL-PER.JURIDICA Y PER.FISICA-F.742</field>
+        <field name="code">977</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_978" model="afip.concept">
+        <field name="name">DDJJ INFORMATIVA ANUAL PERSONA JURIDICA-F.743</field>
+        <field name="code">978</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_979" model="afip.concept">
+        <field name="name">DDJJ ANUAL INFORMATIVA - PERSONAS FÍSICAS</field>
+        <field name="code">979</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_980" model="afip.concept">
+        <field name="name">DDJJ INFORMATIVA CINES</field>
+        <field name="code">980</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_981" model="afip.concept">
+        <field name="name">DDJJ INFORMATIVA</field>
+        <field name="code">981</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_982" model="afip.concept">
+        <field name="name">DDJJ.INFORMATIVA ACTIV.AGROPECUARIA</field>
+        <field name="code">982</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_983" model="afip.concept">
+        <field name="name">BOLSA DE CEREALES</field>
+        <field name="code">983</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_984" model="afip.concept">
+        <field name="name">PARTICIPACIONES SOCIETARIAS</field>
+        <field name="code">984</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_985" model="afip.concept">
+        <field name="name">CONSUMOS RELEVANTES</field>
+        <field name="code">985</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_986" model="afip.concept">
+        <field name="name">PRODUCTORES DE SEGUROS</field>
+        <field name="code">986</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_987" model="afip.concept">
+        <field name="name">REPRESENTANTES DE SUJETOS RESIDENTES EN EL EXTERIOR</field>
+        <field name="code">987</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_988" model="afip.concept">
+        <field name="name">REP. DEL EXT. - TERCEROS INTERVINIENTES</field>
+        <field name="code">988</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_989" model="afip.concept">
+        <field name="name">TARJETAS DE CRÉDITO</field>
+        <field name="code">989</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_990" model="afip.concept">
+        <field name="name">CITI-COMPRAS</field>
+        <field name="code">990</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_991" model="afip.concept">
+        <field name="name">OPER DE COMPRA Y DESCUENTO C/ENDOSOS O CESION DE DOC</field>
+        <field name="code">991</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_992" model="afip.concept">
+        <field name="name">CITI ESCRIBANOS</field>
+        <field name="code">992</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_993" model="afip.concept">
+        <field name="name">GUIA FISCAL HARINERA - ESTABLECIMIENTO MOLINERO</field>
+        <field name="code">993</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_994" model="afip.concept">
+        <field name="name">GUIA FISCAL HARINERA - USUARIO DEL SERVICIO DE MOLIENDA</field>
+        <field name="code">994</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_995" model="afip.concept">
+        <field name="name">COMBUSTIBLES EXENTOS - COMBEX</field>
+        <field name="code">995</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_996" model="afip.concept">
+        <field name="name">COMBUSTIBLES ZONA SUR - COMBSUR</field>
+        <field name="code">996</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_997" model="afip.concept">
+        <field name="name">SITER ENTIDADES FINANCIERAS</field>
+        <field name="code">997</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_998" model="afip.concept">
+        <field name="name">SITER COMISIONISTAS</field>
+        <field name="code">998</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_concept_999" model="afip.concept">
+        <field name="name">DONACIONES EN DINERO O EN ESPECIE - DONATARIOS</field>
+        <field name="code">999</field>
+        <field name="active" eval="1" />
+    </record>
+</odoo>

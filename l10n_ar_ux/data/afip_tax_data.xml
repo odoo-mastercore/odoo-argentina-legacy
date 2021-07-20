@@ -1,0 +1,4258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="afip_tax_3" model="afip.tax">
+        <field name="name">INFORMACION NO TRIBUTARIA</field>
+        <field name="code">3</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_4" model="afip.tax">
+        <field name="name">INSCRIPCIÓN DE SOCIEDADES RNS</field>
+        <field name="code">4</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_5" model="afip.tax">
+        <field name="name">DDJJ INEXISTENCIA DEUDA RNSS</field>
+        <field name="code">5</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_6" model="afip.tax">
+        <field name="name">F.8102 - APLIC. PERCEP CPRAS E</field>
+        <field name="code">6</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_7" model="afip.tax">
+        <field name="name">PENALIDADES RENDITA Y ACRETA</field>
+        <field name="code">7</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_8" model="afip.tax">
+        <field name="name">DADOR DE TRABAJO SERV. DOM.</field>
+        <field name="code">8</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_10" model="afip.tax">
+        <field name="name">GANANCIAS SOCIEDADES</field>
+        <field name="code">10</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_11" model="afip.tax">
+        <field name="name">GANANCIAS PERSONAS FISICAS</field>
+        <field name="code">11</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_12" model="afip.tax">
+        <field name="name">EXENTO EN GANANCIAS</field>
+        <field name="code">12</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_14" model="afip.tax">
+        <field name="name">PRECIOS DE TRANSFERENCIA</field>
+        <field name="code">14</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_15" model="afip.tax">
+        <field name="name">EMERGENCIA SOBRE ALTAS RENTAS</field>
+        <field name="code">15</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_20" model="afip.tax">
+        <field name="name">MONOTRIBUTO</field>
+        <field name="code">20</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_21" model="afip.tax">
+        <field name="name">MONOTRIBUTO AUTONOMO</field>
+        <field name="code">21</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_22" model="afip.tax">
+        <field name="name">MONOTRIBUTO SEG.SOCIAL</field>
+        <field name="code">22</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_23" model="afip.tax">
+        <field name="name">MONOTRIBUTO-INTEG.DE SOCIEDAD</field>
+        <field name="code">23</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_24" model="afip.tax">
+        <field name="name">MONOTRIBUTO OBRA SOCIAL</field>
+        <field name="code">24</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_25" model="afip.tax">
+        <field name="name">GANANCIA MINIMA PRESUNTA</field>
+        <field name="code">25</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_26" model="afip.tax">
+        <field name="name">INT.PAG.Y COSTO FINAN.ENDEUDAM</field>
+        <field name="code">26</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_27" model="afip.tax">
+        <field name="name">PATRIMONIO NETO</field>
+        <field name="code">27</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_28" model="afip.tax">
+        <field name="name">SEGURO DE VIDA COLECTIVO</field>
+        <field name="code">28</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_30" model="afip.tax">
+        <field name="name">IVA</field>
+        <field name="code">30</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_31" model="afip.tax">
+        <field name="name">RENTAS DIVERSAS</field>
+        <field name="code">31</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_32" model="afip.tax">
+        <field name="name">IVA EXENTO</field>
+        <field name="code">32</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_33" model="afip.tax">
+        <field name="name">IVA RESPONSABLE NO INSCRIPTO</field>
+        <field name="code">33</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_34" model="afip.tax">
+        <field name="name">IVA NO ALCANZADO</field>
+        <field name="code">34</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_35" model="afip.tax">
+        <field name="name">PRESENT.ESPONTANEA DTO.935/97</field>
+        <field name="code">35</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_36" model="afip.tax">
+        <field name="name">REG.INF.INGRESOS-EGRESOSRG1242</field>
+        <field name="code">36</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_37" model="afip.tax">
+        <field name="name">GARANTIAS</field>
+        <field name="code">37</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_38" model="afip.tax">
+        <field name="name">FACILIDADES DE PAGO DTO.938/97</field>
+        <field name="code">38</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_39" model="afip.tax">
+        <field name="name">MULTAS INFRACCIONES FORMALES</field>
+        <field name="code">39</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_40" model="afip.tax">
+        <field name="name">REG.ESP.FAC.PAGO</field>
+        <field name="code">40</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_41" model="afip.tax">
+        <field name="name">P.FAC PAGO-RG896 RESTO REG GRA</field>
+        <field name="code">41</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_42" model="afip.tax">
+        <field name="name">P.FAC PAGO-RG896 RESTO REG EXC</field>
+        <field name="code">42</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_43" model="afip.tax">
+        <field name="name">MULTAS L. 11683</field>
+        <field name="code">43</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_48" model="afip.tax">
+        <field name="name">HONORARIOS AGENTES FISCALES</field>
+        <field name="code">48</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_49" model="afip.tax">
+        <field name="name">HONORARIOS DE REPRES.DEL FISCO</field>
+        <field name="code">49</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_50" model="afip.tax">
+        <field name="name">REG.FACILIDADES PAGO RG.50</field>
+        <field name="code">50</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_51" model="afip.tax">
+        <field name="name">REG DE FAC DE PAGO OBRAS SOCIA</field>
+        <field name="code">51</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_52" model="afip.tax">
+        <field name="name">TASA S/ACTUACIONES ANTE TFN</field>
+        <field name="code">52</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_53" model="afip.tax">
+        <field name="name">TASA REGISTRO PROPIED.INMUEBLE</field>
+        <field name="code">53</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_55" model="afip.tax">
+        <field name="name">SELLOS LEY 18524</field>
+        <field name="code">55</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_57" model="afip.tax">
+        <field name="name">FAC.PAGO-REG.EXCEPIRREG CONCUR</field>
+        <field name="code">57</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_58" model="afip.tax">
+        <field name="name">FAC.PAGO-REG.EXCEPIRREG FALLID</field>
+        <field name="code">58</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_59" model="afip.tax">
+        <field name="name">FAC.PAG.REG.EXCEP.DEUD.QUIROG.</field>
+        <field name="code">59</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_60" model="afip.tax">
+        <field name="name">FAC PAGO DTO 93/2000</field>
+        <field name="code">60</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_61" model="afip.tax">
+        <field name="name">DECRETO 93/00 DEUDA CONCURSADA</field>
+        <field name="code">61</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_62" model="afip.tax">
+        <field name="name">FAC DE PAGO LEY 25190</field>
+        <field name="code">62</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_64" model="afip.tax">
+        <field name="name">SICORE-IMPTO.EMERG.AUTOMOTORES</field>
+        <field name="code">64</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_65" model="afip.tax">
+        <field name="name">EMERG.AUTOMOTORES</field>
+        <field name="code">65</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_66" model="afip.tax">
+        <field name="name">EXTERIORIZACIÓN - LEY 26.476</field>
+        <field name="code">66</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_70" model="afip.tax">
+        <field name="name">INTERNOS- NACIONALES LEY 21425</field>
+        <field name="code">70</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_71" model="afip.tax">
+        <field name="name">CONTROL REND.BANCARIAS S.2000</field>
+        <field name="code">71</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_72" model="afip.tax">
+        <field name="name">RESP DEUDA AJENA BS.PERS.</field>
+        <field name="code">72</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_73" model="afip.tax">
+        <field name="name">RESP DEUDA AJENA GAN MIN PRES</field>
+        <field name="code">73</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_74" model="afip.tax">
+        <field name="name">F.PAG.RG.896-REG.GRAL.</field>
+        <field name="code">74</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_75" model="afip.tax">
+        <field name="name">F.PAG RG.896-REG.EXC.PL.REG.</field>
+        <field name="code">75</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_76" model="afip.tax">
+        <field name="name">F.PAG RG.896-REG.EXC.IRREG.</field>
+        <field name="code">76</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_77" model="afip.tax">
+        <field name="name">F PAGO-REG EXC REG-CONCURSADOS</field>
+        <field name="code">77</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_78" model="afip.tax">
+        <field name="name">FAC PAGO-REG EXC REG-FALLIDOS</field>
+        <field name="code">78</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_79" model="afip.tax">
+        <field name="name">REG.FAC.PAGO-MIS FACILIDADES</field>
+        <field name="code">79</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_83" model="afip.tax">
+        <field name="name">CERTIFICADO DE CREDITO FISCAL</field>
+        <field name="code">83</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_85" model="afip.tax">
+        <field name="name">CANON MENSUAL TURIVA</field>
+        <field name="code">85</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_90" model="afip.tax">
+        <field name="name">REPOSICIÓN DE TOKEN</field>
+        <field name="code">90</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_91" model="afip.tax">
+        <field name="name">COMISIONES POR SERV. DE RECA.</field>
+        <field name="code">91</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_100" model="afip.tax">
+        <field name="name">SOLIC.COMPENSACIÓN-IMP.DE CRED</field>
+        <field name="code">100</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_101" model="afip.tax">
+        <field name="name">SOLICITUD DE DEVOLUCIÓN</field>
+        <field name="code">101</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_102" model="afip.tax">
+        <field name="name">GRAVAMEN A SERV.AUX.NAVEGACION</field>
+        <field name="code">102</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_103" model="afip.tax">
+        <field name="name">REGIMENES DE INFORMACIÓN</field>
+        <field name="code">103</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_104" model="afip.tax">
+        <field name="name">RÉG.ESP.FAC.PAGO-RG,574-RG 904</field>
+        <field name="code">104</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_105" model="afip.tax">
+        <field name="name">PFP-DTO.1384/01-IMPOSITIVAS</field>
+        <field name="code">105</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_106" model="afip.tax">
+        <field name="name">PFP-DTO.1384/01-SEG. SOCIAL</field>
+        <field name="code">106</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_107" model="afip.tax">
+        <field name="name">PFP-DTO.1384/01-IMPOSIT-CONCUR</field>
+        <field name="code">107</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_108" model="afip.tax">
+        <field name="name">PFP-DTO.1384/01-SEG.SOC.CONCUR</field>
+        <field name="code">108</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_109" model="afip.tax">
+        <field name="name">PFP-IMPOSIT DTO.338/2002</field>
+        <field name="code">109</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_110" model="afip.tax">
+        <field name="name">PFP-SEG.SOC.DTO.338/2002</field>
+        <field name="code">110</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_111" model="afip.tax">
+        <field name="name">TRANSF.VALORES MOBILIARIOS</field>
+        <field name="code">111</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_112" model="afip.tax">
+        <field name="name">DTO905-REFOR.PLAN.ANTER.93/00</field>
+        <field name="code">112</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_113" model="afip.tax">
+        <field name="name">ADIC.EMERG.TIT.PUBLIC.RG.3320</field>
+        <field name="code">113</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_114" model="afip.tax">
+        <field name="name">PFP-DTO.338/02-IMPOSIT-CONCURS</field>
+        <field name="code">114</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_115" model="afip.tax">
+        <field name="name">PFP-DTO.338/02-SEG.SOC-CONCURS</field>
+        <field name="code">115</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_116" model="afip.tax">
+        <field name="name">PFP-AUTON MONOTRIB D 27/07/04</field>
+        <field name="code">116</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_117" model="afip.tax">
+        <field name="name">PFP-IMPOSITIVO DECRETO 1541/04</field>
+        <field name="code">117</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_118" model="afip.tax">
+        <field name="name">PFP-DTO2724 IMPOSIT.DEUDA 2002</field>
+        <field name="code">118</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_119" model="afip.tax">
+        <field name="name">PFP-DTO2724 IMPOSIT.DEUDA 2003</field>
+        <field name="code">119</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_120" model="afip.tax">
+        <field name="name">SOBRE LOS CAPITALES</field>
+        <field name="code">120</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_121" model="afip.tax">
+        <field name="name">PLAN FACILIDADES PAGO RG.184</field>
+        <field name="code">121</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_122" model="afip.tax">
+        <field name="name">FAC.PAGO DEUDA S/GTIA.RG.184</field>
+        <field name="code">122</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_123" model="afip.tax">
+        <field name="name">PRESENTACION ESPONTANEA RG.184</field>
+        <field name="code">123</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_124" model="afip.tax">
+        <field name="name">PRES.ESPONTANEA DEUDA S/GTIA.</field>
+        <field name="code">124</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_125" model="afip.tax">
+        <field name="name">PFP-IMPOSITIVO</field>
+        <field name="code">125</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_126" model="afip.tax">
+        <field name="name">PFP-IMPOSITIVO</field>
+        <field name="code">126</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_127" model="afip.tax">
+        <field name="name">REGIMEN REGULARIZ VOLUNT 24476</field>
+        <field name="code">127</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_128" model="afip.tax">
+        <field name="name">PFP- SEGURIDAD SOCIAL</field>
+        <field name="code">128</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_129" model="afip.tax">
+        <field name="name">PFP- SEGURIDAD SOCIAL</field>
+        <field name="code">129</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_130" model="afip.tax">
+        <field name="name">IVA RG.3298</field>
+        <field name="code">130</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_132" model="afip.tax">
+        <field name="name">BENEF.PROV.INVERS.CAP.EXTRANJ.</field>
+        <field name="code">132</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_133" model="afip.tax">
+        <field name="name">REG.FACILIDADES PAGO D.1164/93</field>
+        <field name="code">133</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_134" model="afip.tax">
+        <field name="name">F.PAGO CONCURSOS PREV. RG.3762</field>
+        <field name="code">134</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_135" model="afip.tax">
+        <field name="name">IMPUESTO</field>
+        <field name="code">135</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_136" model="afip.tax">
+        <field name="name">IMPUESTO</field>
+        <field name="code">136</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_137" model="afip.tax">
+        <field name="name">TASAS JUDICIALES L.23898</field>
+        <field name="code">137</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_138" model="afip.tax">
+        <field name="name">HONORARIOS PERITO NO CONTABLE</field>
+        <field name="code">138</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_139" model="afip.tax">
+        <field name="name">IMP S/DEB Y CRED OP.EXENTAS</field>
+        <field name="code">139</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_140" model="afip.tax">
+        <field name="name">HONORARIO ART 64, LEY 24.946</field>
+        <field name="code">140</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_141" model="afip.tax">
+        <field name="name">HONORARIOS ABOGADOS Y PERITOS</field>
+        <field name="code">141</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_142" model="afip.tax">
+        <field name="name">P ESP FAC PAGO L 22681</field>
+        <field name="code">142</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_143" model="afip.tax">
+        <field name="name">PAGO A CTA. FUTUR OBLIGACIONES</field>
+        <field name="code">143</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_144" model="afip.tax">
+        <field name="name">IVA-USUARIOS SERVICIO MOLIENDA</field>
+        <field name="code">144</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_145" model="afip.tax">
+        <field name="name">RAFA-RET BENEF EXTERIOR</field>
+        <field name="code">145</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_146" model="afip.tax">
+        <field name="name">ZONAS AFECTADAS POR INUNDACION</field>
+        <field name="code">146</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_147" model="afip.tax">
+        <field name="name">SICORE-S/DEB.CTA.CTE.Y O.OPER.</field>
+        <field name="code">147</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_148" model="afip.tax">
+        <field name="name">REG.ESPEC.FACILIDADES DE PAGO</field>
+        <field name="code">148</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_149" model="afip.tax">
+        <field name="name">IMP S/DEB Y CRED EN CTA CTE</field>
+        <field name="code">149</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_150" model="afip.tax">
+        <field name="name">REVALUACION HACIENDA L.23079</field>
+        <field name="code">150</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_151" model="afip.tax">
+        <field name="name">AHORRO OBLIGATORIO L.23256</field>
+        <field name="code">151</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_152" model="afip.tax">
+        <field name="name">INTERESES AHORRO OBLIGATORIO</field>
+        <field name="code">152</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_153" model="afip.tax">
+        <field name="name">REGIMEN CONDONACION SANCIONES</field>
+        <field name="code">153</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_154" model="afip.tax">
+        <field name="name">FONDO P/EDUC.Y PROM.COOPTIVA.</field>
+        <field name="code">154</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_155" model="afip.tax">
+        <field name="name">REG.FACILIDADES PAGO RG.2757</field>
+        <field name="code">155</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_156" model="afip.tax">
+        <field name="name">REG.FAC.CONCURSOS Y QUIEBRAS</field>
+        <field name="code">156</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_157" model="afip.tax">
+        <field name="name">AHORRO OBLIGATORIO L.23549</field>
+        <field name="code">157</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_158" model="afip.tax">
+        <field name="name">INTERES AHORRO OBLIGATORIO</field>
+        <field name="code">158</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_159" model="afip.tax">
+        <field name="name">FONDO TRANSIT.P/FINANC.DESEQ.</field>
+        <field name="code">159</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_160" model="afip.tax">
+        <field name="name">TARJETAS ADIC ACRED INSCRIPCIO</field>
+        <field name="code">160</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_161" model="afip.tax">
+        <field name="name">ADICIONAL EMERG.TIT.PUBLICOS</field>
+        <field name="code">161</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_162" model="afip.tax">
+        <field name="name">REG.FACILIDADES PAGO RG.3011</field>
+        <field name="code">162</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_163" model="afip.tax">
+        <field name="name">EMERGENC.AGROPECUARIA RG.3018</field>
+        <field name="code">163</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_164" model="afip.tax">
+        <field name="name">FONDO EMERG.LOCATIVA RG.3033</field>
+        <field name="code">164</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_165" model="afip.tax">
+        <field name="name">S/ACTIVOS FINANCIEROS D.560/89</field>
+        <field name="code">165</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_166" model="afip.tax">
+        <field name="name">SUSPENSION REG.PROM.(GAN.)</field>
+        <field name="code">166</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_167" model="afip.tax">
+        <field name="name">SUSPENSION REG.PROM.(IVA)</field>
+        <field name="code">167</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_168" model="afip.tax">
+        <field name="name">SUSPENSION REG.PROM.(CAP.)</field>
+        <field name="code">168</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_169" model="afip.tax">
+        <field name="name">SUSPENSION REG.PROM.(PN)</field>
+        <field name="code">169</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_170" model="afip.tax">
+        <field name="name">CONTRIBUCION SOLIDARIA L.23740</field>
+        <field name="code">170</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_171" model="afip.tax">
+        <field name="name">REG.FAC.PAGO DTO.1299/89</field>
+        <field name="code">171</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_172" model="afip.tax">
+        <field name="name">IMPUESTO TRANSF DE INMUEBLES</field>
+        <field name="code">172</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_173" model="afip.tax">
+        <field name="name">EMERG.S/UTILIDADES ENT.FINANC.</field>
+        <field name="code">173</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_174" model="afip.tax">
+        <field name="name">CONTRIB.ESPEC.EMERG.L.23764</field>
+        <field name="code">174</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_175" model="afip.tax">
+        <field name="name">SERVICIOS FINANCIEROS L.23760</field>
+        <field name="code">175</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_176" model="afip.tax">
+        <field name="name">APORTE ESPEC.DTOS.435 Y 612/90</field>
+        <field name="code">176</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_177" model="afip.tax">
+        <field name="name">SOBRE LOS ACTIVOS L.23760</field>
+        <field name="code">177</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_178" model="afip.tax">
+        <field name="name">REG.PRES.ESPONT.DTO.1646/90</field>
+        <field name="code">178</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_179" model="afip.tax">
+        <field name="name">PLAN FAC.PAGO DTO.1809/90</field>
+        <field name="code">179</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_180" model="afip.tax">
+        <field name="name">IMPTO.S/BIENES PERSONALES</field>
+        <field name="code">180</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_181" model="afip.tax">
+        <field name="name">COMB LIQ L 23966 NAFTAS</field>
+        <field name="code">181</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_182" model="afip.tax">
+        <field name="name">GAS NATURAL L.23966</field>
+        <field name="code">182</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_183" model="afip.tax">
+        <field name="name">EMERG.AUTOMOV.RURALES RG.3092</field>
+        <field name="code">183</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_184" model="afip.tax">
+        <field name="name">COMBUST.LIQUIDOS DTO.2733/90</field>
+        <field name="code">184</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_185" model="afip.tax">
+        <field name="name">GRAV.S/ENERGIA ELECT.DTO.2733</field>
+        <field name="code">185</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_186" model="afip.tax">
+        <field name="name">ACTIVOS SOCIEDADES L.23905</field>
+        <field name="code">186</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_187" model="afip.tax">
+        <field name="name">REG.RET.TRANSF.INM.P.F.23905</field>
+        <field name="code">187</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_188" model="afip.tax">
+        <field name="name">REG.PRES.ESPONTAN.DTO.292/91</field>
+        <field name="code">188</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_189" model="afip.tax">
+        <field name="name">REG.FAC.PAGO D.292/91 RG.3318</field>
+        <field name="code">189</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_190" model="afip.tax">
+        <field name="name">SUSPENSION REG.PROM. L.23697</field>
+        <field name="code">190</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_191" model="afip.tax">
+        <field name="name">ALICUOTA ADIC.DIVISAS Y B.EXT.</field>
+        <field name="code">191</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_192" model="afip.tax">
+        <field name="name">DIVISAS Y BS.EXTERIOR L.24073</field>
+        <field name="code">192</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_193" model="afip.tax">
+        <field name="name">MONEDAS Y DIVISAS EN EXTERIOR</field>
+        <field name="code">193</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_194" model="afip.tax">
+        <field name="name">ACTIVOS UNIPERSONALES</field>
+        <field name="code">194</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_195" model="afip.tax">
+        <field name="name">PRES.ESPONTANEA DTO.631/92</field>
+        <field name="code">195</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_196" model="afip.tax">
+        <field name="name">FACILIDADES PAGO D.631/92</field>
+        <field name="code">196</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_197" model="afip.tax">
+        <field name="name">REINTEGRO IVA TURISTAS RG.3495</field>
+        <field name="code">197</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_198" model="afip.tax">
+        <field name="name">F.PAGO PROM.IND.RG.3662 GAN</field>
+        <field name="code">198</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_199" model="afip.tax">
+        <field name="name">F.PAGO PROM.IND.RG.3662 IVA</field>
+        <field name="code">199</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_200" model="afip.tax">
+        <field name="name">F.PAGO PROM.IND.RG.3662 CAP</field>
+        <field name="code">200</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_201" model="afip.tax">
+        <field name="name">F.PAGO PROM.IND.RG.3662 P.NETO</field>
+        <field name="code">201</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_202" model="afip.tax">
+        <field name="name">F.PAGO PROM.IND.RG.3662 ACTIV</field>
+        <field name="code">202</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_203" model="afip.tax">
+        <field name="name">PRES.ESPONTANEA DTO.932/93</field>
+        <field name="code">203</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_204" model="afip.tax">
+        <field name="name">FACILIDADES DE PAGO D.932/93</field>
+        <field name="code">204</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_205" model="afip.tax">
+        <field name="name">REINTEGRO IVA DTO.937/93</field>
+        <field name="code">205</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_206" model="afip.tax">
+        <field name="name">GANANCIAS RG.2793</field>
+        <field name="code">206</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_207" model="afip.tax">
+        <field name="name">REG.RET.A LAS GANANCIAS</field>
+        <field name="code">207</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_208" model="afip.tax">
+        <field name="name">RET.GAN.RG2651-PRE-SICORE</field>
+        <field name="code">208</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_209" model="afip.tax">
+        <field name="name">REG.RET.A LAS GANANCIAS</field>
+        <field name="code">209</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_210" model="afip.tax">
+        <field name="name">GANANCIAS REG ESP INGR RG 830</field>
+        <field name="code">210</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_211" model="afip.tax">
+        <field name="name">BP-ACCIONES O PARTICIPACIONES</field>
+        <field name="code">211</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_212" model="afip.tax">
+        <field name="name">RESP DEUDA AJENA BP - ACC O PA</field>
+        <field name="code">212</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_213" model="afip.tax">
+        <field name="name">REG.RET.A LAS GANANCIAS</field>
+        <field name="code">213</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_214" model="afip.tax">
+        <field name="name">FONDO SOLIDARIO REDISTRIBUCION</field>
+        <field name="code">214</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_215" model="afip.tax">
+        <field name="name">RET. SERV. COM. AUDIOVISUAL</field>
+        <field name="code">215</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_217" model="afip.tax">
+        <field name="name">SICORE-IMPTO.A LAS GANANCIAS</field>
+        <field name="code">217</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_218" model="afip.tax">
+        <field name="name">IMP.A LAS GAN.- BENEF.DEL EXT.</field>
+        <field name="code">218</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_219" model="afip.tax">
+        <field name="name">SICORE-IMPTO.S/ BS PERSONALES</field>
+        <field name="code">219</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_220" model="afip.tax">
+        <field name="name">PRESENTAC. DJ RET. Y/O PERCEP</field>
+        <field name="code">220</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_221" model="afip.tax">
+        <field name="name">PRESENT DJ COMBUSTIBLES LIQ</field>
+        <field name="code">221</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_224" model="afip.tax">
+        <field name="name">REG.RET.A LAS GANANCIAS</field>
+        <field name="code">224</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_226" model="afip.tax">
+        <field name="name">DEPOSITOS JUDICIALES</field>
+        <field name="code">226</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_228" model="afip.tax">
+        <field name="name">FONDO HIDRIC DE INFRAESTRUCTUR</field>
+        <field name="code">228</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_229" model="afip.tax">
+        <field name="name">RECARGO SOBRE EL GAS NATURAL</field>
+        <field name="code">229</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_230" model="afip.tax">
+        <field name="name">IVA RG.3298-JTA NAC DE GRANOS</field>
+        <field name="code">230</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_231" model="afip.tax">
+        <field name="name">PFP-D.1384/01 Z.DESASTRE-IMPOS</field>
+        <field name="code">231</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_232" model="afip.tax">
+        <field name="name">PFP-D.338/02 Z.DESASTRE-IMPOS</field>
+        <field name="code">232</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_235" model="afip.tax">
+        <field name="name">REG.FAC.PAGO GANANCIAS RG.4047</field>
+        <field name="code">235</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_236" model="afip.tax">
+        <field name="name">REG.FACILIDADES PAGO RG.4047</field>
+        <field name="code">236</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_237" model="afip.tax">
+        <field name="name">REG.FAC.PAGO BS.PERS.RG.4051</field>
+        <field name="code">237</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_239" model="afip.tax">
+        <field name="name">INTERNOS- AUTOM Y MOTOR GASOIL</field>
+        <field name="code">239</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_240" model="afip.tax">
+        <field name="name">NAFTA FONDO HIDRICO DE INFR.</field>
+        <field name="code">240</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_241" model="afip.tax">
+        <field name="name">GAS,FONDO HIDRICO DE INFR.</field>
+        <field name="code">241</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_242" model="afip.tax">
+        <field name="name">TRANSFERENCIA DE INFORMACIÓN</field>
+        <field name="code">242</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_246" model="afip.tax">
+        <field name="name">INT.Y AJUSTES DEP.PLAZO FIJO</field>
+        <field name="code">246</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_248" model="afip.tax">
+        <field name="name">PRESENTAC.ESPONTANEA D.493/95</field>
+        <field name="code">248</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_249" model="afip.tax">
+        <field name="name">DIFERENCIAS SEG. SOC. PRE SIPA</field>
+        <field name="code">249</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_250" model="afip.tax">
+        <field name="name">MORATORIA DTO.963/95</field>
+        <field name="code">250</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_251" model="afip.tax">
+        <field name="name">FACILIDADES PAGO DTO.1053/96</field>
+        <field name="code">251</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_254" model="afip.tax">
+        <field name="name">IVA PRODUCTORES GANADO</field>
+        <field name="code">254</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_255" model="afip.tax">
+        <field name="name">IVA GANADO BOVINO RG 3125</field>
+        <field name="code">255</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_256" model="afip.tax">
+        <field name="name">IVA COMPRAVTA GANADO RG3298</field>
+        <field name="code">256</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_257" model="afip.tax">
+        <field name="name">IVA OPER.COMPRA-VENTA FAEN GAN</field>
+        <field name="code">257</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_258" model="afip.tax">
+        <field name="name">IVA OPER.COMP-VENTA PROD.YSUBP</field>
+        <field name="code">258</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_259" model="afip.tax">
+        <field name="name">IVA OPER.COMPRA-VENTA REDEST.</field>
+        <field name="code">259</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_260" model="afip.tax">
+        <field name="name">IVA C. VTA MAT FAENA GANADO</field>
+        <field name="code">260</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_261" model="afip.tax">
+        <field name="name">IVA USUARIOS FAENA BOVINO</field>
+        <field name="code">261</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_262" model="afip.tax">
+        <field name="name">IVA ESTABLECIMIENTO FAENADOR</field>
+        <field name="code">262</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_263" model="afip.tax">
+        <field name="name">IVA CONSIGNATARIOS DE HACIENDA</field>
+        <field name="code">263</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_264" model="afip.tax">
+        <field name="name">IVA SUPERMERCADOS</field>
+        <field name="code">264</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_265" model="afip.tax">
+        <field name="name">IVA CONSIGNATARIOS DE CARNE</field>
+        <field name="code">265</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_267" model="afip.tax">
+        <field name="name">IVA ESTAB FAENADOR PORCINO</field>
+        <field name="code">267</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_268" model="afip.tax">
+        <field name="name">IVA CONSIG HACIENDA PORCINO</field>
+        <field name="code">268</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_269" model="afip.tax">
+        <field name="name">IVA USUARIO FAENA PORCINO</field>
+        <field name="code">269</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_270" model="afip.tax">
+        <field name="name">CONTRIB.VALES ALIMENT.L.24700</field>
+        <field name="code">270</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_293" model="afip.tax">
+        <field name="name">REGULARIZ DTO 793/94</field>
+        <field name="code">293</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_300" model="afip.tax">
+        <field name="name">FAC.PAGO IVA IMP.DEF.BS.USO</field>
+        <field name="code">300</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_301" model="afip.tax">
+        <field name="name">EMPLEADOR-APORTES SEG. SOCIAL</field>
+        <field name="code">301</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_302" model="afip.tax">
+        <field name="name">APORTES OBRAS SOCIALES</field>
+        <field name="code">302</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_304" model="afip.tax">
+        <field name="name">ENTRADAS ESPEC.CINEMATOGRAFICO</field>
+        <field name="code">304</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_305" model="afip.tax">
+        <field name="name">IMPTO. S/VIDEOGRAMA GRABADOS</field>
+        <field name="code">305</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_306" model="afip.tax">
+        <field name="name">IMPTO.S/SERV.RADIODIFUSION TV.</field>
+        <field name="code">306</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_307" model="afip.tax">
+        <field name="name">IMPTO.S/RADIODIFUSION AM/FM</field>
+        <field name="code">307</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_308" model="afip.tax">
+        <field name="name">APORTES SEG.SOCIAL AUTONOMOS</field>
+        <field name="code">308</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_309" model="afip.tax">
+        <field name="name">PRESENTAC.ESPONTANEA RG.4043</field>
+        <field name="code">309</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_310" model="afip.tax">
+        <field name="name">NORMALIZAC.TRIBUTARIA L 23495</field>
+        <field name="code">310</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_311" model="afip.tax">
+        <field name="name">TRANSF.DE VALORES MOBILIARIOS</field>
+        <field name="code">311</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_312" model="afip.tax">
+        <field name="name">ASEG.RIESGO DE TRABAJO L 24557</field>
+        <field name="code">312</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_313" model="afip.tax">
+        <field name="name">SERV. COMUNICACIÓN AUDIOVISUAL</field>
+        <field name="code">313</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_314" model="afip.tax">
+        <field name="name">SCA ART 96 INC A, D Y/O E.</field>
+        <field name="code">314</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_315" model="afip.tax">
+        <field name="name">SCA ART 96 INC B,C,F Y/O G</field>
+        <field name="code">315</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_318" model="afip.tax">
+        <field name="name">BENEF.EVENTUALES RET.INDIVID.</field>
+        <field name="code">318</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_319" model="afip.tax">
+        <field name="name">BENEF.EVENTUALES RET.GOBALES</field>
+        <field name="code">319</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_321" model="afip.tax">
+        <field name="name">APORTE MAGISTRADOS</field>
+        <field name="code">321</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_330" model="afip.tax">
+        <field name="name">IVA MERCADOS MAYORISTAS</field>
+        <field name="code">330</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_331" model="afip.tax">
+        <field name="name">REGIMEN DE FACTURACION RG 3419</field>
+        <field name="code">331</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_340" model="afip.tax">
+        <field name="name">PFP.ESTAB.FAENADORES-IMPOSITIV</field>
+        <field name="code">340</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_341" model="afip.tax">
+        <field name="name">PFP-ESTAB.FAENADOR-SEG.SOCIAL</field>
+        <field name="code">341</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_348" model="afip.tax">
+        <field name="name">AFA-CLUBES DE FÚTBOL-DTO.1212</field>
+        <field name="code">348</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_349" model="afip.tax">
+        <field name="name">PRES.ESPONTANEA DTO.271/95</field>
+        <field name="code">349</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_350" model="afip.tax">
+        <field name="name">REVALUACION HACIENDA L.23079</field>
+        <field name="code">350</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_351" model="afip.tax">
+        <field name="name">CONTRIBUCIONES SEG. SOCIAL</field>
+        <field name="code">351</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_352" model="afip.tax">
+        <field name="name">CONTRIBUCIONES OBRA SOCIAL</field>
+        <field name="code">352</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_353" model="afip.tax">
+        <field name="name">RETENCIONES CONTRIB.SEG.SOCIAL</field>
+        <field name="code">353</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_354" model="afip.tax">
+        <field name="name">APORTES Y CONTR.O.S. PRE-SIJP</field>
+        <field name="code">354</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_355" model="afip.tax">
+        <field name="name">REGIMEN FACILIDADES DE PAGO</field>
+        <field name="code">355</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_356" model="afip.tax">
+        <field name="name">PAMI AP/CONT ASIG NO REM D1273</field>
+        <field name="code">356</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_357" model="afip.tax">
+        <field name="name">RNOS AP/CONT ASIG NO REM D1273</field>
+        <field name="code">357</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_358" model="afip.tax">
+        <field name="name">CONTRIB.SEG.SOCIAL AUTONOMOS</field>
+        <field name="code">358</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_359" model="afip.tax">
+        <field name="name">FONDO TRANSIT.P/FINANC.L.23562</field>
+        <field name="code">359</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_360" model="afip.tax">
+        <field name="name">CONTRIBUCION RENATEA</field>
+        <field name="code">360</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_361" model="afip.tax">
+        <field name="name">INTERNOS- TABACOS</field>
+        <field name="code">361</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_362" model="afip.tax">
+        <field name="name">INTERNOS-ALCOHOLES</field>
+        <field name="code">362</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_363" model="afip.tax">
+        <field name="name">INTERNOS-BEBIDAS ALCOHOL</field>
+        <field name="code">363</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_364" model="afip.tax">
+        <field name="name">INTERNOS-VINO CHAMPAGNE</field>
+        <field name="code">364</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_365" model="afip.tax">
+        <field name="name">INTERNOS-SEGUROS</field>
+        <field name="code">365</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_366" model="afip.tax">
+        <field name="name">ADICIONAL EMERG.CIGARRILLOS</field>
+        <field name="code">366</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_367" model="afip.tax">
+        <field name="name">INTERNOS-SERV TEL CEL Y SATEL</field>
+        <field name="code">367</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_368" model="afip.tax">
+        <field name="name">INTERNOS-CHAMPAÑAS</field>
+        <field name="code">368</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_369" model="afip.tax">
+        <field name="name">INTERNOS-VEHIC AUTOM EMBARC</field>
+        <field name="code">369</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_370" model="afip.tax">
+        <field name="name">F.1245 DDJJ PATRIMONIAL INT.</field>
+        <field name="code">370</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_371" model="afip.tax">
+        <field name="name">F.1246 DDJJ PATR.COMP.FLIAR</field>
+        <field name="code">371</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_374" model="afip.tax">
+        <field name="name">PLAN F. PAGO AUTONOM Y MONOTR</field>
+        <field name="code">374</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_375" model="afip.tax">
+        <field name="name">PFP AUTON Y MONOTR CONCURSADOS</field>
+        <field name="code">375</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_376" model="afip.tax">
+        <field name="name">MONOTRIB AUTONOMOS DEUDA SICAM</field>
+        <field name="code">376</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_377" model="afip.tax">
+        <field name="name">COM LIQ L.23966/24699 ART 2DOA</field>
+        <field name="code">377</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_380" model="afip.tax">
+        <field name="name">DTO.271/95 FORM.627 R.III</field>
+        <field name="code">380</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_381" model="afip.tax">
+        <field name="name">DTO.271/95 FORM.627 R.IV</field>
+        <field name="code">381</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_382" model="afip.tax">
+        <field name="name">DTO.271/95 FORM.627 R.V</field>
+        <field name="code">382</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_383" model="afip.tax">
+        <field name="name">REG.FACIL.PAGO DTO.493/95 F624</field>
+        <field name="code">383</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_384" model="afip.tax">
+        <field name="name">PFP-D.1384/01-Z.DESAST-SEG.SOC</field>
+        <field name="code">384</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_385" model="afip.tax">
+        <field name="name">PFP-D.338/01-Z.DESASTRE-SEG.SO</field>
+        <field name="code">385</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_386" model="afip.tax">
+        <field name="name">SEGURIDAD SOCIAL</field>
+        <field name="code">386</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_387" model="afip.tax">
+        <field name="name">FAC.PAGO CONTRIBUC. L.24753</field>
+        <field name="code">387</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_388" model="afip.tax">
+        <field name="name">FAC.PAGO APORTES L.24753</field>
+        <field name="code">388</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_389" model="afip.tax">
+        <field name="name">FAC.PAGO AUTONOMOS L.24753</field>
+        <field name="code">389</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_390" model="afip.tax">
+        <field name="name">SEGURIDAD SOCIAL</field>
+        <field name="code">390</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_391" model="afip.tax">
+        <field name="name">PFP-DTO2724 SEG.SOC.DEUDA 2002</field>
+        <field name="code">391</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_392" model="afip.tax">
+        <field name="name">PFP-DTO2724 SEG.SOC.DEUDA 2003</field>
+        <field name="code">392</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_394" model="afip.tax">
+        <field name="name">RAFA-IMPOSITIVO/CONTRIBUCIONES</field>
+        <field name="code">394</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_395" model="afip.tax">
+        <field name="name">COMB LIQ L 23966/24699 ART 2 B</field>
+        <field name="code">395</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_396" model="afip.tax">
+        <field name="name">COMBUSTIBLES LIQUIDOS IMPORTAD</field>
+        <field name="code">396</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_397" model="afip.tax">
+        <field name="name">COMB LIQ L 23966 GAS LICUADO</field>
+        <field name="code">397</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_398" model="afip.tax">
+        <field name="name">IMPUESTO S/GAS OIL</field>
+        <field name="code">398</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_399" model="afip.tax">
+        <field name="name">G.N.C. L.23966</field>
+        <field name="code">399</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_400" model="afip.tax">
+        <field name="name">RAFA-SEG SOCIAL/APORTES</field>
+        <field name="code">400</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_401" model="afip.tax">
+        <field name="name">MANUF.CIGARRILLOS L.23562</field>
+        <field name="code">401</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_402" model="afip.tax">
+        <field name="name">INTERNOS-MANUF TABACALES AFIN</field>
+        <field name="code">402</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_403" model="afip.tax">
+        <field name="name">INTERNOS-MANUF.TABACALES HOJAS</field>
+        <field name="code">403</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_405" model="afip.tax">
+        <field name="name">INTERNOS-IMPORT.TABACOS ELABOR</field>
+        <field name="code">405</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_408" model="afip.tax">
+        <field name="name">TABACOS/COMERCIALIZAC.TABACOS</field>
+        <field name="code">408</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_409" model="afip.tax">
+        <field name="name">LEY N°27260 DECLARACION BIENES</field>
+        <field name="code">409</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_410" model="afip.tax">
+        <field name="name">ACOPIADORES DE TABACO</field>
+        <field name="code">410</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_411" model="afip.tax">
+        <field name="name">LEY 27253- DEVOLUCIÓN DE IVA</field>
+        <field name="code">411</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_413" model="afip.tax">
+        <field name="name">TABACOS/DESNAT. DE TABACOS</field>
+        <field name="code">413</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_414" model="afip.tax">
+        <field name="name">INTERNOS-DESEQ PROV S/CIGARR.</field>
+        <field name="code">414</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_415" model="afip.tax">
+        <field name="name">TABACOS/DEPOSITOS GRALES</field>
+        <field name="code">415</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_416" model="afip.tax">
+        <field name="name">MANUFACTURA DE CIGARRILLO</field>
+        <field name="code">416</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_417" model="afip.tax">
+        <field name="name">INTERNOS-DESTIL ALCOHOL INDUST</field>
+        <field name="code">417</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_418" model="afip.tax">
+        <field name="name">INTERNOS-DESTILADOR TANQUES</field>
+        <field name="code">418</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_419" model="afip.tax">
+        <field name="name">INTERNOS-DEST.SUBPR.ALCOH ETIL</field>
+        <field name="code">419</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_420" model="afip.tax">
+        <field name="name">INTERNOS-FRACCION.ALCOHOL ETIL</field>
+        <field name="code">420</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_421" model="afip.tax">
+        <field name="name">FRACCIONAM.PRODUCCION ALCOHOL</field>
+        <field name="code">421</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_426" model="afip.tax">
+        <field name="name">INTERNOS-FAB BEBIDAS DESTILADA</field>
+        <field name="code">426</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_427" model="afip.tax">
+        <field name="name">INTERNOS-ZONA LIBRE ALCOHOLERA</field>
+        <field name="code">427</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_428" model="afip.tax">
+        <field name="name">IMPORTADOR DE PERF A BASE DE A</field>
+        <field name="code">428</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_429" model="afip.tax">
+        <field name="name">IMPORTADOR ALCOHOL ETILICO</field>
+        <field name="code">429</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_430" model="afip.tax">
+        <field name="name">IVA DETERMIN.OFICIO RG. 3274</field>
+        <field name="code">430</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_431" model="afip.tax">
+        <field name="name">INTERNOS-DESTILERIA SIST MIXTO</field>
+        <field name="code">431</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_432" model="afip.tax">
+        <field name="name">ALCOHOLES-COM.ALCOHOL ETILICO</field>
+        <field name="code">432</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_433" model="afip.tax">
+        <field name="name">ALCOHOLES-MANIP.ALCOHOL ETILIC</field>
+        <field name="code">433</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_434" model="afip.tax">
+        <field name="name">USUARIO ALCOHOL ETILICO</field>
+        <field name="code">434</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_435" model="afip.tax">
+        <field name="name">MANIPUL ALCOHOL ETILICO</field>
+        <field name="code">435</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_436" model="afip.tax">
+        <field name="name">ALCHOLES COMERCIALIZACION MAYO</field>
+        <field name="code">436</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_437" model="afip.tax">
+        <field name="name">USUARIO PRODUCTOS ALCOHOLICOS</field>
+        <field name="code">437</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_438" model="afip.tax">
+        <field name="name">CINTA TESTIGO DIGITAL</field>
+        <field name="code">438</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_439" model="afip.tax">
+        <field name="name">INFORME DELINSPECTOR-INF.TOTAL</field>
+        <field name="code">439</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_440" model="afip.tax">
+        <field name="name">ESPECIFICO DE APUESTAS</field>
+        <field name="code">440</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_441" model="afip.tax">
+        <field name="name">APUESTAS ON LINE</field>
+        <field name="code">441</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_442" model="afip.tax">
+        <field name="name">USUARIO ALCOHOL EXENTO</field>
+        <field name="code">442</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_443" model="afip.tax">
+        <field name="name">I ALCOHOL FAB DESTIL</field>
+        <field name="code">443</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_444" model="afip.tax">
+        <field name="name">FABRICAC PERFUME A BASE DE ALC</field>
+        <field name="code">444</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_445" model="afip.tax">
+        <field name="name">ALCOHOLES-FRAC.ALCOHOL DESNAT.</field>
+        <field name="code">445</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_446" model="afip.tax">
+        <field name="name">ALCOHOLES FRAC ALC DESNAT</field>
+        <field name="code">446</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_447" model="afip.tax">
+        <field name="name">MANIPULADOR ALCOHOL DESNAT</field>
+        <field name="code">447</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_449" model="afip.tax">
+        <field name="name">INTERNOS-VEHIC. AUTOMOV MOTOR</field>
+        <field name="code">449</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_450" model="afip.tax">
+        <field name="name">INTERNOS-FAB.BEBIDAS ALCOHOLIC</field>
+        <field name="code">450</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_451" model="afip.tax">
+        <field name="name">INTERNOS-CERVEZAS</field>
+        <field name="code">451</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_452" model="afip.tax">
+        <field name="name">INTERNOS-FAB.BEB.ALCOHOL FERME</field>
+        <field name="code">452</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_453" model="afip.tax">
+        <field name="name">INTERNOS-IMPORT BEBIDA ALCOHOL</field>
+        <field name="code">453</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_454" model="afip.tax">
+        <field name="name">INTERNOS-IMPORT BEB.ALCOH FERM</field>
+        <field name="code">454</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_457" model="afip.tax">
+        <field name="name">INTERNOS-FRACC.BEBIDAS ALCOHOL</field>
+        <field name="code">457</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_458" model="afip.tax">
+        <field name="name">GRAV.S/ENERGIA ELECT.LEY 17574</field>
+        <field name="code">458</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_459" model="afip.tax">
+        <field name="name">INTERNOS-CIAS.SEGUROS NACIONAL</field>
+        <field name="code">459</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_460" model="afip.tax">
+        <field name="name">INTERNOS-SEGUR CONTRATADOS EXT</field>
+        <field name="code">460</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_461" model="afip.tax">
+        <field name="name">INTERNOS-OTROS BIENES Y SERVIC</field>
+        <field name="code">461</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_462" model="afip.tax">
+        <field name="name">INTERNOS-ACEITES LUBRICANTES</field>
+        <field name="code">462</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_463" model="afip.tax">
+        <field name="name">ADICION.ACEITES LUBRICANTES</field>
+        <field name="code">463</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_464" model="afip.tax">
+        <field name="name">GRAV PETROLEO CRUDO PROCESADO</field>
+        <field name="code">464</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_465" model="afip.tax">
+        <field name="name">COMBUSTIBLES AERONAVES</field>
+        <field name="code">465</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_466" model="afip.tax">
+        <field name="name">SICORE-PREMIOS JUEGOS Y C.DEP</field>
+        <field name="code">466</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_467" model="afip.tax">
+        <field name="name">INTERNOS-VINOS/BODEGUEROS</field>
+        <field name="code">467</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_468" model="afip.tax">
+        <field name="name">PAGO CONTRIBUCIONES AGP</field>
+        <field name="code">468</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_469" model="afip.tax">
+        <field name="name">INTERNOS-FABRIC VINOS POSTRE</field>
+        <field name="code">469</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_470" model="afip.tax">
+        <field name="name">INTERNOS-FABR VINOS COMPUESTOS</field>
+        <field name="code">470</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_471" model="afip.tax">
+        <field name="name">INTERNOS-FABR VINOS ESPUMOSOS</field>
+        <field name="code">471</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_473" model="afip.tax">
+        <field name="name">INTERNOS-FABRICANTES CHAMPAGNE</field>
+        <field name="code">473</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_474" model="afip.tax">
+        <field name="name">INTERNOS-VINOS INTERMEDIARIOS</field>
+        <field name="code">474</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_475" model="afip.tax">
+        <field name="name">INTERNOS-VINOS IMPORTADORES</field>
+        <field name="code">475</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_476" model="afip.tax">
+        <field name="name">INTERNOS-VINOS CORTADORES</field>
+        <field name="code">476</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_477" model="afip.tax">
+        <field name="name">INTERNOS-VINOS FRACCIONADORES</field>
+        <field name="code">477</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_478" model="afip.tax">
+        <field name="name">GRAVAMEN SERV.AUXIL.NAVEGACION</field>
+        <field name="code">478</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_479" model="afip.tax">
+        <field name="name">INTERNOS-SOBRETASA VINO</field>
+        <field name="code">479</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_480" model="afip.tax">
+        <field name="name">INTERNOS-ARTICULOS DE TOCADOR</field>
+        <field name="code">480</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_481" model="afip.tax">
+        <field name="name">INTERNOS-OBJETOS SUNTUARIOS</field>
+        <field name="code">481</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_482" model="afip.tax">
+        <field name="name">INTERNOS-CUBIERTAS</field>
+        <field name="code">482</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_483" model="afip.tax">
+        <field name="name">FONDO NAC.VIALIDAD-CUBIERTAS</field>
+        <field name="code">483</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_484" model="afip.tax">
+        <field name="name">FON.NAC.COMPLEMENT.VIALIDAD</field>
+        <field name="code">484</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_485" model="afip.tax">
+        <field name="name">INTERNOS-BEB.ANALCOHOL JARAB</field>
+        <field name="code">485</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_486" model="afip.tax">
+        <field name="name">GRAV ENERGIA ELECTRICA</field>
+        <field name="code">486</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_487" model="afip.tax">
+        <field name="name">GRAV PETROLEO CRUDO PROCESADO</field>
+        <field name="code">487</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_488" model="afip.tax">
+        <field name="name">CPRA/VTA. DE DIVISAS L.18526</field>
+        <field name="code">488</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_489" model="afip.tax">
+        <field name="name">FONDO DE ASIST. A LOS MEDICAM.</field>
+        <field name="code">489</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_490" model="afip.tax">
+        <field name="name">GRAV ENERGIA ELECTRICA L 15336</field>
+        <field name="code">490</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_491" model="afip.tax">
+        <field name="name">TRANSF.COMBUSTIBLES LIQUIDOS</field>
+        <field name="code">491</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_492" model="afip.tax">
+        <field name="name">INTERNOS MOTONAFTA, ALCONAFTA</field>
+        <field name="code">492</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_493" model="afip.tax">
+        <field name="name">INTERNOS GAS L.23549</field>
+        <field name="code">493</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_494" model="afip.tax">
+        <field name="name">INTERNOS -SERVICIO TELEFONICO</field>
+        <field name="code">494</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_495" model="afip.tax">
+        <field name="name">APUESTAS DE CARRERAS L.11242</field>
+        <field name="code">495</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_496" model="afip.tax">
+        <field name="name">FONDO.NAC.AUTOPISTAS L.18408</field>
+        <field name="code">496</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_497" model="afip.tax">
+        <field name="name">GRAV GAS NATURAL L 16656</field>
+        <field name="code">497</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_498" model="afip.tax">
+        <field name="name">SELLOS LEY 11290</field>
+        <field name="code">498</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_499" model="afip.tax">
+        <field name="name">DEPOSITO ACTA FISC. LEY 18820</field>
+        <field name="code">499</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_582" model="afip.tax">
+        <field name="name">TRANSFERENCIA DE DIVISAS</field>
+        <field name="code">582</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_724" model="afip.tax">
+        <field name="name">REGIMEN REGULARIZ VOLUNT 26970</field>
+        <field name="code">724</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_725" model="afip.tax">
+        <field name="name">COMISIONES PAGADAS EN EXCESO</field>
+        <field name="code">725</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_727" model="afip.tax">
+        <field name="name">GANANCIAS ADUANA</field>
+        <field name="code">727</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_728" model="afip.tax">
+        <field name="name">IVA RETENCIONES GLOB.ADUANA</field>
+        <field name="code">728</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_729" model="afip.tax">
+        <field name="name">IVA ADUANA</field>
+        <field name="code">729</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_730" model="afip.tax">
+        <field name="name">OPERADORES RG 3569</field>
+        <field name="code">730</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_731" model="afip.tax">
+        <field name="name">IVA GANADO PORCINO</field>
+        <field name="code">731</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_732" model="afip.tax">
+        <field name="name">REG.PAGO A CUENTA IVA SALONES</field>
+        <field name="code">732</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_733" model="afip.tax">
+        <field name="name">IVA RESTAURANTES</field>
+        <field name="code">733</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_734" model="afip.tax">
+        <field name="name">REG PAGO A CUENTA-IVA GARAGES,</field>
+        <field name="code">734</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_735" model="afip.tax">
+        <field name="name">IVA RETENCIONES</field>
+        <field name="code">735</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_736" model="afip.tax">
+        <field name="name">RETENCION RESTAURANTES HOTELES</field>
+        <field name="code">736</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_737" model="afip.tax">
+        <field name="name">PAGO A CUENTA-IVA</field>
+        <field name="code">737</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_738" model="afip.tax">
+        <field name="name">IVA POLLOS PARRILLEROS</field>
+        <field name="code">738</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_739" model="afip.tax">
+        <field name="name">IVA CAL Y CEMENTO</field>
+        <field name="code">739</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_740" model="afip.tax">
+        <field name="name">EXT.TENENCIA M.E.LEY N° 26.860</field>
+        <field name="code">740</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_741" model="afip.tax">
+        <field name="name">INGRESO A CTA RET Y PERCEP IVA</field>
+        <field name="code">741</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_742" model="afip.tax">
+        <field name="name">BILLETERA ELECTRONICA - TBI</field>
+        <field name="code">742</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_743" model="afip.tax">
+        <field name="name">SALIDAS NO DOCUMENTADAS</field>
+        <field name="code">743</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_760" model="afip.tax">
+        <field name="name">IVA HARINAS Y DERIV DE TRIGO</field>
+        <field name="code">760</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_761" model="afip.tax">
+        <field name="name">PRESENTAC.ESPONTANEA RG.3962</field>
+        <field name="code">761</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_767" model="afip.tax">
+        <field name="name">SICORE - RETENCIONES Y PERCEPC</field>
+        <field name="code">767</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_770" model="afip.tax">
+        <field name="name">DERECHOS DE EXPORTACION</field>
+        <field name="code">770</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_771" model="afip.tax">
+        <field name="name">DERECHOS DE IMPORTACION</field>
+        <field name="code">771</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_772" model="afip.tax">
+        <field name="name">TASA ESTADISTICA- ADUANA</field>
+        <field name="code">772</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_773" model="afip.tax">
+        <field name="name">TASA EQUIP.PRECIOS-ADUANA</field>
+        <field name="code">773</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_774" model="afip.tax">
+        <field name="name">DERECHOS ANTIDUMPING-ADUANA</field>
+        <field name="code">774</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_775" model="afip.tax">
+        <field name="name">TASA SERV EXTRAORD.-ADUANA</field>
+        <field name="code">775</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_776" model="afip.tax">
+        <field name="name">TASA COMPROBACION-ADUANA</field>
+        <field name="code">776</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_777" model="afip.tax">
+        <field name="name">OTRAS TASAS-ADUANA</field>
+        <field name="code">777</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_778" model="afip.tax">
+        <field name="name">FONDO NAC MARINA MERCAN-ADUANA</field>
+        <field name="code">778</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_779" model="afip.tax">
+        <field name="name">INTA-ADUANA</field>
+        <field name="code">779</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_780" model="afip.tax">
+        <field name="name">INTI-ADUANA</field>
+        <field name="code">780</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_781" model="afip.tax">
+        <field name="name">INFRACCIONES LEY 22415</field>
+        <field name="code">781</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_782" model="afip.tax">
+        <field name="name">DOCUMENTO ELECTRONICO ADUANERO</field>
+        <field name="code">782</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_783" model="afip.tax">
+        <field name="name">RÉG.APLICACIÓN FONDOS EXT.</field>
+        <field name="code">783</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_784" model="afip.tax">
+        <field name="name">MULTAS INF FORM PREVISIONALES</field>
+        <field name="code">784</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_785" model="afip.tax">
+        <field name="name">PRESENT. DJ SIRE IMPOSITIVO</field>
+        <field name="code">785</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_786" model="afip.tax">
+        <field name="name">ART TRAB. CASAS. PARTI.</field>
+        <field name="code">786</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_787" model="afip.tax">
+        <field name="name">RET ART 79 LEY GCIAS INC A,BYC</field>
+        <field name="code">787</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_789" model="afip.tax">
+        <field name="name">IMP S/DEB Y CRED EN CTAS BCO</field>
+        <field name="code">789</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_790" model="afip.tax">
+        <field name="name">CCG - INFORME DE DEUDA</field>
+        <field name="code">790</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_791" model="afip.tax">
+        <field name="name">PLAN DEUDA DTO 814/2001 - CABA</field>
+        <field name="code">791</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_830" model="afip.tax">
+        <field name="name">IVA ADUANA</field>
+        <field name="code">830</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_831" model="afip.tax">
+        <field name="name">IVA PERCEPCIONES ADUANA</field>
+        <field name="code">831</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_832" model="afip.tax">
+        <field name="name">INTERNOS NACIONALES-ADUANA</field>
+        <field name="code">832</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_833" model="afip.tax">
+        <field name="name">TABACOS/ADUANA</field>
+        <field name="code">833</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_834" model="afip.tax">
+        <field name="name">A LOS COMBUSTIBLES ADUANA</field>
+        <field name="code">834</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_835" model="afip.tax">
+        <field name="name">GANANCIAS RETENCIONES EXCEPTO</field>
+        <field name="code">835</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_871" model="afip.tax">
+        <field name="name">PRESENT.DJ REASIG. DE SALDOS</field>
+        <field name="code">871</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_935" model="afip.tax">
+        <field name="name">RENATEA</field>
+        <field name="code">935</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_936" model="afip.tax">
+        <field name="name">DACIÓN EN PAGO DE ESP.PUBLICI.</field>
+        <field name="code">936</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_937" model="afip.tax">
+        <field name="name">REVALUO IMPOSITIVO LEY 27.430</field>
+        <field name="code">937</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_945" model="afip.tax">
+        <field name="name">APORTES TRAB. CASAS PARTI.</field>
+        <field name="code">945</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_946" model="afip.tax">
+        <field name="name">CONTRIB. TRAB. CASAS PARTI.</field>
+        <field name="code">946</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_947" model="afip.tax">
+        <field name="name">OBRA SOCIAL TRAB. CASAS PARTI.</field>
+        <field name="code">947</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_951" model="afip.tax">
+        <field name="name">APORTES EX-CAJAS PROV./MUNICIP</field>
+        <field name="code">951</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_966" model="afip.tax">
+        <field name="name">REG.SEG.SOCIAL-AUTONOMOS</field>
+        <field name="code">966</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_967" model="afip.tax">
+        <field name="name">CONV.GREMIAL-AFA</field>
+        <field name="code">967</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_968" model="afip.tax">
+        <field name="name">ACTAS DE FISCALIZACION-ANSES</field>
+        <field name="code">968</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_969" model="afip.tax">
+        <field name="name">ANSES PAGO MORATORIA Y EMPLEAD</field>
+        <field name="code">969</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_970" model="afip.tax">
+        <field name="name">CONV.GREMIAL-ALGODONERA</field>
+        <field name="code">970</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_971" model="afip.tax">
+        <field name="name">CAJA SUBS.FAM.PERS.INDUSTRIA</field>
+        <field name="code">971</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_972" model="afip.tax">
+        <field name="name">SUBSIDIO FLIARES.PERS.COMERCIO</field>
+        <field name="code">972</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_973" model="afip.tax">
+        <field name="name">CAFPE ACT.MARIT.FLUV.Y DE INDU</field>
+        <field name="code">973</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_974" model="afip.tax">
+        <field name="name">ANSES FAC.PAGO OBRAS SOCIALES</field>
+        <field name="code">974</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_976" model="afip.tax">
+        <field name="name">DEUDAS PREV.FAC.PAGO D.933/93</field>
+        <field name="code">976</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_977" model="afip.tax">
+        <field name="name">CONV.GREMIAL-AZUCARERA</field>
+        <field name="code">977</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_978" model="afip.tax">
+        <field name="name">CONV.GREMIAL-CEREALERO</field>
+        <field name="code">978</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_979" model="afip.tax">
+        <field name="name">CONV.DE C.GREMIAL-LANERO</field>
+        <field name="code">979</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_980" model="afip.tax">
+        <field name="name">CONV.DE C.GREMIAL-TABACALERO</field>
+        <field name="code">980</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_981" model="afip.tax">
+        <field name="name">CONV.DE C.GREMIAL-GANADERO</field>
+        <field name="code">981</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_982" model="afip.tax">
+        <field name="name">CONV.DE C.GREMIAL-VIÑATERO</field>
+        <field name="code">982</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_983" model="afip.tax">
+        <field name="name">CONV.GREMIAL-CEREALERO(GRUESA)</field>
+        <field name="code">983</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_984" model="afip.tax">
+        <field name="name">CONV.C.GREMIAL-FORESTAL CHACO</field>
+        <field name="code">984</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_985" model="afip.tax">
+        <field name="name">FAC.PAGO PREVISIONALES RG.3762</field>
+        <field name="code">985</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_986" model="afip.tax">
+        <field name="name">FAC.PAGO OBRA SOCIALES</field>
+        <field name="code">986</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_987" model="afip.tax">
+        <field name="name">FAC.PAGO ASOC.SINDICALES O.S.</field>
+        <field name="code">987</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_988" model="afip.tax">
+        <field name="name">PLAN FAC.DE PAGO AUTONOMOS</field>
+        <field name="code">988</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_989" model="afip.tax">
+        <field name="name">F.PAGO PREVISIONAL DTO.1164/93</field>
+        <field name="code">989</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_990" model="afip.tax">
+        <field name="name">MORATORIA AUTONOMOS RES.421/85</field>
+        <field name="code">990</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_991" model="afip.tax">
+        <field name="name">APORTES PREVIS.TESORO GRAL.</field>
+        <field name="code">991</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_992" model="afip.tax">
+        <field name="name">MORAT.EMPLEADORES RES.420/85</field>
+        <field name="code">992</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_993" model="afip.tax">
+        <field name="name">MORATORIA RES.86/90 INPS</field>
+        <field name="code">993</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_994" model="afip.tax">
+        <field name="name">MORATORIA RES.174-158/91</field>
+        <field name="code">994</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_995" model="afip.tax">
+        <field name="name">MORATORIA RES.271/89</field>
+        <field name="code">995</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_996" model="afip.tax">
+        <field name="name">ANSES DISTRIBUCION SECUNDARIA</field>
+        <field name="code">996</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_997" model="afip.tax">
+        <field name="name">SUSS DTO.2284/91 EMPLEADORES</field>
+        <field name="code">997</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_998" model="afip.tax">
+        <field name="name">REG.NACIONAL OBRAS SOCIALES</field>
+        <field name="code">998</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_1012" model="afip.tax">
+        <field name="name">ARANCELES DE OFICIO</field>
+        <field name="code">1012</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_1013" model="afip.tax">
+        <field name="name">ARANCELES E INGRESOS VARIOS</field>
+        <field name="code">1013</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_1014" model="afip.tax">
+        <field name="name">REG.FOMENTO DE INVERSION PYMES</field>
+        <field name="code">1014</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_1015" model="afip.tax">
+        <field name="name">FOMENTO FUENTES RENOV ENERGÍA</field>
+        <field name="code">1015</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_1017" model="afip.tax">
+        <field name="name">ARANCEL SERV. DE RECAUDACION</field>
+        <field name="code">1017</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_1018" model="afip.tax">
+        <field name="name">CO2 - NAFTAS</field>
+        <field name="code">1018</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_1019" model="afip.tax">
+        <field name="name">CO2-SOLV. AGUARRAS GASOL.NAF V</field>
+        <field name="code">1019</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_1020" model="afip.tax">
+        <field name="name">CO2 - GASOIL DIESELOIL Y KEROS</field>
+        <field name="code">1020</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_1021" model="afip.tax">
+        <field name="name">DIOXIDO DE CARBONO - FUEL OIL</field>
+        <field name="code">1021</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_1022" model="afip.tax">
+        <field name="name">CO2 - COQUE PETROL Y CARB MIN</field>
+        <field name="code">1022</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_1024" model="afip.tax">
+        <field name="name">BILLETERA ELECTRONICA AFIP</field>
+        <field name="code">1024</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_1025" model="afip.tax">
+        <field name="name">CEDULARES- VALORES O DEPOSITOS</field>
+        <field name="code">1025</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_1026" model="afip.tax">
+        <field name="name">CEDULARES - INMUEBLES</field>
+        <field name="code">1026</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2010" model="afip.tax">
+        <field name="name">DERECHOS DE IMPORTACION</field>
+        <field name="code">2010</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2011" model="afip.tax">
+        <field name="name">TASA DE ESTADISTICA</field>
+        <field name="code">2011</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2012" model="afip.tax">
+        <field name="name">DERECHOS ANTIDUMPING 1</field>
+        <field name="code">2012</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2013" model="afip.tax">
+        <field name="name">DERECHO COMPENSATORIO</field>
+        <field name="code">2013</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2014" model="afip.tax">
+        <field name="name">IMPUESTO EQUIP. DE PREC.</field>
+        <field name="code">2014</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2015" model="afip.tax">
+        <field name="name">DERECHO ESPECIFICO</field>
+        <field name="code">2015</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2016" model="afip.tax">
+        <field name="name">SUMA AD.TEM. D1330-04</field>
+        <field name="code">2016</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2017" model="afip.tax">
+        <field name="name">DERECHO ANTIDUMPING 2</field>
+        <field name="code">2017</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2018" model="afip.tax">
+        <field name="name">DER.IMP.AJ.EQ.PRE.1</field>
+        <field name="code">2018</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2019" model="afip.tax">
+        <field name="name">DERECHO COMPENSATORIO (2)</field>
+        <field name="code">2019</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2020" model="afip.tax">
+        <field name="name">DERECHOS DE EXPORTACION</field>
+        <field name="code">2020</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2021" model="afip.tax">
+        <field name="name">DERECHOS EXPO.INT.RESARCITORIO</field>
+        <field name="code">2021</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2022" model="afip.tax">
+        <field name="name">DERECHOS EXPO.INT.PUNITORIO</field>
+        <field name="code">2022</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2023" model="afip.tax">
+        <field name="name">DERECHOS EXPO. OTROS INTERESES</field>
+        <field name="code">2023</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2024" model="afip.tax">
+        <field name="name">DERECHOS DE EXPORTACION CUEROS</field>
+        <field name="code">2024</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2025" model="afip.tax">
+        <field name="name">DER.IMP.COMPRAS PROV.EXTERIOR</field>
+        <field name="code">2025</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2026" model="afip.tax">
+        <field name="name">DERECHOS EXPORTACION ADICIONAL</field>
+        <field name="code">2026</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2027" model="afip.tax">
+        <field name="name">DER. ADIC. EXPO RES 61/07 MEP</field>
+        <field name="code">2027</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2028" model="afip.tax">
+        <field name="name">D.EXP.ART52LEY27541</field>
+        <field name="code">2028</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2029" model="afip.tax">
+        <field name="name">PAGO 90% EN DJVE</field>
+        <field name="code">2029</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2030" model="afip.tax">
+        <field name="name">SUMA AD. NAC. DE. 1330-04</field>
+        <field name="code">2030</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2031" model="afip.tax">
+        <field name="name">TASA DE COMPROBACION</field>
+        <field name="code">2031</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2032" model="afip.tax">
+        <field name="name">TASA LEY 24196</field>
+        <field name="code">2032</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2033" model="afip.tax">
+        <field name="name">MULTA ARR. FUERA TER.</field>
+        <field name="code">2033</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2034" model="afip.tax">
+        <field name="name">DIEM-SALVAG.</field>
+        <field name="code">2034</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2035" model="afip.tax">
+        <field name="name">INT. RESARC. IMPORTACION</field>
+        <field name="code">2035</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2036" model="afip.tax">
+        <field name="name">INT. PUNITOR.IMPORTACION</field>
+        <field name="code">2036</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2037" model="afip.tax">
+        <field name="name">OTROS INT. IMPORT.</field>
+        <field name="code">2037</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2038" model="afip.tax">
+        <field name="name">DER.EXPO.ADIC.4</field>
+        <field name="code">2038</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2039" model="afip.tax">
+        <field name="name">DER.EXPO.ADIC.3</field>
+        <field name="code">2039</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2040" model="afip.tax">
+        <field name="name">FDO.GRAT.LEY 23993</field>
+        <field name="code">2040</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2041" model="afip.tax">
+        <field name="name">MULTA DEST. FUERA TER.</field>
+        <field name="code">2041</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2042" model="afip.tax">
+        <field name="name">MULTA GRAL. F. DOC. COMP.</field>
+        <field name="code">2042</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2043" model="afip.tax">
+        <field name="name">VARIOS</field>
+        <field name="code">2043</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2044" model="afip.tax">
+        <field name="name">FDO. JER. LEY 23993</field>
+        <field name="code">2044</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2045" model="afip.tax">
+        <field name="name">MULTAS NO AUTOMATICAS</field>
+        <field name="code">2045</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2046" model="afip.tax">
+        <field name="name">MULTA NO TOMAR CONT.</field>
+        <field name="code">2046</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2047" model="afip.tax">
+        <field name="name">MULTA FALTA DOC. COMP.</field>
+        <field name="code">2047</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2048" model="afip.tax">
+        <field name="name">MULTA TRANS. ART. 320</field>
+        <field name="code">2048</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2049" model="afip.tax">
+        <field name="name">DTO. 258 PROD. EF. Y FISC.</field>
+        <field name="code">2049</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2050" model="afip.tax">
+        <field name="name">D.A-DUMP 1/MERCOSUR</field>
+        <field name="code">2050</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2051" model="afip.tax">
+        <field name="name">D.A-DUMP 2/MERCOSUR</field>
+        <field name="code">2051</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2052" model="afip.tax">
+        <field name="name">I. EQUIP. PRECIOS MERC</field>
+        <field name="code">2052</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2053" model="afip.tax">
+        <field name="name">D.I. AJ. EQ. PR. MERC. 1</field>
+        <field name="code">2053</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2054" model="afip.tax">
+        <field name="name">DER. IMP. AJ. EQ. PRE. 2</field>
+        <field name="code">2054</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2055" model="afip.tax">
+        <field name="name">DER. IMP. AJ. EQ. PRE. 2 MERC</field>
+        <field name="code">2055</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2056" model="afip.tax">
+        <field name="name">DER. IMP. USADOS R.909/94</field>
+        <field name="code">2056</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2057" model="afip.tax">
+        <field name="name">DER. IMP. USADOS R.12/98</field>
+        <field name="code">2057</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2058" model="afip.tax">
+        <field name="name">DER. ANTIDUMP. AD. VALOR</field>
+        <field name="code">2058</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2059" model="afip.tax">
+        <field name="name">DER. ESPECIF. OMC</field>
+        <field name="code">2059</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2060" model="afip.tax">
+        <field name="name">DER. ESPECIF. CALZADO</field>
+        <field name="code">2060</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2061" model="afip.tax">
+        <field name="name">TASA ESTAD. MONTO MAX.</field>
+        <field name="code">2061</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2062" model="afip.tax">
+        <field name="name">TASA ESTAD. MONTO MAX.2</field>
+        <field name="code">2062</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2063" model="afip.tax">
+        <field name="name">MULTA FALTA DOC. COMP.</field>
+        <field name="code">2063</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2064" model="afip.tax">
+        <field name="name">MULTA DES. FUERA TER.</field>
+        <field name="code">2064</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2065" model="afip.tax">
+        <field name="name">DIEM - CHINA</field>
+        <field name="code">2065</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2066" model="afip.tax">
+        <field name="name">TASA REDUCIDA</field>
+        <field name="code">2066</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2090" model="afip.tax">
+        <field name="name">DER.EXP.AD.4CF2</field>
+        <field name="code">2090</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2091" model="afip.tax">
+        <field name="name">DERECHO EXPORTACION SERVICIOS</field>
+        <field name="code">2091</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2092" model="afip.tax">
+        <field name="name">TARIFA SUSTITUTIVA LIMONES</field>
+        <field name="code">2092</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2093" model="afip.tax">
+        <field name="name">INT. TARIFA SUSTITUTIVA LIMON</field>
+        <field name="code">2093</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2100" model="afip.tax">
+        <field name="name">CUENTA UNICA GARANTIAS EFVO.</field>
+        <field name="code">2100</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2101" model="afip.tax">
+        <field name="name">GARANTIAS BUENOS AIRES</field>
+        <field name="code">2101</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2103" model="afip.tax">
+        <field name="name">GARANTIAS BAHIA BLANCA</field>
+        <field name="code">2103</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2104" model="afip.tax">
+        <field name="name">GARANTIAS BARILOCHE</field>
+        <field name="code">2104</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2108" model="afip.tax">
+        <field name="name">GARANTIAS CAMPANA</field>
+        <field name="code">2108</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2110" model="afip.tax">
+        <field name="name">GARANTIAS BARRANQUERAS</field>
+        <field name="code">2110</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2111" model="afip.tax">
+        <field name="name">BONOS ADUANEROS</field>
+        <field name="code">2111</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2112" model="afip.tax">
+        <field name="name">GARANTIAS CLORINDA</field>
+        <field name="code">2112</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2113" model="afip.tax">
+        <field name="name">GARANTIAS COLON</field>
+        <field name="code">2113</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2114" model="afip.tax">
+        <field name="name">GARANTIAS COMODORO RIVADAVIA</field>
+        <field name="code">2114</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2115" model="afip.tax">
+        <field name="name">GARANTIAS CONC.DEL URUGUAY</field>
+        <field name="code">2115</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2116" model="afip.tax">
+        <field name="name">GARANTIAS CONCORDIA</field>
+        <field name="code">2116</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2117" model="afip.tax">
+        <field name="name">GARANTIAS CORDOBA</field>
+        <field name="code">2117</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2118" model="afip.tax">
+        <field name="name">GARANTIAS CORRIENTES</field>
+        <field name="code">2118</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2119" model="afip.tax">
+        <field name="name">GARANTIAS PUERTO DESEADO</field>
+        <field name="code">2119</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2120" model="afip.tax">
+        <field name="name">GARANTIAS DIAMANTE</field>
+        <field name="code">2120</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2123" model="afip.tax">
+        <field name="name">GARANTIAS ESQUEL</field>
+        <field name="code">2123</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2126" model="afip.tax">
+        <field name="name">GARANTIAS GUALEGUAYCHU</field>
+        <field name="code">2126</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2129" model="afip.tax">
+        <field name="name">GARANTIAS IGUAZU</field>
+        <field name="code">2129</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2131" model="afip.tax">
+        <field name="name">GARANTIAS JUJUY</field>
+        <field name="code">2131</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2133" model="afip.tax">
+        <field name="name">GARANTIAS LA PLATA</field>
+        <field name="code">2133</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2134" model="afip.tax">
+        <field name="name">GARANTIAS LA QUIACA</field>
+        <field name="code">2134</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2137" model="afip.tax">
+        <field name="name">GARANTIAS MAR DEL PLATA</field>
+        <field name="code">2137</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2138" model="afip.tax">
+        <field name="name">GARANTIAS MENDOZA</field>
+        <field name="code">2138</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2140" model="afip.tax">
+        <field name="name">GARANTIAS NECOCHEA</field>
+        <field name="code">2140</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2141" model="afip.tax">
+        <field name="name">GARANTIAS PARANA</field>
+        <field name="code">2141</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2142" model="afip.tax">
+        <field name="name">GARANTIAS PASO DE LOS LIBRES</field>
+        <field name="code">2142</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2145" model="afip.tax">
+        <field name="name">GARANTIAS POCITOS</field>
+        <field name="code">2145</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2146" model="afip.tax">
+        <field name="name">GARANTIAS POSADAS</field>
+        <field name="code">2146</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2147" model="afip.tax">
+        <field name="name">GARANTIAS PUERTO MADRYN</field>
+        <field name="code">2147</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2148" model="afip.tax">
+        <field name="name">GARANTIAS RIO GALLEGOS</field>
+        <field name="code">2148</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2149" model="afip.tax">
+        <field name="name">GARANTIAS RIO GRANDE</field>
+        <field name="code">2149</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2152" model="afip.tax">
+        <field name="name">GARANTIAS ROSARIO</field>
+        <field name="code">2152</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2153" model="afip.tax">
+        <field name="name">GARANTIAS SALTA</field>
+        <field name="code">2153</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2154" model="afip.tax">
+        <field name="name">GARANTIAS SAN JAVIER</field>
+        <field name="code">2154</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2155" model="afip.tax">
+        <field name="name">GARANTIAS SAN JUAN</field>
+        <field name="code">2155</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2157" model="afip.tax">
+        <field name="name">GARANTIAS SAN LORENZO</field>
+        <field name="code">2157</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2158" model="afip.tax">
+        <field name="name">GAR.S.MARTIN DE LOS ANDES</field>
+        <field name="code">2158</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2159" model="afip.tax">
+        <field name="name">GARANTIAS SAN NICOLAS</field>
+        <field name="code">2159</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2160" model="afip.tax">
+        <field name="name">GARANTIAS SAN PEDRO</field>
+        <field name="code">2160</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2161" model="afip.tax">
+        <field name="name">GARANTIAS SANTA CRUZ</field>
+        <field name="code">2161</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2162" model="afip.tax">
+        <field name="name">GARANTIAS SANTA FE</field>
+        <field name="code">2162</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2166" model="afip.tax">
+        <field name="name">GARANTIAS TINOGASTA</field>
+        <field name="code">2166</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2167" model="afip.tax">
+        <field name="name">GARANTIAS USHUAIA</field>
+        <field name="code">2167</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2169" model="afip.tax">
+        <field name="name">GARANTIAS VILLA CONSTITUCION</field>
+        <field name="code">2169</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2173" model="afip.tax">
+        <field name="name">GARANTIAS EZEIZA</field>
+        <field name="code">2173</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2174" model="afip.tax">
+        <field name="name">GARANTIAS TUCUMAN</field>
+        <field name="code">2174</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2175" model="afip.tax">
+        <field name="name">GARANTIAS NEUQUEN</field>
+        <field name="code">2175</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2176" model="afip.tax">
+        <field name="name">GARANTIAS ORAN</field>
+        <field name="code">2176</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2178" model="afip.tax">
+        <field name="name">GARANTIAS SAN RAFAEL</field>
+        <field name="code">2178</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2179" model="afip.tax">
+        <field name="name">GARANTIAS LA RIOJA</field>
+        <field name="code">2179</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2180" model="afip.tax">
+        <field name="name">GARANTIAS SAN ANTONIO OESTE</field>
+        <field name="code">2180</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2182" model="afip.tax">
+        <field name="name">GARANTIAS BERNARDO DE IRIGOYEN</field>
+        <field name="code">2182</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2183" model="afip.tax">
+        <field name="name">GARANTIAS SAN LUIS</field>
+        <field name="code">2183</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2184" model="afip.tax">
+        <field name="name">GARANTIAS SANT0 TOME</field>
+        <field name="code">2184</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2186" model="afip.tax">
+        <field name="name">GARANTIAS OBERA</field>
+        <field name="code">2186</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2187" model="afip.tax">
+        <field name="name">GARANTIAS CALETA OLIVIA</field>
+        <field name="code">2187</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2188" model="afip.tax">
+        <field name="name">GARANTIAS GENERAL DEHEZA</field>
+        <field name="code">2188</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2189" model="afip.tax">
+        <field name="name">GARANTIAS SANTIAGO DEL ESTERO</field>
+        <field name="code">2189</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2199" model="afip.tax">
+        <field name="name">CTA. UNICA GARANTIAS RESIDUAL</field>
+        <field name="code">2199</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2210" model="afip.tax">
+        <field name="name">DER. IMPOR. AAE</field>
+        <field name="code">2210</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2217" model="afip.tax">
+        <field name="name">IMP. INTERNOS AAE</field>
+        <field name="code">2217</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2285" model="afip.tax">
+        <field name="name">VALOR EN AD. AAE</field>
+        <field name="code">2285</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2286" model="afip.tax">
+        <field name="name">VALOR EN AD. A PAG.</field>
+        <field name="code">2286</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2300" model="afip.tax">
+        <field name="name">CUENTA UNICA MNA</field>
+        <field name="code">2300</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2301" model="afip.tax">
+        <field name="name">MNA BUENOS AIRES</field>
+        <field name="code">2301</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2303" model="afip.tax">
+        <field name="name">MNA BAHIA BLANCA</field>
+        <field name="code">2303</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2304" model="afip.tax">
+        <field name="name">MNA BARILOCHE</field>
+        <field name="code">2304</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2308" model="afip.tax">
+        <field name="name">MNA CAMPANA</field>
+        <field name="code">2308</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2310" model="afip.tax">
+        <field name="name">MNA BARRANQUERAS</field>
+        <field name="code">2310</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2312" model="afip.tax">
+        <field name="name">MNA CLORINDA</field>
+        <field name="code">2312</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2313" model="afip.tax">
+        <field name="name">MNA COLON</field>
+        <field name="code">2313</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2314" model="afip.tax">
+        <field name="name">MNA COMODORO RIVADAVIA</field>
+        <field name="code">2314</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2315" model="afip.tax">
+        <field name="name">MNA CONCEPCION DEL URUGUAY</field>
+        <field name="code">2315</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2316" model="afip.tax">
+        <field name="name">MNA CONCORDIA</field>
+        <field name="code">2316</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2317" model="afip.tax">
+        <field name="name">MNA CORDOBA</field>
+        <field name="code">2317</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2318" model="afip.tax">
+        <field name="name">MNA CORRIENTES</field>
+        <field name="code">2318</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2319" model="afip.tax">
+        <field name="name">MNA PTO DESEADO</field>
+        <field name="code">2319</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2320" model="afip.tax">
+        <field name="name">MNA DIAMANTE</field>
+        <field name="code">2320</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2323" model="afip.tax">
+        <field name="name">MNA ESQUEL</field>
+        <field name="code">2323</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2324" model="afip.tax">
+        <field name="name">MNA FORMOSA</field>
+        <field name="code">2324</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2325" model="afip.tax">
+        <field name="name">MNA GOYA</field>
+        <field name="code">2325</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2326" model="afip.tax">
+        <field name="name">MNA GUALEGUAYCHU</field>
+        <field name="code">2326</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2329" model="afip.tax">
+        <field name="name">MNA IGUAZU</field>
+        <field name="code">2329</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2331" model="afip.tax">
+        <field name="name">MNA JUJUY</field>
+        <field name="code">2331</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2333" model="afip.tax">
+        <field name="name">MNA LA PLATA</field>
+        <field name="code">2333</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2334" model="afip.tax">
+        <field name="name">MNA LA QUIACA</field>
+        <field name="code">2334</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2337" model="afip.tax">
+        <field name="name">MNA MAR DEL PLATA</field>
+        <field name="code">2337</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2338" model="afip.tax">
+        <field name="name">MNA MENDOZA</field>
+        <field name="code">2338</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2340" model="afip.tax">
+        <field name="name">MNA NECOCHEA</field>
+        <field name="code">2340</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2341" model="afip.tax">
+        <field name="name">MNA PARANA</field>
+        <field name="code">2341</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2342" model="afip.tax">
+        <field name="name">MNA PASO DE LOS LIBRES</field>
+        <field name="code">2342</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2345" model="afip.tax">
+        <field name="name">MNA POCITOS</field>
+        <field name="code">2345</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2346" model="afip.tax">
+        <field name="name">MNA POSADAS</field>
+        <field name="code">2346</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2347" model="afip.tax">
+        <field name="name">MNA PTO MADRYN</field>
+        <field name="code">2347</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2348" model="afip.tax">
+        <field name="name">MNA RIO GALLEGOS</field>
+        <field name="code">2348</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2349" model="afip.tax">
+        <field name="name">MNA RIO GRANDE</field>
+        <field name="code">2349</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2352" model="afip.tax">
+        <field name="name">MNA ROSARIO</field>
+        <field name="code">2352</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2353" model="afip.tax">
+        <field name="name">MNA SALTA</field>
+        <field name="code">2353</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2354" model="afip.tax">
+        <field name="name">MNA SAN JAVIER</field>
+        <field name="code">2354</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2355" model="afip.tax">
+        <field name="name">MNA SAN JUAN</field>
+        <field name="code">2355</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2357" model="afip.tax">
+        <field name="name">MNA SAN LORENZO</field>
+        <field name="code">2357</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2358" model="afip.tax">
+        <field name="name">MNA SAN MARTIN DE LOS ANDES</field>
+        <field name="code">2358</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2359" model="afip.tax">
+        <field name="name">MNA SAN NICOLAS</field>
+        <field name="code">2359</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2360" model="afip.tax">
+        <field name="name">MNA SAN PEDRO</field>
+        <field name="code">2360</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2361" model="afip.tax">
+        <field name="name">MNA SANTA CRUZ</field>
+        <field name="code">2361</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2362" model="afip.tax">
+        <field name="name">MNA SANTA FE</field>
+        <field name="code">2362</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2366" model="afip.tax">
+        <field name="name">MNA TINOGASTA</field>
+        <field name="code">2366</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2367" model="afip.tax">
+        <field name="name">MNA USHUAIA</field>
+        <field name="code">2367</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2369" model="afip.tax">
+        <field name="name">MNA VILLA CONSTITUCION</field>
+        <field name="code">2369</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2373" model="afip.tax">
+        <field name="name">MNA EZEIZA</field>
+        <field name="code">2373</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2374" model="afip.tax">
+        <field name="name">MNA TUCUMAN</field>
+        <field name="code">2374</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2375" model="afip.tax">
+        <field name="name">MNA NEUQUEN</field>
+        <field name="code">2375</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2376" model="afip.tax">
+        <field name="name">MNA ORAN</field>
+        <field name="code">2376</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2378" model="afip.tax">
+        <field name="name">MNA SAN RAFAEL</field>
+        <field name="code">2378</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2379" model="afip.tax">
+        <field name="name">MNA LA RIOJA</field>
+        <field name="code">2379</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2380" model="afip.tax">
+        <field name="name">MNA SAN ANTONIO OESTE</field>
+        <field name="code">2380</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2382" model="afip.tax">
+        <field name="name">MNA BERNARDO DE IRIGOYEN</field>
+        <field name="code">2382</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2383" model="afip.tax">
+        <field name="name">MNA SAN LUIS</field>
+        <field name="code">2383</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2384" model="afip.tax">
+        <field name="name">MNA SANTO TOME</field>
+        <field name="code">2384</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2385" model="afip.tax">
+        <field name="name">MNA VA REGINA</field>
+        <field name="code">2385</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2386" model="afip.tax">
+        <field name="name">MNA OBERA</field>
+        <field name="code">2386</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2387" model="afip.tax">
+        <field name="name">MNA CALETA OLIVIA</field>
+        <field name="code">2387</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2388" model="afip.tax">
+        <field name="name">MNA GENERAL DEHEZA</field>
+        <field name="code">2388</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2389" model="afip.tax">
+        <field name="name">MNA SANTIAGO DEL ESTERO</field>
+        <field name="code">2389</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2414" model="afip.tax">
+        <field name="name">IVA INTERESES RESARCITORIOS</field>
+        <field name="code">2414</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2415" model="afip.tax">
+        <field name="name">IVA</field>
+        <field name="code">2415</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2416" model="afip.tax">
+        <field name="name">IVA INTERESES FINANCIEROS</field>
+        <field name="code">2416</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2417" model="afip.tax">
+        <field name="name">IMPUESTOS INTERNOS</field>
+        <field name="code">2417</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2418" model="afip.tax">
+        <field name="name">IMP. TRANSF. GASOIL</field>
+        <field name="code">2418</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2419" model="afip.tax">
+        <field name="name">IMP. INT. CIGARRILLOS</field>
+        <field name="code">2419</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2420" model="afip.tax">
+        <field name="name">IVA DEV. REINT.REE</field>
+        <field name="code">2420</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2421" model="afip.tax">
+        <field name="name">IMP.COMBUST.LIQUIDOS</field>
+        <field name="code">2421</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2422" model="afip.tax">
+        <field name="name">IVA ADICIONAL INSCR.</field>
+        <field name="code">2422</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2423" model="afip.tax">
+        <field name="name">IVA ADICIONAL NO INSCR.</field>
+        <field name="code">2423</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2424" model="afip.tax">
+        <field name="name">IMP. A LAS GANANCIAS</field>
+        <field name="code">2424</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2425" model="afip.tax">
+        <field name="name">IVA DEV. REINT. REEM</field>
+        <field name="code">2425</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2426" model="afip.tax">
+        <field name="name">INFRAESTRUC.HIDRICA</field>
+        <field name="code">2426</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2427" model="afip.tax">
+        <field name="name">IMP.INT. L24699 ART.3</field>
+        <field name="code">2427</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2428" model="afip.tax">
+        <field name="name">I.COMB.LIQ. L24699 2</field>
+        <field name="code">2428</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2429" model="afip.tax">
+        <field name="name">IIBB BUENOS AIRES</field>
+        <field name="code">2429</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2430" model="afip.tax">
+        <field name="name">ANT.IMP.GANANCIAS EXPORTACION</field>
+        <field name="code">2430</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2433" model="afip.tax">
+        <field name="name">IVA AD NOINS NOCVDI</field>
+        <field name="code">2433</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2434" model="afip.tax">
+        <field name="name">IMP. INT. DEC.290/00</field>
+        <field name="code">2434</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2435" model="afip.tax">
+        <field name="name">I.COMB.LIQ.ADVALOREM</field>
+        <field name="code">2435</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2436" model="afip.tax">
+        <field name="name">I.COMB.LIQ.L24699 ADVA</field>
+        <field name="code">2436</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2437" model="afip.tax">
+        <field name="name">IMP.INT.CIGARR.MAX.</field>
+        <field name="code">2437</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2438" model="afip.tax">
+        <field name="name">IMP.INT.CIGARR.MIN.</field>
+        <field name="code">2438</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2439" model="afip.tax">
+        <field name="name">INFRAEST.HID.ADVALOR</field>
+        <field name="code">2439</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2440" model="afip.tax">
+        <field name="name">AFIP L 23993 ART. 2C</field>
+        <field name="code">2440</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2441" model="afip.tax">
+        <field name="name">GENDARMERIA NACIONAL 2 C</field>
+        <field name="code">2441</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2442" model="afip.tax">
+        <field name="name">PREFECTURA N ARG. 2C</field>
+        <field name="code">2442</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2443" model="afip.tax">
+        <field name="name">POLICIA FEDERAL ARGENTINA 2 C</field>
+        <field name="code">2443</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2444" model="afip.tax">
+        <field name="name">POL. AERONAUTICA NAC.</field>
+        <field name="code">2444</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2445" model="afip.tax">
+        <field name="name">GEO FSEG.DTO.258/99</field>
+        <field name="code">2445</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2449" model="afip.tax">
+        <field name="name">INGRESOS BRUTOS - CTA.PTE.</field>
+        <field name="code">2449</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2450" model="afip.tax">
+        <field name="name">IIBB CIUDAD BUENOS AIRES</field>
+        <field name="code">2450</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2452" model="afip.tax">
+        <field name="name">IIBB CORDOBA</field>
+        <field name="code">2452</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2453" model="afip.tax">
+        <field name="name">IIBB CORRIENTES</field>
+        <field name="code">2453</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2455" model="afip.tax">
+        <field name="name">IIBB PROVINCIA CHUBUT</field>
+        <field name="code">2455</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2464" model="afip.tax">
+        <field name="name">IIBB RIO NEGRO</field>
+        <field name="code">2464</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2467" model="afip.tax">
+        <field name="name">IIBB SAN LUIS</field>
+        <field name="code">2467</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2468" model="afip.tax">
+        <field name="name">IIBB SANTA CRUZ</field>
+        <field name="code">2468</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2471" model="afip.tax">
+        <field name="name">IIBB TIERRA DEL FUEGO</field>
+        <field name="code">2471</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2472" model="afip.tax">
+        <field name="name">IIBB TUCUMAN</field>
+        <field name="code">2472</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2473" model="afip.tax">
+        <field name="name">IM.TRA.GASOIL L26325</field>
+        <field name="code">2473</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2474" model="afip.tax">
+        <field name="name">IM.INT.AUTOM.L24674</field>
+        <field name="code">2474</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2475" model="afip.tax">
+        <field name="name">IMP.DIOX.CARBONO</field>
+        <field name="code">2475</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2476" model="afip.tax">
+        <field name="name">IMP. FUEL OIL, COQUE, CARBON</field>
+        <field name="code">2476</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2499" model="afip.tax">
+        <field name="name">AD. FONDOS POR DISTRIBUIR</field>
+        <field name="code">2499</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2500" model="afip.tax">
+        <field name="name">ARANCEL SIM IMPO</field>
+        <field name="code">2500</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2501" model="afip.tax">
+        <field name="name">ARANCEL SIM EXPO</field>
+        <field name="code">2501</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2502" model="afip.tax">
+        <field name="name">FACT-CONVERGENCIA(I)</field>
+        <field name="code">2502</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2505" model="afip.tax">
+        <field name="name">DEVOLUCION FC (E)</field>
+        <field name="code">2505</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2506" model="afip.tax">
+        <field name="name">DEVOLUCION FC (I)</field>
+        <field name="code">2506</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2509" model="afip.tax">
+        <field name="name">ARANCEL UNICO SERVICIOS ADUA.</field>
+        <field name="code">2509</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2510" model="afip.tax">
+        <field name="name">INTERESES ARANC.UNI.SERV.ADUA.</field>
+        <field name="code">2510</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2511" model="afip.tax">
+        <field name="name">TASA AEROP. SERV. ADUAN.</field>
+        <field name="code">2511</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2512" model="afip.tax">
+        <field name="name">MULTA AUSA</field>
+        <field name="code">2512</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2513" model="afip.tax">
+        <field name="name">TASA AEROP.SERV.ADUAN.INTERES</field>
+        <field name="code">2513</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2515" model="afip.tax">
+        <field name="name">ARANCEL DECLARACIONES SUMARIAS</field>
+        <field name="code">2515</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2516" model="afip.tax">
+        <field name="name">INT. ARANCEL DECL. SUMARIAS</field>
+        <field name="code">2516</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2517" model="afip.tax">
+        <field name="name">ARANC.UNI.SUSE</field>
+        <field name="code">2517</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2518" model="afip.tax">
+        <field name="name">SUSE INTERESES</field>
+        <field name="code">2518</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2519" model="afip.tax">
+        <field name="name">MULTA SUSE</field>
+        <field name="code">2519</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2521" model="afip.tax">
+        <field name="name">SERV. DE GUARDA Y DIG.(LAKAUT)</field>
+        <field name="code">2521</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2522" model="afip.tax">
+        <field name="name">REINT.GASTOS ADM. INF.</field>
+        <field name="code">2522</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2523" model="afip.tax">
+        <field name="name">INT.RES.DEST.FUE.TER.</field>
+        <field name="code">2523</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2524" model="afip.tax">
+        <field name="name">INT.PUN.DEST.FUE.TER.</field>
+        <field name="code">2524</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2525" model="afip.tax">
+        <field name="name">O.INT.M.DEST.FUE.TER.</field>
+        <field name="code">2525</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2530" model="afip.tax">
+        <field name="name">INT. PUNITORIO IVA</field>
+        <field name="code">2530</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2531" model="afip.tax">
+        <field name="name">INT. RESARCITORIO ESTADISTICA</field>
+        <field name="code">2531</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2532" model="afip.tax">
+        <field name="name">INT. PUNITORIO ESTADISTICA</field>
+        <field name="code">2532</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2533" model="afip.tax">
+        <field name="name">INT. RESARCITORIOS GANANCIAS</field>
+        <field name="code">2533</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2534" model="afip.tax">
+        <field name="name">INT. PUNITORIOS GANANCIAS</field>
+        <field name="code">2534</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2535" model="afip.tax">
+        <field name="name">INT. RES. MULTA FALTA DOC.COMP</field>
+        <field name="code">2535</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2536" model="afip.tax">
+        <field name="name">INT. PUN. MULTA FALTA DOC.COMP</field>
+        <field name="code">2536</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2537" model="afip.tax">
+        <field name="name">INT. RES. IMPUESTOS INTERNOS</field>
+        <field name="code">2537</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2538" model="afip.tax">
+        <field name="name">INT. PUN. IMPUESTOS INTERNOS</field>
+        <field name="code">2538</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2539" model="afip.tax">
+        <field name="name">INT. RES. LEY 24196</field>
+        <field name="code">2539</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2540" model="afip.tax">
+        <field name="name">INT. PUN. LEY 24196</field>
+        <field name="code">2540</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2541" model="afip.tax">
+        <field name="name">INT. RES. TASA COMP.DESTINO</field>
+        <field name="code">2541</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2542" model="afip.tax">
+        <field name="name">INT. PUN. TASA COMP.DESTINO</field>
+        <field name="code">2542</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2551" model="afip.tax">
+        <field name="name">SERV.DE GUARDA Y DIG. (DASA)</field>
+        <field name="code">2551</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2555" model="afip.tax">
+        <field name="name">ANTIC. PAGO TRIBUTOS ADUANEROS</field>
+        <field name="code">2555</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2556" model="afip.tax">
+        <field name="name">PAGO DE GARANTES</field>
+        <field name="code">2556</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2700" model="afip.tax">
+        <field name="name">HONO. ABOG. Y PERITOS - ADUANA</field>
+        <field name="code">2700</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2710" model="afip.tax">
+        <field name="name">D.I. CERT.DES.</field>
+        <field name="code">2710</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2802" model="afip.tax">
+        <field name="name">FACT-CONVER.IMPO (G)</field>
+        <field name="code">2802</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2803" model="afip.tax">
+        <field name="name">FACT-CONVER.AAE (G)</field>
+        <field name="code">2803</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2819" model="afip.tax">
+        <field name="name">IMP.INT.CIGARR (G)</field>
+        <field name="code">2819</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2820" model="afip.tax">
+        <field name="name">DER.SALV.INTR. (G)</field>
+        <field name="code">2820</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2821" model="afip.tax">
+        <field name="name">IVA.SALV.INTR. (G)</field>
+        <field name="code">2821</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2822" model="afip.tax">
+        <field name="name">IVA AD.SALV.INTR. (G)</field>
+        <field name="code">2822</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2823" model="afip.tax">
+        <field name="name">GCIAS.SALV.INTR (G)</field>
+        <field name="code">2823</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2824" model="afip.tax">
+        <field name="name">I.INT.SALV.INTR (G)</field>
+        <field name="code">2824</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2849" model="afip.tax">
+        <field name="name">DEVOL.BENEFICIOS (G)</field>
+        <field name="code">2849</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2850" model="afip.tax">
+        <field name="name">FALTA TIT.TRANSPORTE (G)</field>
+        <field name="code">2850</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2851" model="afip.tax">
+        <field name="name">ESTADISTICA (G)</field>
+        <field name="code">2851</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2852" model="afip.tax">
+        <field name="name">IVA (G)</field>
+        <field name="code">2852</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2853" model="afip.tax">
+        <field name="name">IMP.INTERNOS (G)</field>
+        <field name="code">2853</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2854" model="afip.tax">
+        <field name="name">IVA ADIC.INSCR (G)</field>
+        <field name="code">2854</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2855" model="afip.tax">
+        <field name="name">IVA ADIC.NO INSC (G)</field>
+        <field name="code">2855</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2856" model="afip.tax">
+        <field name="name">IMP.GANANCIAS(G)</field>
+        <field name="code">2856</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2857" model="afip.tax">
+        <field name="name">DER.ANTI-DUMP 1 (G)</field>
+        <field name="code">2857</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2858" model="afip.tax">
+        <field name="name">DER.ANTI-DUMP 2 (G)</field>
+        <field name="code">2858</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2859" model="afip.tax">
+        <field name="name">IMP.INT.A-DUMP 1 (G)</field>
+        <field name="code">2859</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2860" model="afip.tax">
+        <field name="name">IVA ANTIDUMPING (G)</field>
+        <field name="code">2860</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2861" model="afip.tax">
+        <field name="name">IVA ADI.R.I DUMP. (G)</field>
+        <field name="code">2861</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2862" model="afip.tax">
+        <field name="name">IVA ADI.R.N.I DUM. (G)</field>
+        <field name="code">2862</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2863" model="afip.tax">
+        <field name="name">IMP.GCIAS.DUMP. (G)</field>
+        <field name="code">2863</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2864" model="afip.tax">
+        <field name="name">D.A-DUMP1 MERCO. (G)</field>
+        <field name="code">2864</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2865" model="afip.tax">
+        <field name="name">D.A-DUMP2 MERCO. (G)</field>
+        <field name="code">2865</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2866" model="afip.tax">
+        <field name="name">DER.IMPORTACION (G)</field>
+        <field name="code">2866</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2867" model="afip.tax">
+        <field name="name">DER.COMPENSATOR (G)</field>
+        <field name="code">2867</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2868" model="afip.tax">
+        <field name="name">I.EQ.DE PRECIOS (G)</field>
+        <field name="code">2868</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2869" model="afip.tax">
+        <field name="name">DER.ESPECIFICO (G)</field>
+        <field name="code">2869</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2870" model="afip.tax">
+        <field name="name">DER.IMP.ADICIONAL(G)</field>
+        <field name="code">2870</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2871" model="afip.tax">
+        <field name="name">DER.EXPORTACION (G)</field>
+        <field name="code">2871</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2872" model="afip.tax">
+        <field name="name">TASA COM.DESTINO (G)</field>
+        <field name="code">2872</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2873" model="afip.tax">
+        <field name="name">I.V.A. INTERESES (G)</field>
+        <field name="code">2873</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2874" model="afip.tax">
+        <field name="name">IMP.COMB.LIQUID (G)</field>
+        <field name="code">2874</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2882" model="afip.tax">
+        <field name="name">MULTA RES 763/305</field>
+        <field name="code">2882</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2883" model="afip.tax">
+        <field name="name">MULTA F. CERT. INSP.</field>
+        <field name="code">2883</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2884" model="afip.tax">
+        <field name="name">D.I. USAD.R.12/98 (G)</field>
+        <field name="code">2884</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2885" model="afip.tax">
+        <field name="name">VALOR EN ADUANA</field>
+        <field name="code">2885</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2886" model="afip.tax">
+        <field name="name">D.I. USAD.G.R.909/94</field>
+        <field name="code">2886</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2887" model="afip.tax">
+        <field name="name">I.INT.L 24699 A.3 (G)</field>
+        <field name="code">2887</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2889" model="afip.tax">
+        <field name="name">I.C.LIQ.L24699 2 (G)</field>
+        <field name="code">2889</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2891" model="afip.tax">
+        <field name="name">DIEM-CHINA (G)</field>
+        <field name="code">2891</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2892" model="afip.tax">
+        <field name="name">DIEM IVA (G)</field>
+        <field name="code">2892</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2893" model="afip.tax">
+        <field name="name">DIEM IVAAD (G)</field>
+        <field name="code">2893</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2894" model="afip.tax">
+        <field name="name">DIEM IMP GCIAS (G)</field>
+        <field name="code">2894</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2895" model="afip.tax">
+        <field name="name">DIF DIEM OMC (G)</field>
+        <field name="code">2895</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2896" model="afip.tax">
+        <field name="name">DIF DIEM CHINA (G)</field>
+        <field name="code">2896</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2897" model="afip.tax">
+        <field name="name">DIF DIEM DI (G)</field>
+        <field name="code">2897</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2898" model="afip.tax">
+        <field name="name">IMP.INT.AUTL24674 (G)</field>
+        <field name="code">2898</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2899" model="afip.tax">
+        <field name="name">D.ANTIDUM.AD-VALOR (G)</field>
+        <field name="code">2899</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2900" model="afip.tax">
+        <field name="name">CUENTA UNICA</field>
+        <field name="code">2900</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_5243" model="afip.tax">
+        <field name="name">REG. SIMPLIFICADO IIBB CORDOBA</field>
+        <field name="code">5243</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_5244" model="afip.tax">
+        <field name="name">CONTRIBUCION MUNICIPAL CORDOBA</field>
+        <field name="code">5244</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_5445" model="afip.tax">
+        <field name="name">INGRESOS BRUTOS MENDOZA</field>
+        <field name="code">5445</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_5446" model="afip.tax">
+        <field name="name">CONTRIBUCION MUNICIPAL MENDOZA</field>
+        <field name="code">5446</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_5556" model="afip.tax">
+        <field name="name">INGRESOS BRUTOS SAN JUAN</field>
+        <field name="code">5556</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_5557" model="afip.tax">
+        <field name="name">CONTRIB MUNICIPAL SAN JUAN</field>
+        <field name="code">5557</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_5578" model="afip.tax">
+        <field name="name">INGRESOS BRUTOS JUJUY</field>
+        <field name="code">5578</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_5579" model="afip.tax">
+        <field name="name">CONTRIBUCION MUNICIPAL JUJUY</field>
+        <field name="code">5579</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_16" model="afip.tax">
+        <field name="name">REINT SALARIO COMPLEMENTARIO</field>
+        <field name="code">16</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_216" model="afip.tax">
+        <field name="name">SIRE - IVA</field>
+        <field name="code">216</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_271" model="afip.tax">
+        <field name="name">IMPUESTO REMESA DE UTILIDADES</field>
+        <field name="code">271</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_448" model="afip.tax">
+        <field name="name">COMPENSACION LEY N° 27541</field>
+        <field name="code">448</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_938" model="afip.tax">
+        <field name="name">IMPUESTO PAIS</field>
+        <field name="code">938</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_939" model="afip.tax">
+        <field name="name">PERCEPCION IMPUESTO PAIS</field>
+        <field name="code">939</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_940" model="afip.tax">
+        <field name="name">REINTEGRO SECTORES VULNERADOS</field>
+        <field name="code">940</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_1027" model="afip.tax">
+        <field name="name">REC IIBB - PBA - SERV DIGIT PR</field>
+        <field name="code">1027</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2068" model="afip.tax">
+        <field name="name">MULTA SUBASTA</field>
+        <field name="code">2068</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2069" model="afip.tax">
+        <field name="name">REMANENTE SUBASTA</field>
+        <field name="code">2069</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2095" model="afip.tax">
+        <field name="name">EMBARGO CUENTA UNICA</field>
+        <field name="code">2095</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2097" model="afip.tax">
+        <field name="name">PAGO 90% D.A.</field>
+        <field name="code">2097</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_2413" model="afip.tax">
+        <field name="name">IVA BANCO SUBASTA</field>
+        <field name="code">2413</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_5109" model="afip.tax">
+        <field name="name">CABA PERCEP IIBB SERV DIGITAL</field>
+        <field name="code">5109</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_5120" model="afip.tax">
+        <field name="name">INGRESOS BRUTOS CABA</field>
+        <field name="code">5120</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_5121" model="afip.tax">
+        <field name="name">CONTRIB MUNICIPAL CABA</field>
+        <field name="code">5121</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_5485" model="afip.tax">
+        <field name="name">INGRESOS BRUTOS RIO NEGRO</field>
+        <field name="code">5485</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_5486" model="afip.tax">
+        <field name="name">CONTRIBUCION MUN. RIO NEGRO</field>
+        <field name="code">5486</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_5900" model="afip.tax">
+        <field name="name">IIBB CONVENIO MULTILATERAL</field>
+        <field name="code">5900</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_5901" model="afip.tax">
+        <field name="name">IIBB LOCAL CABA</field>
+        <field name="code">5901</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_5902" model="afip.tax">
+        <field name="name">IIBB LOCAL BUENOS AIRES</field>
+        <field name="code">5902</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_5903" model="afip.tax">
+        <field name="name">IIBB LOCAL CATAMARCA</field>
+        <field name="code">5903</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_5904" model="afip.tax">
+        <field name="name">REG. GENERAL IIBB CORDOBA</field>
+        <field name="code">5904</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_5905" model="afip.tax">
+        <field name="name">IIBB LOCAL CORRIENTES</field>
+        <field name="code">5905</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_5906" model="afip.tax">
+        <field name="name">IIBB LOCAL CHACO</field>
+        <field name="code">5906</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_5907" model="afip.tax">
+        <field name="name">IIBB LOCAL CHUBUT</field>
+        <field name="code">5907</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_5908" model="afip.tax">
+        <field name="name">IIBB LOCAL ENTRE RIOS</field>
+        <field name="code">5908</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_5909" model="afip.tax">
+        <field name="name">IIBB LOCAL FORMOSA</field>
+        <field name="code">5909</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_5910" model="afip.tax">
+        <field name="name">IIBB LOCAL JUJUY</field>
+        <field name="code">5910</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_5911" model="afip.tax">
+        <field name="name">IIBB LOCAL LA PAMPA</field>
+        <field name="code">5911</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_5912" model="afip.tax">
+        <field name="name">IIBB LOCAL LA RIOJA</field>
+        <field name="code">5912</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_5913" model="afip.tax">
+        <field name="name">IIBB LOCAL MENDOZA</field>
+        <field name="code">5913</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_5914" model="afip.tax">
+        <field name="name">IIBB LOCAL MISIONES</field>
+        <field name="code">5914</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_5915" model="afip.tax">
+        <field name="name">IIBB LOCAL NEUQUEN</field>
+        <field name="code">5915</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_5916" model="afip.tax">
+        <field name="name">IIBB LOCAL RIO NEGRO</field>
+        <field name="code">5916</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_5917" model="afip.tax">
+        <field name="name">IIBB LOCAL SALTA</field>
+        <field name="code">5917</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_5918" model="afip.tax">
+        <field name="name">IIBB LOCAL SAN JUAN</field>
+        <field name="code">5918</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_5919" model="afip.tax">
+        <field name="name">IIBB LOCAL SAN LUIS</field>
+        <field name="code">5919</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_5920" model="afip.tax">
+        <field name="name">IIBB LOCAL SANTA CRUZ</field>
+        <field name="code">5920</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_5921" model="afip.tax">
+        <field name="name">IIBB LOCAL SANTA FE</field>
+        <field name="code">5921</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_5922" model="afip.tax">
+        <field name="name">IIBB LOCAL SGO. DEL ESTERO</field>
+        <field name="code">5922</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_5923" model="afip.tax">
+        <field name="name">IIBB LOCAL TIERRA DEL FUEGO</field>
+        <field name="code">5923</field>
+        <field name="active" eval="1" />
+    </record>
+    <record id="afip_tax_5924" model="afip.tax">
+        <field name="name">IIBB LOCAL TUCUMAN</field>
+        <field name="code">5924</field>
+        <field name="active" eval="1" />
+    </record>
+</odoo>
