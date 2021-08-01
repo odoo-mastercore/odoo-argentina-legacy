@@ -114,7 +114,7 @@ class AccountVatLedgerXlsx(models.AbstractModel):
                         base_27 = (invoice.type == 'in_invoice' and 1.0
                             or -1.0) * (invoice.base_27)
                         tax_5 = (invoice.type == 'in_invoice' and 1.0
-                            or -1.0) * inovice.vat_5
+                            or -1.0) * invoice.vat_5
                         tax_10 = (invoice.type == 'in_invoice' and 1.0
                             or -1.0) * invoice.vat_10
                         tax_21 = (invoice.type == 'in_invoice' and 1.0
