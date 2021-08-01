@@ -95,6 +95,8 @@ class AccountVatLedgerXlsx(models.AbstractModel):
                         base_10 = invoice.base_10
                         base_21 = invoice.base_21
                         base_27 = invoice.base_27
+                        tax_2 = invoice.vat_25
+                        tax_5 = invoice.vat_5
                         tax_10 = invoice.vat_10
                         tax_21 = invoice.vat_21
                         tax_27 = invoice.vat_27
@@ -104,15 +106,15 @@ class AccountVatLedgerXlsx(models.AbstractModel):
                     
                     else:
                         base_2 = (invoice.type == 'in_invoice' and 1.0
-                            or -1.0) * (invoice.base_25)
+                            or -1.0) * invoice.base_25
                         base_5 = (invoice.type == 'in_invoice' and 1.0
-                            or -1.0) * (invoice.base_5)
+                            or -1.0) * invoice.base_5
                         base_10 = (invoice.type == 'in_invoice' and 1.0
-                            or -1.0) * (invoice.base_10)
+                            or -1.0) * invoice.base_10
                         base_21 = (invoice.type == 'in_invoice' and 1.0
-                            or -1.0) * (invoice.base_21)
+                            or -1.0) * invoice.base_21
                         base_27 = (invoice.type == 'in_invoice' and 1.0
-                            or -1.0) * (invoice.base_27)
+                            or -1.0) * invoice.base_27
                         tax_5 = (invoice.type == 'in_invoice' and 1.0
                             or -1.0) * invoice.vat_5
                         tax_10 = (invoice.type == 'in_invoice' and 1.0
