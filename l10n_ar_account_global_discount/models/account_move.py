@@ -6,7 +6,21 @@
 #
 #
 ###############################################################################
-from odoo import models, fields, api, _
+from odoo import fields, models, api, _
+from odoo.exceptions import UserError
+import logging
+import sys
+import re
+import base64
+import traceback
+from datetime import datetime
+_logger = logging.getLogger(__name__)
+
+try:
+    from pysimplesoap.client import SoapFault
+except ImportError:
+    _logger.debug('Can not `from pyafipws.soap import SoapFault`.')
+
 
 class AccountMove(models.Model):
     _inherit = "account.move"
