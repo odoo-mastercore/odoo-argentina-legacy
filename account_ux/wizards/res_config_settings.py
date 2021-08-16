@@ -32,10 +32,10 @@ class ResConfigSettings(models.TransientModel):
         ir_default = self.env['ir.default'].sudo()
 
         taxes_ids = ir_default.get(
-            'product.template', 'taxes_id', company_id=company_id)
+            'product.template', 'taxes_id', company_id=company_id) or []
         supplier_taxes_ids = ir_default.get(
             'product.template', 'supplier_taxes_id',
-            company_id=company_id)
+            company_id=company_id) or []
 
         res.update({
             'sale_tax_ids': [(6, 0, taxes_ids)],
@@ -59,3 +59,10 @@ class ResConfigSettings(models.TransientModel):
             "supplier_taxes_id",
             self.purchase_tax_ids.ids,
             company_id=self.company_id.id)
+
+        sale_taxes = self.sale_tax_ids.filtered(
+            lambda tax: tax.company_id == self.company_id)
+        purchase_taxes = self.purchase_tax_ids.filtered(
+            lambda tax: tax.company_id == self.company_id)
+        self.company_id.account_sale_tax_id = sale_taxes[0] if sale_taxes else sale_taxes
+        self.company_id.account_purchase_tax_id = purchase_taxes[0] if purchase_taxes else purchase_taxes
