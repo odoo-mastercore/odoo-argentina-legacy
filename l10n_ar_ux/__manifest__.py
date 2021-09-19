@@ -22,7 +22,7 @@
         'data/account_tax_group_data.xml',
         'data/account_chart_template_data.xml',
         'data/account_tax_template_data.xml',
-        'wizards/account_move_change_rate_views.xml',
+        'wizard/account_move_change_rate_views.xml',
         'data/afip_concept_data.xml',
         'data/afip_tax_data.xml',
         'data/afip_activity_data.xml',
