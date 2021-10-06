@@ -8,3 +8,5 @@ from . import account_move
 from . import afip
 from . import account_payment_group
 from . import res_partner
+from . import mail_compose_message
+

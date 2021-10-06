@@ -23,3 +23,5 @@ class ResCompany(models.Model):
     l10n_ar_afip_start_date = fields.Date(
         related='partner_id.start_date', string='Activities Start', 
         readonly=False)
+    l10n_ar_report_signature = fields.Image('Firma', copy=False, attachment=True)
+    l10n_ar_report_signed_by = fields.Text('Aclaracion', copy=False)
