@@ -132,7 +132,7 @@ class AccountMove(models.Model):
                     'ctz': rec.l10n_ar_currency_rate,
                     'tipoDocRec': int(rec.partner_id.\
                         l10n_latam_identification_type_id.l10n_ar_afip_code),
-                    'nroDocRec': int(str(rec.partner_id.vat).replace('-','')),
+                    'nroDocRec': int(str(rec.partner_id.vat or '20-22222222-3').replace('-','')),
                     'tipoCodAut': 'E',
                     'codAut': int(rec.afip_auth_code),
                 }
