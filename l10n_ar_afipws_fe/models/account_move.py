@@ -230,8 +230,7 @@ class AccountMove(models.Model):
             partner_id_code = commercial_partner.l10n_latam_identification_type_id.l10n_ar_afip_code
             tipo_doc = partner_id_code or '99'
             nro_doc = \
-                partner_id_code and re.sub(
-                    '[^0-9]', '', commercial_partner.vat) or "0"
+                partner_id_code and commercial_partner.vat or "0"
             cbt_desde = cbt_hasta = cbte_nro = ws_next_invoice_number
             concepto = tipo_expo = int(inv.l10n_ar_afip_concept)
 
