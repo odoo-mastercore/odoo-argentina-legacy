@@ -100,7 +100,7 @@ class AccountVatLedger(models.Model):
     def _compute_invoices(self):
         for rec in self:
             rec.invoice_ids = rec.env['account.ar.vat.line'].search([
-                ('state', 'not in ', ['draft','cancel']),
+                ('state', 'not in', ['draft','cancel']),
                 # ('number', '!=', False),
                 # ('internal_number', '!=', False),
                 ('journal_id', 'in', rec.journal_ids.ids),
