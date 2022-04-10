@@ -65,11 +65,25 @@
                     <button name="%(action_account_change_currency)d" type="action" class="oe_inline oe_link" string="(change)" attrs="{'invisible':[('state','!=','draft')]}"/>
                 </div>
             </field>
-
             <field name="journal_id" position="attributes">
                 <attribute name="groups">account.group_account_invoice</attribute>
                 <attribute name="force_save">1</attribute>
             </field>
+         </field>
+    </record>
+
+    <record id="view_move_form_debit" model="ir.ui.view">
+        <field name="model">account.move</field>
+        <field name="name">account.move.form</field>
+        <field name="inherit_id" ref="account_debit_note.view_move_form_debit"/>
+        <field name="arch" type="xml">
+             <!-- permitimos modificar "Factura origne de la ND" para poder vincular ND creadas a mano -->
+            <xpath expr="//group[@name='sale_info_group']/field[@name='debit_origin_id']" position="attributes">
+    
+                <attribute name="attrs">{'invisible': [('type', '!=', 'out_invoice')], 'readonly': [('state', '!=', 'draft')]}</attribute>
+                <attribute name="domain">[('type', 'in', ('out_invoice', 'out_refund')), ('partner_id.commercial_partner_id', '=', commercial_partner_id), ('state', '=', 'posted')]</attribute>
+            </xpath>
+            
         </field>
     </record>
 

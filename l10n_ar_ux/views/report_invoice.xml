@@ -39,11 +39,19 @@
             <p t-if="o._fields.get('move_currency_id') and o.move_currency_id">
                 El total de este comprobante equivale a un total de <span t-raw="o.amount_total / o.move_inverse_currency_rate" t-options="{'widget': 'monetary', 'display_currency': o.move_currency_id}"/> a un tipo de cambio consignado de <span t-field="o.move_inverse_currency_rate"/>
             </p>
+            <p t-if="o.company_id.l10n_ar_invoice_report_ars_amount and o.currency_id != o.company_id.currency_id">
+                El total de este comprobante expresado en moneda de curso legal - Pesos Argentinos - asciende a <span t-esc="abs(o.amount_total_signed)" t-options="{'widget': 'monetary', 'display_currency': o.company_id.currency_id}"/>
+            </p>
         </p>
          <div id="qrcode" position="after">
             <div t-if="o.company_id.country_id.code == 'AR' and o.journal_id.qr_code and o.invoice_payment_state != 'paid'">
-                <field name="qr_code_label"/>
-                <img t-att-src="'/report/barcode/?type=QR&amp;value=%s&amp;width=128&amp;height=128' % o.journal_id.qr_code"/>
+                <div clas="row m-0 justify-content-center align-item-center">
+                    <div class="col-auto p-5 text-center">
+                        <h5><span t-field="o.journal_id.qr_code_label"/></h5>
+                        <br/>
+                        <img t-att-src="'/report/barcode/?type=QR&amp;value=%s&amp;width=128&amp;height=128' % o.journal_id.qr_code" style="height:100px"/>
+                    </div>
+                </div>
             </div>
         </div>
     </template>
@@ -53,11 +61,19 @@
             <p t-if="o._fields.get('move_currency_id') and o.move_currency_id">
                 El total de este comprobante equivale a un total de <span t-raw="o.amount_total / o.move_inverse_currency_rate" t-options="{'widget': 'monetary', 'display_currency': o.move_currency_id}"/> a un tipo de cambio consignado de <span t-field="o.move_inverse_currency_rate"/>
             </p>
+            <p t-if="o.company_id.l10n_ar_invoice_report_ars_amount and o.currency_id != o.company_id.currency_id">
+                El total de este comprobante expresado en moneda de curso legal - Pesos Argentinos - asciende a <span t-esc="abs(o.amount_total_signed)" t-options="{'widget': 'monetary', 'display_currency': o.company_id.currency_id}"/>
+            </p>
         </p>
          <div id="qrcode" position="after">
             <div t-if="o.company_id.country_id.code == 'AR' and o.journal_id.qr_code and o.invoice_payment_state != 'paid'">
-                <field name="qr_code_label"/>
-                <img t-att-src="'/report/barcode/?type=QR&amp;value=%s&amp;width=128&amp;height=128' % o.journal_id.qr_code"/>
+                <div clas="row m-0 justify-content-center align-item-center">
+                    <div class="col-auto p-5 text-center">
+                        <h5><span t-field="o.journal_id.qr_code_label"/></h5>
+                        <br/>
+                        <img t-att-src="'/report/barcode/?type=QR&amp;value=%s&amp;width=128&amp;height=128' % o.journal_id.qr_code" style="height:100px"/>
+                    </div>
+                </div>
             </div>
         </div>
     </template>

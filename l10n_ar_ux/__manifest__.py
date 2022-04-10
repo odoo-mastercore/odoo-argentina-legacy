@@ -1,6 +1,6 @@
 {
     'name': 'Argentinian Accounting UX',
-    'version': "13.0.1.28.0",
+    'version': "13.0.1.36.0",
     'category': 'Localization/Argentina',
     'sequence': 14,
     'author': 'ADHOC SA, MASTERCORE SAS',
@@ -9,7 +9,6 @@
     'summary': '',
     'depends': [
         'account',
-        'account_debit_note',
         'l10n_ar',
         'account_check',
         # for payment group report

@@ -6,12 +6,6 @@
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="arch" type="xml">
-            <field name="ref" position="attributes">
-                <attribute name="placeholder">Reference/Name fantasy</attribute>
-            </field>
-            <field name="parent_id" position="after">
-                <field name="ref" position="move"/>
-            </field>
             <field name="vat" position="after">
                <button
                name="%(action_partner_update)d"
