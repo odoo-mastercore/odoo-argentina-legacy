@@ -366,7 +366,7 @@ class AccountMove(models.Model):
                     doc_afip_code, pos_number, cbte_nro, fecha_cbte,
                     imp_total, tipo_expo, permiso_existente, pais_dst_cmp,
                     nombre_cliente, cuit_pais_cliente, domicilio_cliente,
-                    id_impositivo, moneda_id, moneda_ctz, obs_comerciales,
+                    id_impositivo, moneda_id, round(float(moneda_ctz), 2), obs_comerciales,
                     obs_generales, forma_pago, incoterms,
                     idioma_cbte, incoterms_ds, fecha_pago,
                 )
