@@ -87,9 +87,8 @@ class AccountVatLedgerXlsx(models.AbstractModel):
                     sheet.write(row, 15, '0,00', line)
                 else:
                     # Creating environment variables
-                    untaxed = (invoice.type == 'in_invoice' and 1.0
-                        or -1.0) * invoice.not_taxed
                     if invoice.type == 'in_refund':
+                        untaxed = invoice.not_taxed
                         base_2 = invoice.base_25
                         base_5 = invoice.base_5
                         base_10 = invoice.base_10
@@ -105,6 +104,8 @@ class AccountVatLedgerXlsx(models.AbstractModel):
                         total = invoice.total
                     
                     else:
+                        untaxed = (invoice.type == 'in_invoice' and 1.0
+                                   or -1.0) * invoice.not_taxed
                         base_2 = (invoice.type == 'in_invoice' and 1.0
                             or -1.0) * invoice.base_25
                         base_5 = (invoice.type == 'in_invoice' and 1.0
